@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+import Header from './components/header';
+
 import './App.css';
 
 function App() {
@@ -19,7 +21,7 @@ function App() {
         </a>
       </header> */}
 
-      <div className="container text-red-600 text-4xl">Kumba App</div>
+      <div className="container text-red-600 text-4xl"><Header /></div>
     </div>
   );
 }
