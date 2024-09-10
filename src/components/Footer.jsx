@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
-import Mobile1 from '../assets/img/mobile1.png';
+import Mobile1 from '../assets/img/iphone15_mockup.png';
 
 function Footer() {
   return (
@@ -319,7 +319,7 @@ function Footer() {
             </div>
           </div>
           <div className="hidden sm:block absolute top-16 right-0 -bottom-2 transform -rotate-6 -translate-y-1/2">
-            <img src={Mobile1} className="w-[11rem]" alt="Bilan Image" title='Bilan Image' />
+            <img src={Mobile1} className="w-[14rem]" alt="Bilan Image" title='Bilan Image' />
           </div>
         </section>
       </section>
