@@ -55,7 +55,7 @@ function Header(){
                     <img src={img1} className='w-[730px]' alt="" srcset="" />
                 </div>
             </div>
-            <div className="absolute z-0 right-shape rounded-l-3xl w-[38%] h-[650px] right-0 bg-[#b8efc4]"></div>
+            <div className="absolute z-0 right-shape rounded-l-3xl w-[38%] h-[650px] right-0 bg-[#e5e7e6]"></div>
         </div>
         
     </div>
