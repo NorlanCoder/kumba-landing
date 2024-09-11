@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import  './App.css';
-import About from './pages/About.jsx'
+import AboutUs from './components/AboutUs.jsx'
 import Accordion from './components/Accordion.jsx';
 import Footer from './components/Footer.jsx';
 import Solution from './components/Solution.jsx';
@@ -11,13 +11,11 @@ import Header from './components/Header.jsx';
 function App() {
   return (
     <div className="App">
-
-      <Header/>
-
+      <Header />
       <Statistical />
+      <AboutUs />
       <Partner />
       <Solution />
-      <About />
       <Accordion />
       <Footer/>
     </div>
