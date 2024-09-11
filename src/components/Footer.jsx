@@ -8,7 +8,7 @@ function Footer() {
     <>
       <section className="max-w-3xl mx-auto">
         <section className="my-5 mx-5 bg-terre p-2 rounded-xl flex items-center justify-between relative">
-          <div className="text-white p-2 sm:pl-8 sm:pt-8">
+          <div className="text-white p-2 sm:pl-8 sm:pt-8 sm:pb-8">
             <h1 className="text-2xl font-extrabold mb-2 sm:w-1/2">
               Trouvons votre habitation idéale aujourd'hui !
             </h1>
