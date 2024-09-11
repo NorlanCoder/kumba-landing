@@ -8,6 +8,11 @@
   src: url('./assets/font/Poppins-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'jetbrainsmono_extrabold';
+  src: url('./assets/font/JetBrainsMono-ExtraBold.ttf');
+}
+
 * {
   font-family: poppins, sans-serif;
 }
