@@ -31,7 +31,7 @@ const Statistical = () => {
         <div className="max-w-2xl mx-auto text-center">
             <h3 className="text-gray-800 text-3xl text-center font-semibold sm:text-4xl">Nos clients sont toujours satisfaits</h3>
             <p className="mt-3 text-gray-700">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis sollicitudin quam ut tincidunt.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis sollicitudin quam ut tincidunt.
             </p>
         </div>
         <div className="mt-12">

@@ -318,7 +318,7 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div className="hidden sm:block absolute top-16 right-0 -bottom-2 transform -rotate-6 -translate-y-1/2">
+          <div className="hidden sm:block absolute sm:top-20 md:top-16 right-0 -bottom-2 transform -rotate-6 -translate-y-1/2">
             <img src={Mobile1} className="w-[14rem]" alt="Bilan Image" title='Bilan Image' />
           </div>
         </section>
@@ -335,10 +335,10 @@ function Footer() {
               <div className="text-sm uppercase text-terre font-bold">
                 Entreprise
               </div>
-              <a className="my-2 block" href="/#">
+              <a className="my-2 block text-sm" href="/#">
                 À propos <span className="text-teal-600 text-xs p-1"></span>
               </a>
-              <a className="my-2 block" href="/#">
+              <a className="my-2 block text-sm" href="/#">
                 Contactez-nous
               </a>
             </div>
@@ -347,17 +347,17 @@ function Footer() {
               <div className="text-sm uppercase text-terre font-bold">
                 Ressources
               </div>
-              <a className="my-2 block" href="/#">
+              <a className="my-2 block text-sm" href="/#">
                 FAQ<span className="text-teal-600 text-xs p-1"></span>
               </a>
-              <a className="my-2 block" href="/#">
+              <a className="my-2 block text-sm" href="/#">
                 Support<span className="text-teal-600 text-xs p-1"></span>
               </a>
-              <a className="my-2 block" href="/#">
+              <a className="my-2 block text-sm" href="/#">
                 Politique de confidentialité
                 <span className="text-teal-600 text-xs p-1"></span>
               </a>
-              <a className="my-2 block" href="/#">
+              <a className="my-2 block text-sm" href="/#">
                 Termes et Conditions{" "}
                 <span className="text-teal-600 text-xs p-1"></span>
               </a>
@@ -367,11 +367,11 @@ function Footer() {
               <div className="text-sm uppercase text-terre font-bold">
                 Contactez-nous
               </div>
-              <a className="my-2 block" href="/#">
+              <a className="my-2 block text-sm" href="/#">
                 XXX XXXX, Floor 4 San Francisco, CA
                 <span className="text-teal-600 text-xs p-1"></span>
               </a>
-              <a className="my-2 block" href="/#">
+              <a className="my-2 block text-sm" href="/#">
                 contact@company.com
                 <span className="text-teal-600 text-xs p-1"></span>
               </a>
