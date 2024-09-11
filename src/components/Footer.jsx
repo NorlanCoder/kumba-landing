@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import Mobile1 from '../assets/img/iphone15_mockup.png';
+import Fleche from '../assets/img/fleche.png';
 
 function Footer() {
   return (
@@ -318,8 +319,14 @@ function Footer() {
               </a>
             </div>
           </div>
+
+
+          <div className="hidden sm:block absolute top-1/2 left-1/2 right-0 bottom-44 transform -rotate-6 -translate-y-1/2">
+            <img src={Fleche} className="w-[7rem]" alt="Bilan Image" title='Bilan Image' />
+          </div>
+
           <div className="hidden sm:block absolute sm:top-20 md:top-16 right-0 -bottom-2 transform -rotate-6 -translate-y-1/2">
-            <img src={Mobile1} className="w-[14rem]" alt="Bilan Image" title='Bilan Image' />
+            <img src={Mobile1} className="w-[15rem]" alt="Bilan Image" title='Bilan Image' />
           </div>
         </section>
       </section>
