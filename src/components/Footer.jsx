@@ -3,6 +3,7 @@ import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import Mobile1 from '../assets/img/iphone15_mockup.png';
 import Fleche from '../assets/img/fleche.png';
+import Forme5 from '../assets/img/forme5.png';
 
 function Footer() {
   return (
@@ -332,14 +333,14 @@ function Footer() {
       </section>
 
       <footer className="bg-white text-white pt-7">
-        <div className="max-w-6xl mx-auto">
+        <section className="max-w-6xl mx-auto">
           <div className="px-4 sm:px-6 text-gray-700 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto">
             <div className="p-5">
               <h3 className="font-bold text-xl text-terre">Kumba</h3>
             </div>
 
             <div className="p-5">
-              <div className="text-sm uppercase text-terre font-bold">
+              <div className="text-sm uppercase text-terre font-bold select-none">
                 Entreprise
               </div>
               <a className="my-2 block text-sm" href="/#">
@@ -351,7 +352,7 @@ function Footer() {
             </div>
 
             <div className="p-5">
-              <div className="text-sm uppercase text-terre font-bold">
+              <div className="text-sm uppercase text-terre font-bold select-none">
                 Ressources
               </div>
               <a className="my-2 block text-sm" href="/#">
@@ -371,7 +372,7 @@ function Footer() {
             </div>
 
             <div className="p-5">
-              <div className="text-sm uppercase text-terre font-bold">
+              <div className="text-sm uppercase text-terre font-bold select-none">
                 Contactez-nous
               </div>
               <a className="my-2 block text-sm" href="/#">
@@ -384,11 +385,11 @@ function Footer() {
               </a>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="flex flex-wrap justify-between items-center pb-5 px-3 md:px-0 m-auto pt-3 border-t text-gray-700 text-sm max-w-6xl">
-            <div className="my-5 text-sm w-full text-center sm:w-1/3 sm:text-left">
+        <section className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="flex flex-wrap justify-between items-center relative pb-5 px-3 md:px-0 m-auto pt-3 border-t text-gray-700 text-sm max-w-6xl">
+            <div className="my-5 text-sm w-full text-center sm:w-1/3 sm:text-left select-none">
               <span className="">Copyright © Kumba 2024.</span>
             </div>
 
@@ -428,8 +429,12 @@ function Footer() {
                 <option value="English">English</option>
               </select>
             </div>
+
+            <section className="hidden sm:block opacity-20 absolute left-10 -top-20 z-20 transform">
+              <img src={Forme5} className="w-[5rem]" alt="Bilan Image" title='Bilan Image' />
+            </section>
           </div>
-        </div>
+        </section>
       </footer>
     </>
   );

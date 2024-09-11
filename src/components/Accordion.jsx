@@ -96,14 +96,14 @@ function Accordion () {
                 <section className="flex-grow mx-4 px-2 max-w-3xl sm:mx-auto my-12 rounded-xl">
                     {faqData1.find((section) => section.id === activeSection1)
                         ?.questions.map((question, index) => (
-                        <div key={question.id} className="group m-4 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2">
+                        <div key={question.id} className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2">
                 
                             <div className="cursor-pointer flex justify-between items-center font-medium" onClick={() => handleToggle(question.id)}>
                                 <div className={`text-md text-gray-700 font-bold ${ activeQuestion === question.id ? "text-terre" : ""}`}>{question.question}</div>
                                 <FaPlus className={`m-2 ml-2 transition-all duration-200 ${ activeQuestion === question.id ? "rotate-90 text-terre" : ""}`}/>
                             </div>
-                            <div className={`overflow-hidden transition-max-height duration-500 ${activeQuestion === question.id ? "max-h-screen" : "max-h-0"}`}>
-                                <section className="mt-2 text-md">
+                            <div className={`overflow-hidden transition-max-height duration-500 bg-white ${activeQuestion === question.id ? "max-h-screen" : "max-h-0"}`}>
+                                <section className="mt-2 px-2 text-md">
                                     <div dangerouslySetInnerHTML={{ __html: question.answer }} />
                                 </section>
                             </div>

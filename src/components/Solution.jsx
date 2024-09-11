@@ -55,14 +55,14 @@ const Solution = () => {
 
   return (
     <section className="py-14">
-      <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8 select-none">
+      <div className="max-w-3xl mx-auto px-4 text-gray-600 md:px-8 select-none">
         <div className="max-w-xl mx-auto text-center space-y-3">
             <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">Des solutions simples pour des problèmes complexes</h3>
             <p>Avec Kumba trouvé la solution avec vos problèmes d'immobiliers, de bureaux, de villas, d'appartements, de maisons, d'hôtels, de magasins, d'écolodges, de boutiques, de déménagements</p>
         </div>
 
         <div className="mt-12">
-            <ul className="grid gap-y-8 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
+            <ul className="grid gap-y-8 gap-x-8 sm:grid-cols-2 lg:grid-cols-2">
                 {features.map((item, idx) => (
                   <li key={idx} className="flex gap-x-4">
                     <div className="flex-none w-12 h-12 bg-terre text-white rounded-lg flex items-center justify-center">
