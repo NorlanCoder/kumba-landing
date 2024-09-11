@@ -11,6 +11,7 @@ import Statistical from './components/Statistical.jsx';
 function App() {
   return (
     <div className="App">
+      <Header />
       <Statistical />
       <Partner />
       <Solution />
