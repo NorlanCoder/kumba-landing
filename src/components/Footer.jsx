@@ -336,7 +336,7 @@ function Footer() {
         <section className="max-w-6xl mx-auto">
           <div className="px-4 sm:px-6 text-gray-700 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto">
             <div className="p-5">
-              <h3 className="font-bold text-xl text-terre">Kumba</h3>
+              <h3 className="font-bold text-2xl text-terre sonia">Kumba</h3>
             </div>
 
             <div className="p-5">

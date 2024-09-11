@@ -4,7 +4,7 @@ const Partner = () => {
   return (
     <div className="py-14">
         <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-            <h3 className="text-gray-800 text-3xl text-center font-semibold sm:text-4xl">Nos Partenaires</h3>
+            <h3 className="text-gray-800 text-3xl text-center font-semibold sm:text-5xl sonia">Nos Partenaires</h3>
             <div className="flex justify-center mt-8">
                 <ul className="inline-grid grid-cols-2 gap-x-10 gap-y-6 md:gap-x-16 md:grid-cols-3 lg:grid-cols-4">
                     <li>

@@ -86,8 +86,8 @@ function Accordion () {
   return (
     <>
         <section className="py-8">
-            <section className="relative">
-                <h1 className="text-gray-800 text-3xl text-center font-semibold sm:text-4xl">Questions Fréquemment Posées</h1>
+            <section className="relative select-none">
+                <h1 className="text-gray-800 text-3xl text-center font-semibold sm:text-5xl sonia">Questions Fréquemment Posées</h1>
                 
                 <section className="hidden sm:block opacity-30 absolute right-10 -top-20 -z-20 transform -rotate-6">
                     <img src={Forme2} className="w-[11rem]" alt="Bilan Image" title='Bilan Image' />
