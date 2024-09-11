@@ -41,8 +41,8 @@ function Header(){
                         Simplify your life and discover a new way to get around.
                     </h1>
                     <div className="buttons flex sm:justify-center lg:justify-normal mx-5 mt-[10%] gap-x-4">
-                        <div className="download inline rounded-xl w-[154px] text-terre border-1 border-terre text-center py-2 bg-[#e5e7e6] text-sm font-medium">Télecharger</div>
-                        <div className="download inline rounded-xl  w-[154px] h-[36px] text-center py-2 bg-[#B67332] text-white text-sm font-medium">Lire plus</div>
+                        <a href="#" className='download inline rounded-xl w-[154px] text-terre border-1 border-terre text-center py-2 bg-[#e5e7e6] text-sm font-medium'>Télecharger</a>
+                        <a href="#" className='download inline rounded-xl  w-[154px] h-[36px] text-center py-2 bg-[#B67332] text-white text-sm font-medium'>Lire plus</a>
                     </div>
 
                     <div className="stats flex items-center lg:justify-normal sm:justify-center mt-[10%]">
