@@ -7,16 +7,16 @@ import img1 from '../img-phone-1.png'
 function Navbar(){
 
     const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
-    const [menu_class, setMenuClass] = useState("menu-on-click absolute flex flex-col w-[40%] z-30 h-screen left-0 bg-[#e5e7e6] hidden")
+    const [menu_class, setMenuClass] = useState("menu-on-apear absolute flex flex-col w-[80%] left-1/2 transform opacity-0 duration-500 -translate-x-1/2 z-30 bg-[#e5e7e6f5]")
     const [isMenuClicked, setIsMenuClicked] = useState(false)
 
     const updateMenu = () => {
         if(!isMenuClicked){
             setBurgerClass("burger-bar clicked");
-            setMenuClass("menu-on-click absolute flex flex-col w-[40%] z-30 h-screen left-0 bg-[#e5e7e6] block")
+            setMenuClass("menu-on-apear absolute flex z-10 flex-col w-[80%] left-1/2 opacity-100 duration-500 -translate-x-1/2 z-30 bg-[#e5e7e6f5]")
         }else{
             setBurgerClass("burger-bar unclicked");
-            setMenuClass("menu-on-click absolute flex flex-col w-[40%] z-30 h-screen left-0 bg-[#e5e7e6] hidden")
+            setMenuClass("menu absolute flex flex-col z-10 w-[80%] left-1/2 opacity-0 duration-500 -translate-x-1/2 z-30 bg-[#e5e7e6f5]")
         }
 
         setIsMenuClicked(!isMenuClicked)
@@ -27,13 +27,13 @@ function Navbar(){
             <div className={menu_class}>
                 <div className="content mt-8">
                     <div className='logo text-center mb-6'>
-                        <a href="#"><h1 className="md:text-4xl text-terre font-bold">KUMBA</h1></a>
+                        <a href="#"><h1 className="md:text-4xl text-terre font-bold">KUMA</h1></a>
                     </div>
-                    <div className="md:text-xl flex flex-col gap-y-4 font-extralight">
-                        <a href="#" className='border-t-2 border-terre py-3'><span className='mx-4'>Home</span></a>
-                        <a href="#" className='border-t-2 border-terre py-3'><span className='mx-4'>About</span></a>
-                        <a href="#" className='border-t-2 border-terre py-3'><span className='mx-4'>Statistiques</span></a>
-                        <a href="#" className='border-y-2 border-terre pt-3 pb-7'><span className='mx-4'>Solutions</span></a>
+                    <div className="md:text-xl rounded-lg flex flex-col justify-center gap-y-4 font-extralight">
+                        <a href="#" className='border-t-2 w-full text-center border-terre py-3'><span className='mx-4'>Home</span></a>
+                        <a href="#" className='border-t-2 w-full text-center border-terre py-3'><span className='mx-4'>About</span></a>
+                        <a href="#" className='border-t-2 w-full text-center border-terre py-3'><span className='mx-4'>Statistiques</span></a>
+                        <a href="#" className='border-y-2 rounded-b-xl w-full text-center border-terre pt-3 pb-7'><span className='mx-4'>Solutions</span></a>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@ function Navbar(){
                         <li><a href="#">Statistiques</a></li>
                         <li><a href="#">Solutions</a></li>
                     </ul>
-                    <div className='md:hidden flex justify-end text-terre'>
+                    <div className='md:hidden flex z-20 justify-end text-terre'>
                         <svg className={burger_class} onClick={updateMenu} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line className='line1' x1="3" y1="12" x2="21" y2="12"></line>
                             <line className='line2' x1="3" y1="6" x2="21" y2="6"></line>
