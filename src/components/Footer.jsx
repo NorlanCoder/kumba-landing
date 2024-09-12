@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import Mobile1 from '../assets/img/iphone15_mockup.png';
@@ -6,18 +6,40 @@ import Fleche from '../assets/img/fleche.png';
 import Forme5 from '../assets/img/forme5.png';
 
 function Footer() {
+
+
+  useEffect(() => {
+    const handleScroll = (e) => {
+      e.preventDefault();
+      const targetId = e.currentTarget.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach((link) => {
+      link.addEventListener("click", handleScroll);
+    });
+
+    return () => {
+      links.forEach((link) => {
+        link.removeEventListener("click", handleScroll);
+      });
+    };
+  }, []);
+
+
   return (
     <>
       <section className="max-w-3xl mx-auto">
-        <section className="my-5 mx-5 bg-terre p-2 rounded-xl flex items-center justify-between relative">
+        <section className="my-5 mx-5 bg-terre p-2 rounded-xl sm:flex sm:items-center sm:justify-between relative">
           <div className="text-white p-2 sm:pl-8 sm:pt-8 sm:pb-8">
-            <h1 className="text-2xl font-extrabold mb-2 sm:w-1/2">
+            <h1 className="text-xl sm:text-2xl text-center sm:text-left font-extrabold mb-2 sm:w-1/2">
               Trouvons votre habitation idéale aujourd'hui !
             </h1>
-            <p className="text-xs font-light text-gray-200 sm:w-1/2">
-              La maison de vos rêves est à portée de clic. Réservez votre temps
-              et vos efforts pour les choses qui comptent vraiment.
-            </p>
+            <p className="text-xs  text-center sm:text-left font-light text-gray-200 sm:w-1/2 mb-2">La maison de vos rêves est à portée de clic. </p>
             <div className="flex flex-wrap justify-center sm:justify-start items-center gap-3 mt-2">
               <a href="#">
                 <svg className="w-32" fill="none" viewBox="0 0 338 100">
@@ -322,67 +344,43 @@ function Footer() {
           </div>
 
 
-          <div className="hidden sm:block absolute top-1/2 left-1/2 right-0 bottom-44 transform -rotate-6 -translate-y-1/2">
-            <img src={Fleche} className="w-[7rem]" alt="Bilan Image" title='Bilan Image' />
+          <div className="hidden sm:block absolute top-1/2 left-1/2 right-0 bottom-44 transform sm:-rotate-12 md:-rotate-6 -translate-y-1/2">
+            <img src={Fleche} className="sm:w-[5rem] md:w-[7rem]" alt="Bilan Image" title='Bilan Image' />
           </div>
 
-          <div className="hidden sm:block absolute sm:top-20 md:top-16 right-0 -bottom-2 transform -rotate-6 -translate-y-1/2">
-            <img src={Mobile1} className="w-[15rem]" alt="Bilan Image" title='Bilan Image' />
+          <div className="hidden sm:block absolute sm:top-24 md:top-16 right-0 -bottom-2 transform -rotate-6 -translate-y-1/2">
+            <img src={Mobile1} className="sm:w-[12rem] md:w-[15rem]" alt="Bilan Image" title='Bilan Image' />
           </div>
         </section>
       </section>
 
       <footer className="bg-white text-white pt-7">
         <section className="max-w-6xl mx-auto">
-          <div className="px-4 sm:px-6 text-gray-700 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto">
+          <div className="px-4 sm:px-6 text-gray-700 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto  select-none">
             <div className="p-5">
               <h3 className="font-bold text-2xl text-terre sonia">Kumba</h3>
             </div>
 
             <div className="p-5">
-              <div className="text-sm uppercase text-terre font-bold select-none">
-                Entreprise
-              </div>
-              <a className="my-2 block text-sm" href="/#">
-                À propos <span className="text-teal-600 text-xs p-1"></span>
-              </a>
-              <a className="my-2 block text-sm" href="/#">
-                Contactez-nous
-              </a>
+              <div className="text-sm uppercase text-terre font-bold select-none">Entreprise</div>
+              <a className="my-2 block text-sm" href="#statistical">Statistiques</a>
+              <a className="my-2 block text-sm" href="#partners">Nos partenaires</a>
+              <a className="my-2 block text-sm" href="#about">À propos</a>
+              <a className="my-2 block text-sm" href="#contact">Contactez-nous</a>
             </div>
 
             <div className="p-5">
-              <div className="text-sm uppercase text-terre font-bold select-none">
-                Ressources
-              </div>
-              <a className="my-2 block text-sm" href="/#">
-                FAQ<span className="text-teal-600 text-xs p-1"></span>
-              </a>
-              <a className="my-2 block text-sm" href="/#">
-                Support<span className="text-teal-600 text-xs p-1"></span>
-              </a>
-              <a className="my-2 block text-sm" href="/#">
-                Politique de confidentialité
-                <span className="text-teal-600 text-xs p-1"></span>
-              </a>
-              <a className="my-2 block text-sm" href="/#">
-                Termes et Conditions{" "}
-                <span className="text-teal-600 text-xs p-1"></span>
-              </a>
+              <div className="text-sm uppercase text-terre font-bold select-none">Ressources</div>
+              <a className="my-2 block text-sm" href="#faq">FAQ</a>
+              <a className="my-2 block text-sm" href="/#">Support</a>
+              <a className="my-2 block text-sm" href="/#">Politique de confidentialité</a>
+              <a className="my-2 block text-sm" href="/#">Termes et Conditions</a>
             </div>
 
             <div className="p-5">
-              <div className="text-sm uppercase text-terre font-bold select-none">
-                Contactez-nous
-              </div>
-              <a className="my-2 block text-sm" href="/#">
-                XXX XXXX, Floor 4 San Francisco, CA
-                <span className="text-teal-600 text-xs p-1"></span>
-              </a>
-              <a className="my-2 block text-sm" href="/#">
-                contact@company.com
-                <span className="text-teal-600 text-xs p-1"></span>
-              </a>
+              <div className="text-sm uppercase text-terre font-bold">Contactez-nous</div>
+              <a className="my-2 block text-sm">XXX XXXX, Floor 4 San Francisco, CA</a>
+              <a className="my-2 block text-sm">contact@company.com</a>
             </div>
           </div>
         </section>

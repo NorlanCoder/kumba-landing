@@ -7,6 +7,8 @@ import Solution from './components/Solution.jsx';
 import Partner from './components/Partner.jsx';
 import Statistical from './components/Statistical.jsx';
 import Header from './components/Header.jsx';
+import ScrollToTopButton from './components/ScrollToTopButton.jsx';
+import ContactUs from './components/ContactUs.jsx';
 
 function App() {
   return (
@@ -16,8 +18,11 @@ function App() {
       <Partner />
       <AboutUs />
       <Solution />
+      <ContactUs />
       <Accordion />
       <Footer/>
+
+      <ScrollToTopButton />
     </div>
   );
 }

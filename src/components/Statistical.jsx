@@ -14,23 +14,20 @@ const Statistical = () => {
       logo: <img src={Utilisateur} width={30} />,
       data: "30+",
       title: "Users",
-      texte: "Notre application est utilisée par une diversité d'utilisateurs à travers le monde, chacun bénéficiant de fonctionnalités adaptées à leurs besoins spécifiques."
     },
     {
       logo: <img src={Drapeau} width={30} />,
       data: "40+",
       title: "Pays",
-      texte: "Notre application connaît une adoption croissante à l'échelle internationale devenant un outil indispensable dans plusieurs pays."
     },
     {
       logo: <img src={Service} width={30} />,
       data: "30+",
       title: "Services",
-      texte: "Que ce soit pour faciliter la recherche d'appartement, la vente immobilière ou améliorer l'accès à des logements"
     },
   ]
   return (
-    <section className="py-14">
+    <section className="py-14" id="statistical">
       <div className="max-w-6xl mx-auto px-4 md:px-8 select-none">
         <div className="max-w-2xl mx-auto text-center">
             <h3 className="text-gray-800 text-3xl text-center font-semibold sm:text-5xl sonia">Nos clients sont toujours satisfaits</h3>
@@ -39,17 +36,14 @@ const Statistical = () => {
             </p>
         </div>
         <div className="mt-12">
-            <ul className="grid gap-y-8 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
+            <ul className="max-w-sm sm:max-w-2xl mx-auto grid gap-y-8 gap-x-8 sm:grid-cols-3 px-2">
                 {stats.map((item, idx) => (
-                  <li key={idx} className="h-72 text-center border border-gray-300 hover:scale-105 hover:shadow-xl transition-all duration-300 px-4 py-4 rounded-lg">
+                  <li key={idx} className=" text-center border hover:border-terre hover:scale-105 hover:shadow-md hover:shadow-terre transition-all duration-300 px-4 py-4 rounded-lg">
                     <div className="flex items-center justify-center text-red-600">
                       {item.logo}
                     </div>
                     <h4 className="text-3xl text-gray-700 font-semibold mt-2">{item.data}</h4>
                     <p className="mt-1 text-gray-700 text-md font-semibold">{item.title}</p>
-                    <div className="text-center">
-                      <p className="text-gray-700 text-md text-justify mt-2">{item.texte}</p>
-                    </div>
                   </li>
                 ))}
             </ul>

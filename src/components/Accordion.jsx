@@ -85,7 +85,7 @@ function Accordion () {
 
   return (
     <>
-        <section className="py-8">
+        <section className="py-8" id="faq">
             <section className="relative select-none">
                 <h1 className="text-gray-800 text-3xl text-center font-semibold sm:text-5xl sonia">Questions Fréquemment Posées</h1>
                 
@@ -93,7 +93,7 @@ function Accordion () {
                     <img src={Forme2} className="w-[11rem]" alt="Bilan Image" title='Bilan Image' />
                 </section>
 
-                <section className="flex-grow mx-4 px-2 max-w-3xl sm:mx-auto my-12 rounded-xl">
+                <section className="flex-grow mx-4 sm:px-2 max-w-3xl md:mx-auto my-12 rounded-xl">
                     {faqData1.find((section) => section.id === activeSection1)
                         ?.questions.map((question, index) => (
                         <div key={question.id} className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2">
@@ -102,8 +102,8 @@ function Accordion () {
                                 <div className={`text-md text-gray-700 font-bold ${ activeQuestion === question.id ? "text-terre" : ""}`}>{question.question}</div>
                                 <FaPlus className={`m-2 ml-2 transition-all duration-200 ${ activeQuestion === question.id ? "rotate-90 text-terre" : ""}`}/>
                             </div>
-                            <div className={`overflow-hidden transition-max-height duration-500 bg-white ${activeQuestion === question.id ? "max-h-screen" : "max-h-0"}`}>
-                                <section className="mt-2 px-2 text-md">
+                            <div className={`overflow-hidden transition-max-height duration-500 ${activeQuestion === question.id ? "max-h-screen" : "max-h-0"}`}>
+                                <section className="my-3 px-3 rounded-md text-md text-justify">
                                     <div dangerouslySetInnerHTML={{ __html: question.answer }} />
                                 </section>
                             </div>

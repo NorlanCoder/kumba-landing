@@ -1,5 +1,6 @@
 import React from 'react';
-import Forme6 from '../assets/img/forme6.png';
+import Forme8 from '../assets/img/forme8.png';
+import Forme9 from '../assets/img/forme9.png';
 
 const Solution = () => {
 
@@ -62,27 +63,33 @@ const Solution = () => {
             <p>Avec Kumba trouvé la solution à vos problèmes d'immobiliers, de bureaux, de villas, d'appartements, de maisons, d'hôtels, de magasins, d'écolodges, de boutiques, de déménagements</p>
         </div>
 
-        <section className="hidden sm:block opacity-15 absolute left-5 -top-10 -z-20 transform">
-            <img src={Forme6} className="w-[11rem]" alt="Bilan Image" title='Bilan Image' />
+        <section className="hidden sm:block opacity-65 absolute left-5 -top-10 -z-20 transform">
+            <img src={Forme8} className="w-[11rem]" alt="Bilan Image" title='Bilan Image' />
         </section>
 
         <div className="mt-12">
             <ul className="grid gap-y-8 gap-x-8 sm:grid-cols-2 lg:grid-cols-2">
                 {features.map((item, idx) => (
                   <li key={idx} className="flex gap-x-4">
-                    <div className="flex-none w-12 h-12 bg-terre text-white rounded-lg flex items-center justify-center">
-                      {item.icon}
-                    </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-lg text-gray-800 font-semibold">{item.title}</h4>
-                        <p>{item.desc}</p>
+                        <div className="flex items-center gap-4">
+                            <div className="flex-none w-12 h-12 bg-terre text-white rounded-lg flex items-center justify-center">
+                                {item.icon}
+                            </div>
+                            <h4 className="text-lg text-gray-800 font-semibold">{item.title}</h4>
+                        </div>
+                        <p className="text-justify">{item.desc}</p>
                     </div>
                   </li>
                 ))
                 }
             </ul>
         </div>
+
+        <section className="hidden sm:block opacity-30 absolute -left-36 bottom-20 -z-20 transform">
+            <img src={Forme9} className="w-[12rem]" alt="Bilan Image" title='Bilan Image' />
+        </section>
       </div>
     </section>
   )
