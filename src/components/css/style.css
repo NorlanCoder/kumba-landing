@@ -29,3 +29,14 @@
   transform: rotate(0);
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
+
+/* .menu {
+  top: -40%;
+  transition: 0.5s;
+  background: #e5e7e6f5;
+} */
+
+/* .menu-on-apear {
+  transform: translateY(-40%, -20%);
+  transition: 0.5s;
+} */
