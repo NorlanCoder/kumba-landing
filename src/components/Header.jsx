@@ -8,7 +8,7 @@ import logo_kumba from '../assets/img/LOGO_KUMBA_AUDACE-01.webp'
 function Navbar(){
 
     const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
-    const [menu_class, setMenuClass] = useState("menu-on-apear absolute flex flex-col w-[80%] left-1/2 transform opacity-0 duration-500 -translate-x-1/2 z-30 bg-[#e5e7e6f5]")
+    const [menu_class, setMenuClass] = useState("menu-on-apear absolute flex-col w-[80%] left-1/2 transform hidden opacity-0 duration-500 -translate-x-1/2 z-30 bg-[#e5e7e6f5]")
     const [isMenuClicked, setIsMenuClicked] = useState(false)
 
     const updateMenu = () => {
@@ -31,10 +31,10 @@ function Navbar(){
                         <a href="#"><img className='w-16' src={logo_kumba} alt="" srcset="" /></a>
                     </div>
                     <div className="md:text-xl rounded-lg flex flex-col justify-center gap-y-4 font-extralight">
-                        <a href="#" className='border-t-2 w-full text-center border-terre py-3'><span className='mx-4'>Home</span></a>
-                        <a href="#" className='border-t-2 w-full text-center border-terre py-3'><span className='mx-4'>About</span></a>
-                        <a href="#" className='border-t-2 w-full text-center border-terre py-3'><span className='mx-4'>Statistiques</span></a>
-                        <a href="#" className='border-y-2 rounded-b-xl w-full text-center border-terre pt-3 pb-7'><span className='mx-4'>Solutions</span></a>
+                        <a href="#home" className='border-t-2 w-full text-center border-terre py-3'><span className='mx-4'>Home</span></a>
+                        <a href="#about" className='border-t-2 w-full text-center border-terre py-3'><span className='mx-4'>About</span></a>
+                        <a href="#statistical" className='border-t-2 w-full text-center border-terre py-3'><span className='mx-4'>Statistiques</span></a>
+                        <a href="#contact" className='border-y-2 rounded-b-xl w-full text-center border-terre pt-3 pb-7'><span className='mx-4'>Contactez-nous</span></a>
                     </div>
                 </div>
             </div>
@@ -43,12 +43,12 @@ function Navbar(){
                     <a href="#"><img className='w-20' src={logo_kumba} alt="" srcset="" /></a>
                 </div>
                 <div className="menu z-20 mt-2">
-                    <ul className="md:flex hidden font-extralight gap-x-8">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Statistiques</a></li>
-                        <li><a href="#">Solutions</a></li>
-                    </ul>
+                    <div className="md:flex hidden font-extralight gap-x-8">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#statistical">Statistiques</a>
+                        <a href="#contact">Contactez-nous</a>
+                    </div>
                     <div className='md:hidden flex z-20 justify-end text-terre'>
                         <svg className={burger_class} onClick={updateMenu} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line className='line1' x1="3" y1="12" x2="21" y2="12"></line>
