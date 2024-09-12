@@ -33,7 +33,7 @@ function Footer() {
 
   return (
     <>
-      <section className="max-w-3xl mx-auto">
+      <section id="footer" className="max-w-3xl mx-auto">
         <section className="my-5 mx-5 bg-terre p-2 rounded-xl sm:flex sm:items-center sm:justify-between relative">
           <div className="text-white p-2 sm:pl-8 sm:pt-8 sm:pb-8">
             <h1 className="text-xl sm:text-2xl text-center sm:text-left font-extrabold mb-2 sm:w-1/2">

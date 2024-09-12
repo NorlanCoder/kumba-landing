@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useEffect } from 'react';
 import './css/style.css'
 import img1 from '../img-phone-1.png' 
 import logo_kumba from '../assets/img/LOGO_KUMBA_AUDACE-01.webp'
@@ -6,6 +7,28 @@ import logo_kumba from '../assets/img/LOGO_KUMBA_AUDACE-01.webp'
 
 // navbar component
 function Navbar(){
+
+    useEffect(() => {
+        const handleScroll = (e) => {
+          e.preventDefault();
+          const targetId = e.currentTarget.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: "smooth" });
+          }
+        };
+    
+        const links = document.querySelectorAll('a[href^="#"]');
+        links.forEach((link) => {
+          link.addEventListener("click", handleScroll);
+        });
+    
+        return () => {
+          links.forEach((link) => {
+            link.removeEventListener("click", handleScroll);
+          });
+        };
+      }, []);
 
     const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
     const [menu_class, setMenuClass] = useState("menu-on-apear absolute flex-col w-[80%] left-1/2 transform hidden opacity-0 duration-500 -translate-x-1/2 z-30 bg-[#e5e7e6f5]")
@@ -59,7 +82,7 @@ function Navbar(){
                 </div>
                 
                 <div className="download-button md:flex hidden z-20">
-                    <a href="#" className="md:flex hidden h-12 px-5 py-3 text-md font-md mx-auto rounded-lg bg-terre text-white">Télécharger</a>
+                    <a href="#footer" className="md:flex hidden h-12 px-5 py-3 text-md font-md mx-auto rounded-lg bg-terre text-white">Télécharger</a>
                 </div>
             </div>
         
