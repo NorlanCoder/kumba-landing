@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import Forme8 from '../assets/img/forme8.png';
+import Forme9 from '../assets/img/forme9.png';
 
 const Solution = () => {
 
@@ -55,29 +57,39 @@ const Solution = () => {
 
   return (
     <section className="py-14">
-      <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8 select-none">
+      <div className="max-w-3xl mx-auto px-4 text-gray-600 md:px-8 select-none relative">
         <div className="max-w-xl mx-auto text-center space-y-3">
-            <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">Des solutions simples pour des problèmes complexes</h3>
-            <p>Avec Kumba trouvé la solution avec vos problèmes d'immobiliers, de bureaux, de villas, d'appartements, de maisons, d'hôtels, de magasins, d'écolodges, de boutiques, de déménagements</p>
+            <h3 className="text-gray-800 text-3xl font-semibold sm:text-5xl sonia">Des solutions simples pour des problèmes complexes</h3>
+            <p>Avec Kumba trouvé la solution à vos problèmes d'immobiliers, de bureaux, de villas, d'appartements, de maisons, d'hôtels, de magasins, d'écolodges, de boutiques, de déménagements</p>
         </div>
 
+        <section className="hidden sm:block opacity-65 absolute left-5 -top-10 -z-20 transform">
+            <img src={Forme8} className="w-[11rem]" alt="Bilan Image" title='Bilan Image' />
+        </section>
+
         <div className="mt-12">
-            <ul className="grid gap-y-8 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
+            <ul className="grid gap-y-8 gap-x-8 sm:grid-cols-2 lg:grid-cols-2">
                 {features.map((item, idx) => (
                   <li key={idx} className="flex gap-x-4">
-                    <div className="flex-none w-12 h-12 bg-terre text-white rounded-lg flex items-center justify-center">
-                      {item.icon}
-                    </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-lg text-gray-800 font-semibold">{item.title}</h4>
-                        <p>{item.desc}</p>
+                        <div className="flex items-center gap-4">
+                            <div className="flex-none w-12 h-12 bg-terre text-white rounded-lg flex items-center justify-center">
+                                {item.icon}
+                            </div>
+                            <h4 className="text-lg text-gray-800 font-semibold">{item.title}</h4>
+                        </div>
+                        <p className="text-justify">{item.desc}</p>
                     </div>
                   </li>
                 ))
                 }
             </ul>
         </div>
+
+        <section className="hidden sm:block opacity-30 absolute -left-36 bottom-20 -z-20 transform">
+            <img src={Forme9} className="w-[12rem]" alt="Bilan Image" title='Bilan Image' />
+        </section>
       </div>
     </section>
   )

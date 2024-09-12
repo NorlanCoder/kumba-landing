@@ -13,8 +13,26 @@
   src: url('./assets/font/JetBrainsMono-ExtraBold.ttf');
 }
 
+@font-face {
+  font-family: 'soria';
+  src: url('./assets/font/soria-font.ttf');
+}
+
+@font-face {
+  font-family: 'manrope_bold';
+  src: url('./assets/font/Manrope-ExtraBold.ttf');
+}
+
 * {
   font-family: poppins, sans-serif;
+}
+
+.sonia {
+  font-family: soria;
+}
+
+.manrope_bold {
+  font-family: manrope_bold;
 }
 
 body {

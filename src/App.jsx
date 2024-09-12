@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import  './App.css';
-import About from './pages/About.jsx'
+import AboutUs from './components/AboutUs.jsx'
 import Accordion from './components/Accordion.jsx';
 import Footer from './components/Footer.jsx';
-import Header from './components/Header.jsx';
 import Solution from './components/Solution.jsx';
 import Partner from './components/Partner.jsx';
 import Statistical from './components/Statistical.jsx';
+import Header from './components/Header.jsx';
+import ScrollToTopButton from './components/ScrollToTopButton.jsx';
+import ContactUs from './components/ContactUs.jsx';
 
 function App() {
   return (
@@ -14,10 +16,13 @@ function App() {
       <Header />
       <Statistical />
       <Partner />
+      <AboutUs />
       <Solution />
-      <About />
+      <ContactUs />
       <Accordion />
       <Footer/>
+
+      <ScrollToTopButton />
     </div>
   );
 }
