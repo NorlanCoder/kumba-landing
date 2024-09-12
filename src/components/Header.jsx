@@ -97,7 +97,7 @@ function Header(){
     <div className="header">
         <div className=""><Navbar/></div>
         
-        <div className="w-full md:h-[650px] -mt-20 md:flex md:bg-white bg-[#e5e7e6]">
+        <div className="w-full md:h-[650px] -mt-28 md:flex md:bg-white bg-[#e5e7e6]">
             <div className="flex lg:justify-between justify-center px-10 md:mt-24 mt-12">
                 <div className="text-content lg:w-[50%] z-10 md:mt-20 mt-16 lg:ml-24 sm:ml-12">
                     <h1 className="md:text-[60px] text-4xl font-[500] antialiased text-[#23273a] md:text-left text-center md:leading-[60px]">Logement rapide,
