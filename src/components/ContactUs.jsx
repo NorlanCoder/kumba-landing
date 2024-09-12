@@ -17,7 +17,7 @@ const ContactUs = () => {
 
           <div className="md:w-1/2">
             <h3 className="text-2xl text-gray-800 font-semibold mb-2">Des questions ? <br /> Écrivez-nous ou appelez-nous.</h3>
-            <p className="mb-3">Voulez-vous nous contacter ? Nous aimerions avoir de vos nouvelles. Voici comment nous joindre...</p>
+            <p className="mb-3">Nous aimerions avoir de vos nouvelles. Voici comment nous joindre...</p>
             <div className="items-center gap-2 text-gray-600 mb-6 text-justify">
               <div className="flex items-center my-2 conte gap-2">
                 <span className="border border-gray-300 p-2 rounded-md"><FiPhone /></span>
