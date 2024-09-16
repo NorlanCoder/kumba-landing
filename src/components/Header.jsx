@@ -100,7 +100,7 @@ function Header(){
 
     return <>
     <section className="home mb-8">
-    <div className="header h-[90vh] ">
+    <div className="header md:h-[90vh] ">
         <div className=""><Navbar/></div>
         
         <div className="w-full md:h-[90vh] -mt-28 md:flex md:bg-white bg-[#e5e7e6]">
