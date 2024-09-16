@@ -15,7 +15,7 @@ const Statistical = () => {
 
   
   return (
-    <section className="py-14" id="statistical">
+    <section className="py-8 sm:py-14" id="statistical">
       <div className="max-w-6xl mx-auto px-4 md:px-8 select-none">
         <div className="max-w-2xl mx-auto text-center">
             <h3 className="text-gray-800 text-3xl text-center font-semibold sm:text-5xl sonia">{t('statistical.titre')}</h3>

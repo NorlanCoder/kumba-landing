@@ -9,7 +9,7 @@ const ContactUs = () => {
   const [t, i18n] = useTranslation("global")
 
   return (
-    <section className="py-14 max-w-6xl mx-auto relative select-none" id="contact">
+    <section className="py-8 sm:py-14 max-w-6xl mx-auto relative select-none" id="contact">
         <div className='flex item-center justify-center'>
           <h2 className="text-gray-800 text-3xl text-center font-semibold sm:text-5xl sonia">{t("contact.titre")}</h2>
         </div>

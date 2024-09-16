@@ -64,7 +64,7 @@ function Navbar(){
                     </div>
                 </div>
             </div>
-            <div className="navbar w-full md:pt-6 pt-2 z-40 flex items-center md:justify-around md:bg-white bg-[#e5e7e6] md:px-12 px-6 justify-between select-none">
+            <div className="navbar w-full z-40 flex items-center md:justify-around md:bg-white bg-[#e5e7e6] md:px-12 px-6 justify-between select-none">
                 <div className="logo z-10 mt-2">
                     <a href="#"><img className='w-20' src={logo_kumba} alt="" srcset="" /></a>
                 </div>
@@ -100,7 +100,7 @@ function Header(){
 
     return <>
     <section className="home mb-8">
-    <div className="header h-[90vh] ">
+    <div className="header sm:h-[60vh] md:h-[90vh] ">
         <div className=""><Navbar/></div>
         
         <div className="w-full md:h-[90vh] -mt-28 md:flex md:bg-white bg-[#e5e7e6]">
