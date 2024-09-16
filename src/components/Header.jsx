@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './css/style.css'
 import img1 from '../img-phone-1.png' 
 import logo_kumba from '../assets/img/LOGO_KUMBA_AUDACE-01.webp'
@@ -53,18 +52,18 @@ function Navbar(){
     return <>
             <div className={menu_class}>
                 <div className="content mt-8 select-none">
-                    <div className='logo flex justify-center mb-6'>
+                    {/* <div className='logo flex justify-center mb-6'>
                         <a href="#"><img className='w-16' src={logo_kumba} alt="" srcset="" /></a>
-                    </div>
+                    </div> */}
                     <div className="md:text-xl rounded-lg w-full flex flex-col justify-center gap-y-4 font-extralight">
-                        <a href="#home" className='border-t-2 w-full text-center border-terre py-3'><span className='mx-4'>{t("navbar.menu1")}</span></a>
-                        <a href="#about" className='border-t-2 w-full text-center border-terre py-3'><span className='mx-4'>{t("navbar.menu2")}</span></a>
-                        <a href="#faq" className='border-t-2 w-full text-center border-terre py-3'><span className='mx-4'>{t("navbar.menu3")}</span></a>
-                        <a href="#contact" className='border-y-2 rounded-b-xl w-full text-center border-terre pt-3 pb-7'><span className='mx-4'>{t("navbar.menu4")}</span></a>
+                        <a href="#home" className='w-full text-center border-terre py-3'><span className='mx-2'>{t("navbar.menu1")}</span></a>
+                        <a href="#about" className='border-t-2 w-full text-center border-terre py-3'><span className='mx-2'>{t("navbar.menu2")}</span></a>
+                        <a href="#faq" className='border-t-2 w-full text-center border-terre py-3'><span className='mx-2'>{t("navbar.menu3")}</span></a>
+                        <a href="#contact" className='border-y-2 rounded-b-xl w-full text-center border-terre pt-3 pb-7'><span className='mx-2'>{t("navbar.menu4")}</span></a>
                     </div>
                 </div>
             </div>
-            <div className="navbar w-full md:pt-6 pt-2 z-40 flex items-center md:justify-around md:bg-white bg-[#e5e7e6] md:px-12 px-6 justify-between select-none">
+            <div className="navbar w-full md:pt-6 pt-2 z-40 flex items-center md:justify-around md:bg-white bg-[#e5e7e6] md:px-12 px-4 justify-between select-none">
                 <div className="logo z-10 mt-2">
                     <a href="#"><img className='w-20' src={logo_kumba} alt="" srcset="" /></a>
                 </div>

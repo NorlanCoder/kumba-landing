@@ -9,8 +9,22 @@ import Statistical from './components/Statistical.jsx';
 import Header from './components/Header.jsx';
 import ScrollToTopButton from './components/ScrollToTopButton.jsx';
 import ContactUs from './components/ContactUs.jsx';
+import PrivacyModal from './components/PrivacyModal.jsx';
+import TermsModal from './components/TermsModal.jsx';
+import { useState } from 'react';
 
 function App() {
+
+  const [isModalPoliciesOpen, setIsModalPoliciesOpen] = useState(false);
+  
+  const openModalPolicies = () => setIsModalPoliciesOpen(true);
+  const closeModalPolicies = () => setIsModalPoliciesOpen(false); 
+
+  const [isModalTermsOpen, setIsModalTermsOpen] = useState(false);
+  
+  const openModalTerms = () => setIsModalTermsOpen(true);
+  const closeModalTerms = () => setIsModalTermsOpen(false); 
+
   return (
     <div className="App">
       <Header />
@@ -20,9 +34,12 @@ function App() {
       <Solution />
       <ContactUs />
       <Accordion />
-      <Footer/>
-
+      <Footer openModalPolicies={openModalPolicies} openModalTerms={openModalTerms}/>
       <ScrollToTopButton />
+
+      {isModalPoliciesOpen && <PrivacyModal closeModalPolicies={closeModalPolicies} />}
+      {isModalTermsOpen && <TermsModal closeModalTerms={closeModalTerms}/>}
+
     </div>
   );
 }

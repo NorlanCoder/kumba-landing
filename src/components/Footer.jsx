@@ -6,7 +6,7 @@ import Fleche from '../assets/img/fleche.png';
 import Forme5 from '../assets/img/forme5.png';
 import { useTranslation } from "react-i18next";
 
-function Footer() {
+function Footer({openModalPolicies,openModalTerms}) {
   
   const [t, i18n] = useTranslation("global")
   const storedLang = localStorage.getItem('langvalue');
@@ -47,6 +47,17 @@ function Footer() {
       });
     };
   }, []);
+
+  const handleClickPolicies = (e) => {
+    e.preventDefault();
+    openModalPolicies()
+  };
+
+  const handleClickTerms = (e) => {
+    e.preventDefault();
+    openModalTerms()
+  };
+  
 
 
   return (
@@ -391,8 +402,8 @@ function Footer() {
               <div className="text-sm uppercase text-terre font-bold select-none">{t("footer.ressources")}</div>
               <a className="my-2 block text-sm" href="#faq">{t("footer.ressources1")}</a>
               <a className="my-2 block text-sm" href="/#">{t("footer.ressources2")}</a>
-              <a className="my-2 block text-sm" href="/#">{t("footer.ressources3")}</a>
-              <a className="my-2 block text-sm" href="/#">{t("footer.ressources4")}</a>
+              <a className="my-2 block text-sm" onClick={handleClickPolicies} href="/#">{t("footer.ressources3")}</a>
+              <a className="my-2 block text-sm" onClick={handleClickTerms} href="/#">{t("footer.ressources4")}</a>
             </div>
 
             <div className="p-5">
