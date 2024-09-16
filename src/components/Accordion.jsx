@@ -1,79 +1,14 @@
-import DOMPurify from 'dompurify';
-import { useState } from 'react';
-import { FaPlus } from 'react-icons/fa6';
-import Forme1 from '../assets/img/forme1.png';
-import Forme2 from '../assets/img/forme2.png';
+import DOMPurify from "dompurify";
+import { useState } from "react";
+import { FaPlus } from "react-icons/fa6";
+import Forme1 from "../assets/img/forme1.png";
+import Forme2 from "../assets/img/forme2.png";
+import { useTranslation } from "react-i18next";
 
-function Accordion () {
+function Accordion() {
 
-  const [isOpen1, setIsOpen1] = useState(false);
+  const [t, i18n] = useTranslation("global");
   const [activeQuestion, setActiveQuestion] = useState(null);
-
-  const toggleOpen1 = (id) => {
-    setIsOpen1((prevState) => ({
-      ...prevState,
-      [id]: !prevState[id],
-    }));
-  };
-  
-
-  const faqData1 = [
-    {
-      "questions": [
-        {
-            "id": "1",
-            "question": "Qu'est-ce que Kumba ?",
-            "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis"
-        },
-        {
-            "id": "2",
-            "question": "Comment fonctionne Kumba ?",
-            "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis"
-        },
-        {
-            "id": "3",
-            "question": "Quels types de services puis-je avoir sur Kumba ?",
-            "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis"
-        },
-        {
-            "id": "4",
-            "question": "Quels sont les différents types de biens immobiliers proposés par Kumba ?",
-            "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis"
-        },
-        {
-            "id": "5",
-            "question": "Quels sont les moyens de paiement acceptés par Kumba ?",
-            "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis"
-        },
-        {
-            "id": "6",
-            "question": "Quels sont les avantages d'utiliser Kumba ?",
-            "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis"
-        },
-        {
-            "id": "7",
-            "question": "Comment Kumba protège-t-elle mes données personnelles ?",
-            "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis"
-        },
-        {
-            "id": "8",
-            "question": "Quels sont les différents types de villas proposés",
-            "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis"
-        },
-      ]
-    },
-  ];
-
-
-  const [activeSection1, setActiveSection1] = useState(faqData1[0].id);
-
-  faqData1.forEach((faq) => {
-    faq.questions.forEach((question) => {
-      question.answer = DOMPurify.sanitize(question.answer);
-      question.answer = `<p>${question.answer}</p>`;
-    });
-  });
-
 
   const handleToggle = (questionId) => {
     if (activeQuestion === questionId) {
@@ -81,43 +16,146 @@ function Accordion () {
     } else {
       setActiveQuestion(questionId);
     }
-  };  
+  };
+  
 
   return (
     <>
-        <section className="py-8" id="faq">
-            <section className="relative select-none">
-                <h1 className="text-gray-800 text-3xl text-center font-semibold sm:text-5xl sonia">Questions Fréquemment Posées</h1>
-                
-                <section className="hidden sm:block opacity-30 absolute right-10 -top-20 -z-20 transform -rotate-6">
-                    <img src={Forme2} className="w-[11rem]" alt="Bilan Image" title='Bilan Image' />
-                </section>
+      <section className="py-8" id="faq">
+        <section className="relative select-none">
+          <h1 className="text-gray-800 text-3xl text-center font-semibold sm:text-5xl sonia">{t("faq.titre")}</h1>
 
-                <section className="flex-grow mx-4 sm:px-2 max-w-3xl md:mx-auto my-12 rounded-xl">
-                    {faqData1.find((section) => section.id === activeSection1)
-                        ?.questions.map((question, index) => (
-                        <div key={question.id} className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2">
-                
-                            <div className="cursor-pointer flex justify-between items-center font-medium" onClick={() => handleToggle(question.id)}>
-                                <div className={`text-md text-gray-700 font-bold ${ activeQuestion === question.id ? "text-terre" : ""}`}>{question.question}</div>
-                                <FaPlus className={`m-2 ml-2 transition-all duration-200 ${ activeQuestion === question.id ? "rotate-90 text-terre" : ""}`}/>
-                            </div>
-                            <div className={`overflow-hidden transition-max-height duration-500 ${activeQuestion === question.id ? "max-h-screen" : "max-h-0"}`}>
-                                <section className="my-3 px-3 rounded-md text-md text-justify">
-                                    <div dangerouslySetInnerHTML={{ __html: question.answer }} />
-                                </section>
-                            </div>
-                        </div>
-                    ))}
-                </section>
+          <section className="hidden sm:block opacity-30 absolute right-10 -top-20 -z-20 transform -rotate-6">
+            <img src={Forme2} className="w-[11rem]" alt="Bilan Image" title="Bilan Image" />
+          </section>
 
-                <section className="hidden sm:block opacity-30 absolute left-10 -bottom-20 -z-20 transform -rotate-6">
-                    <img src={Forme1} className="w-[11rem]" alt="Bilan Image" title='Bilan Image' />
+
+          <section className="flex-grow mx-4 sm:px-2 max-w-3xl md:mx-auto my-12 rounded-xl">
+            <div className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2">
+              <div className="cursor-pointer flex justify-between items-center font-medium" onClick={() => handleToggle("1")}>
+                <div className={`text-md text-gray-700 font-bold ${ activeQuestion === "1" ? "text-terre" : "" }`}>
+                  {t("faq.question1")}
+                </div>
+                <FaPlus className={`m-2 ml-2 transition-all duration-200 ${ activeQuestion === "1" ? "rotate-90 text-terre" : "" }`} />
+              </div>
+              <div className={`overflow-hidden transition-max-height duration-500 ${ activeQuestion === "1" ? "max-h-screen" : "max-h-0" }`} >
+                <section className="my-3 px-3 rounded-md text-md text-justify">
+                  <div>{t("faq.answer1")}</div>
                 </section>
-            </section>
+              </div>
+            </div>
+
+            <div className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2">
+              <div className="cursor-pointer flex justify-between items-center font-medium" onClick={() => handleToggle("2")}>
+                <div className={`text-md text-gray-700 font-bold ${ activeQuestion === "2" ? "text-terre" : "" }`} >
+                  {t("faq.question2")}
+                </div>
+                <FaPlus className={`m-2 ml-2 transition-all duration-200 ${ activeQuestion === "2" ? "rotate-90 text-terre" : "" }`} />
+              </div>
+              <div className={`overflow-hidden transition-max-height duration-500 ${ activeQuestion === "2" ? "max-h-screen" : "max-h-0" }`} >
+                <section className="my-3 px-3 rounded-md text-md text-justify">
+                  <div>{t("faq.answer2")}</div>
+                </section>
+              </div>
+            </div>
+            
+            <div className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2">
+              <div className="cursor-pointer flex justify-between items-center font-medium" onClick={() => handleToggle("3")}>
+                <div className={`text-md text-gray-700 font-bold ${ activeQuestion === "3" ? "text-terre" : "" }`} >
+                 {t("faq.question3")}
+                </div>
+                <FaPlus className={`m-2 ml-2 transition-all duration-200 ${ activeQuestion === "3" ? "rotate-90 text-terre" : "" }`} />
+              </div>
+              <div className={`overflow-hidden transition-max-height duration-500 ${ activeQuestion === "3" ? "max-h-screen" : "max-h-0" }`} >
+                <section className="my-3 px-3 rounded-md text-md text-justify">
+                  <div>{t("faq.answer3")}</div>
+                </section>
+              </div>
+            </div>
+            
+            <div className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2">
+              <div className="cursor-pointer flex justify-between items-center font-medium" onClick={() => handleToggle("4")}>
+                <div className={`text-md text-gray-700 font-bold ${ activeQuestion === "4" ? "text-terre" : "" }`} >
+                {t("faq.question4")}
+                </div>
+                <FaPlus className={`m-2 ml-2 transition-all duration-200 ${ activeQuestion === "4" ? "rotate-90 text-terre" : "" }`} />
+              </div>
+              <div className={`overflow-hidden transition-max-height duration-500 ${ activeQuestion === "4" ? "max-h-screen" : "max-h-0" }`} >
+                <section className="my-3 px-3 rounded-md text-md text-justify">
+                  <div>{t("faq.answer4")}</div>
+                </section>
+              </div>
+            </div>
+            
+            <div className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2">
+              <div className="cursor-pointer flex justify-between items-center font-medium" onClick={() => handleToggle("5")}>
+                <div className={`text-md text-gray-700 font-bold ${ activeQuestion === "5" ? "text-terre" : "" }`} >
+                {t("faq.question5")}
+                </div>
+                <FaPlus className={`m-2 ml-2 transition-all duration-200 ${ activeQuestion === "5" ? "rotate-90 text-terre" : "" }`} />
+              </div>
+              <div className={`overflow-hidden transition-max-height duration-500 ${ activeQuestion === "5" ? "max-h-screen" : "max-h-0" }`} >
+                <section className="my-3 px-3 rounded-md text-md text-justify">
+                  <div>{t("faq.answer5")}</div>
+                </section>
+              </div>
+            </div>
+            
+            <div className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2">
+              <div className="cursor-pointer flex justify-between items-center font-medium" onClick={() => handleToggle("6")}>
+                <div className={`text-md text-gray-700 font-bold ${ activeQuestion === "6" ? "text-terre" : "" }`} >
+                {t("faq.question6")}
+                </div>
+                <FaPlus className={`m-2 ml-2 transition-all duration-200 ${ activeQuestion === "6" ? "rotate-90 text-terre" : "" }`} />
+              </div>
+              <div className={`overflow-hidden transition-max-height duration-500 ${ activeQuestion === "6" ? "max-h-screen" : "max-h-0" }`} >
+                <section className="my-3 px-3 rounded-md text-md text-justify">
+                  <div>{t("faq.answer6")}</div>
+                </section>
+              </div>
+            </div>
+            
+            <div className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2">
+              <div className="cursor-pointer flex justify-between items-center font-medium" onClick={() => handleToggle("7")}>
+                <div className={`text-md text-gray-700 font-bold ${ activeQuestion === "7" ? "text-terre" : "" }`} >
+                {t("faq.question7")}
+                </div>
+                <FaPlus className={`m-2 ml-2 transition-all duration-200 ${ activeQuestion === "7" ? "rotate-90 text-terre" : "" }`} />
+              </div>
+              <div className={`overflow-hidden transition-max-height duration-500 ${ activeQuestion === "7" ? "max-h-screen" : "max-h-0" }`} >
+                <section className="my-3 px-3 rounded-md text-md text-justify">
+                  <div>{t("faq.answer7")}</div>
+                </section>
+              </div>
+            </div>
+           
+            <div className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2">
+              <div className="cursor-pointer flex justify-between items-center font-medium" onClick={() => handleToggle("8")}>
+                <div className={`text-md text-gray-700 font-bold ${ activeQuestion === "8" ? "text-terre" : "" }`} >
+                {t("faq.question8")}
+                </div>
+                <FaPlus className={`m-2 ml-2 transition-all duration-200 ${ activeQuestion === "8" ? "rotate-90 text-terre" : "" }`} />
+              </div>
+              <div className={`overflow-hidden transition-max-height duration-500 ${ activeQuestion === "8" ? "max-h-screen" : "max-h-0" }`} >
+                <section className="my-3 px-3 rounded-md text-md text-justify">
+                  <div>{t("faq.answer8")}</div>
+                </section>
+              </div>
+            </div>
+          </section>
+
+          <section className="hidden sm:block opacity-30 absolute left-10 -bottom-20 -z-20 transform -rotate-6">
+            <img
+              src={Forme1}
+              className="w-[11rem]"
+              alt="Bilan Image"
+              title="Bilan Image"
+            />
+          </section>
+        </section>
       </section>
     </>
-  )
+  );
 }
 
-export default Accordion
+export default Accordion;

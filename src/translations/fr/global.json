@@ -1,0 +1,107 @@
+{
+    "navbar" : {
+        "menu1": "Accueil",
+        "menu2": "À propos",
+        "menu3": "FAQ",
+        "menu4": "Contactez-nous",
+        "menu5": "Télécharger"
+    },
+
+    "header" : {
+        "titre1": "Logement rapide",
+        "titre2": "simple et sûr",
+        "description": "Avec Kumba, explorez une vaste sélection de logements adaptés à vos besoins, avec des critères clairs et une interface intuitive. Simple, rapide, et toujours à votre service.",
+        "bouton2": "Lire plus",
+        "nbre": "3,875",
+        "texte1": "personnes ont téléchargé",
+        "texte2": "Kumba ce mois"
+    },
+
+    "partner" : {
+        "titre": "Nos partenaires"        
+    },
+
+    "statistical" : {
+        "titre" : "Nos clients sont toujours satisfaits",
+        "description" : "Chez Kumba, la satisfaction de nos utilisateurs est au cœur de notre mission. Nous nous engageons à offrir une expérience qui répond pleinement à vos attentes. Nous écoutons vos retours et améliorons constamment notre application pour garantir que vos besoins sont toujours au premier plan.",
+        "card1" : {
+            "data": "30+",
+            "title": "Utilisateurs"
+        },
+        "card2" : {
+            "data": "40+",
+            "title": "Pays"
+        },
+        "card3" : {
+            "data": "30+",
+            "title": "Services"
+        }
+    },
+    
+    "about" : {
+        "titre" : "À propos",
+        "soustitre" : "Des multitudes de services à votre disposition",
+        "description" : "Kumba est votre compagnon idéal pour découvrir une large gamme d'appartement, de villa, de maison, de bureau, de simple chambre, d'hôtel, de magasin, de boutique qui répondent parfaitement à vos attentes. Grâce à des filtres précis et une interface conviviale, trouver votre futur chez-vous n’a jamais été aussi simple. Profitez d'une expérience fluide, rapide et toujours adaptée à vos besoins."
+    },
+
+    "solutions" : {
+        "titre" : "Des solutions simples pour des problèmes complexes",
+        "description": "Avec Kumba trouvé la solution à vos problèmes d'immobiliers, de bureaux, de villas, d'appartements, de maisons, d'hôtels, de magasins, d'écolodges, de boutiques, de déménagements",
+        "card1titre": "Rafraîchissement rapide",
+        "card1description" : "Pas de temps à perdre, notre application se charge en un instant pour vous aider à gagner du temps.",
+        "card2titre": "Analytique",
+        "card2description" : "Obtenez une vision claire de vos données et améliorez vos résultats avec notre outil incontournable.",
+        "card3titre": "Sécurité des centres de données",
+        "card3description" : "Nous assurons la sécurité et l'intégrité de vos données grâce à nos fonctionnalités de sécurité avancées.",
+        "card4titre": "Construisez selon vos conditions",
+        "card4description" : "Mettez en place un environnement idéal pour fournir des services de qualité.",
+        "card5titre": "Utilisation sûre",
+        "card5description" : "Kumba utilise les dernières technologies de chiffrement pour protéger vos informations personnelles.",
+        "card6titre": "Flexible",
+        "card6description" : "Kumba vous offre une flexibilité inégalée pour personnaliser votre expérience."
+    },
+
+    "contact" : {
+        "titre": "Contactez-nous",
+        "soustitre1" : "Des questions ?",
+        "soustitre2" : "Écrivez-nous ou appelez-nous.",
+        "description" : "Nous aimerions avoir de vos nouvelles. Voici comment nous joindre..."
+    },
+    
+    "faq" : {
+        "titre": "Questions fréquemment posées",
+        "question1": "Qu'est-ce que Kumba ?",
+        "answer1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+        "question2": "Comment fonctionne Kumba ?",
+        "answer2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+        "question3": "Quels types de services puis-je avoir sur Kumba ?",
+        "answer3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+        "question4": "Quels sont les différents types de biens immobiliers proposés par Kumba ?",
+        "answer4": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+        "question5": "Quels sont les moyens de paiement acceptés par Kumba ?",
+        "answer5": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+        "question6": "Quels sont les avantages d'utiliser Kumba ?",
+        "answer6": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+        "question7": "Comment Kumba protège-t-elle mes données personnelles ?",
+        "answer7": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+        "question8": "Quels sont les différents types de villas proposés ?",
+        "answer8": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis."
+    },
+
+
+    "footer" : {
+        "section1Footer1": "Trouvons votre habitation idéale aujourd'hui !",
+        "section1Footer2": "La maison de vos rêves est à portée de clic.",
+        "entreprise": "Entreprise",
+        "entreprise1": "Statistique",
+        "entreprise2": "Nos partenaires",
+        "entreprise3": "À propos",
+        "entreprise4": "Contactez-nous",
+        "ressources": "Ressources",
+        "ressources1": "FAQ",
+        "ressources2": "Support",
+        "ressources3": "Politique de confidentialité",
+        "ressources4": "Termes et conditions",
+        "contactus": "Contactez-nous"
+    }
+}
