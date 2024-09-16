@@ -1,66 +1,19 @@
 import React from 'react';
 import Forme8 from '../assets/img/forme8.png';
 import Forme9 from '../assets/img/forme9.png';
+import { useTranslation } from 'react-i18next';
 
 const Solution = () => {
 
-  const features = [
-      {
-          icon:
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-              </svg>,
-          title: "Rafraîchissement rapide",
-          desc: "Pas de temps à perdre, notre application se charge en un instant pour vous aider à gagner du temps.",
-      },
-      {
-          icon:
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-              </svg>,
-          title: "Analytique",
-          desc: "Obtenez une vision claire de vos données et améliorez vos résultats avec notre outil incontournable.",
-      },
-      {
-          icon:
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
-              </svg>,
-          title: "Sécurité des centres de données",
-          desc: "Nous assurons la sécurité et l'intégrité de vos données grâce à nos fonctionnalités de sécurité avancées.",
-      },
-      {
-          icon:
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
-              </svg>,
-          title: "Construisez selon vos conditions",
-          desc: "Mettez en place un environnement idéal pour fournir des services de qualité.",
-      },
-      {
-          icon:
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-              </svg>,
-          title: "Utilisation sûre",
-          desc: "Kumba utilise les dernières technologies de chiffrement pour protéger vos informations personnelles.",
-      },
-      {
-          icon:
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
-              </svg>,
-          title: "Flexible",
-          desc: "Kumba vous offre une flexibilité inégalée pour personnaliser votre expérience.",
-      },
-  ]
+  const [t, i18n] = useTranslation("global")
+
 
   return (
     <section className="py-14">
       <div className="max-w-3xl mx-auto px-4 text-gray-600 md:px-8 select-none relative">
         <div className="max-w-xl mx-auto text-center space-y-3">
-            <h3 className="text-gray-800 text-3xl font-semibold sm:text-5xl sonia">Des solutions simples pour des problèmes complexes</h3>
-            <p>Avec Kumba trouvé la solution à vos problèmes d'immobiliers, de bureaux, de villas, d'appartements, de maisons, d'hôtels, de magasins, d'écolodges, de boutiques, de déménagements</p>
+            <h3 className="text-gray-800 text-3xl font-semibold sm:text-5xl sonia">{t("solutions.titre")}</h3>
+            <p>{t("solutions.description")}</p>
         </div>
 
         <section className="hidden sm:block opacity-65 absolute left-5 -top-10 -z-20 transform">
@@ -69,21 +22,89 @@ const Solution = () => {
 
         <div className="mt-12">
             <ul className="grid gap-y-8 gap-x-8 sm:grid-cols-2 lg:grid-cols-2">
-                {features.map((item, idx) => (
-                  <li key={idx} className="flex gap-x-4">
-
+                <li className="flex gap-x-4">
                     <div className="space-y-3">
                         <div className="flex items-center gap-4">
                             <div className="flex-none w-12 h-12 bg-terre text-white rounded-lg flex items-center justify-center">
-                                {item.icon}
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                                </svg>
                             </div>
-                            <h4 className="text-lg text-gray-800 font-semibold">{item.title}</h4>
+                            <h4 className="text-lg text-gray-800 font-semibold">{t("solutions.card1titre")}</h4>
                         </div>
-                        <p className="">{item.desc}</p>
+                        <p className="">{t("solutions.card1description")}</p>
                     </div>
-                  </li>
-                ))
-                }
+                </li>
+                
+                <li className="flex gap-x-4">
+                    <div className="space-y-3">
+                        <div className="flex items-center gap-4">
+                            <div className="flex-none w-12 h-12 bg-terre text-white rounded-lg flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                                </svg>
+                            </div>
+                            <h4 className="text-lg text-gray-800 font-semibold">{t("solutions.card2titre")}</h4>
+                        </div>
+                        <p className="">{t("solutions.card2description")}</p>
+                    </div>
+                </li>
+
+                <li className="flex gap-x-4">
+                    <div className="space-y-3">
+                        <div className="flex items-center gap-4">
+                            <div className="flex-none w-12 h-12 bg-terre text-white rounded-lg flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                </svg>
+                            </div>
+                            <h4 className="text-lg text-gray-800 font-semibold">{t("solutions.card3titre")}</h4>
+                        </div>
+                        <p className="">{t("solutions.card3description")}</p>
+                    </div>
+                </li>
+                
+                <li className="flex gap-x-4">
+                    <div className="space-y-3">
+                        <div className="flex items-center gap-4">
+                            <div className="flex-none w-12 h-12 bg-terre text-white rounded-lg flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
+                                </svg>
+                            </div>
+                            <h4 className="text-lg text-gray-800 font-semibold">{t("solutions.card4titre")}</h4>
+                        </div>
+                        <p className="">{t("solutions.card4description")}</p>
+                    </div>
+                </li>
+
+                <li className="flex gap-x-4">
+                    <div className="space-y-3">
+                        <div className="flex items-center gap-4">
+                            <div className="flex-none w-12 h-12 bg-terre text-white rounded-lg flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                                </svg>
+                            </div>
+                            <h4 className="text-lg text-gray-800 font-semibold">{t("solutions.card5titre")}</h4>
+                        </div>
+                        <p className="">{t("solutions.card5description")}</p>
+                    </div>
+                </li>
+
+                <li className="flex gap-x-4">
+                    <div className="space-y-3">
+                        <div className="flex items-center gap-4">
+                            <div className="flex-none w-12 h-12 bg-terre text-white rounded-lg flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+                                </svg>
+                            </div>
+                            <h4 className="text-lg text-gray-800 font-semibold">{t("solutions.card6titre")}</h4>
+                        </div>
+                        <p className="">{t("solutions.card6description")}</p>
+                    </div>
+                </li>
             </ul>
         </div>
 

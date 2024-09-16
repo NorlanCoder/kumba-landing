@@ -1,0 +1,108 @@
+{
+    "navbar" : {
+        "menu1": "Home",
+        "menu2": "About",
+        "menu3": "FAQs",
+        "menu4": "Contact us",
+        "menu5": "Download"
+    },
+
+    "header" : {
+        "titre1": "Rapid Housing",
+        "titre2": "simple and safe",
+        "description": "With Kumba, explore a vast selection of accommodation adapted to your needs, with clear criteria and an intuitive interface. Simple, fast, and always at your service.",
+        "bouton2": "Read more",
+        "nbre": "3,875",
+        "texte1": "people downloaded",
+        "texte2": "Kumba this month"
+    },
+
+
+    "partner" : {
+        "titre": "Partners"
+    },
+
+    "statistical" : {
+        "titre" : "Our customers are always satisfied",
+        "description" : "At Kumba, the satisfaction of our users is at the heart of our mission. We are committed to providing an experience that fully meets your expectations. We listen to your feedback and are constantly improving our app to ensure your needs are always at the forefront.",
+        "card1" : {
+            "data": "30+",
+            "title": "Users"
+        },
+        "card2" : {
+            "data": "40+",
+            "title": "Country"
+        },
+        "card3" : {
+            "data": "30+",
+            "title": "Services"
+        }
+    },
+
+    "about" : {
+        "titre" : "About",
+        "soustitre" : "Multitudes of services at your disposal",
+        "description" : "Kumba is your ideal companion to discover a wide range of apartements, villas, houses, offices, single rooms, hotels, stores and boutiques that perfectly meet your expectations. Thanks to precise filters and a user-friendly interface, finding your future home has never been easy. Enjoy a smooth, fast experience that is always tailored to your needs."
+    },
+
+    "solutions" : {
+        "titre" : "Simple solutions for complex problems",
+        "description": "With kumba found the solution to your real estate problems, offices, villas, apartements, houses, hotels, stores, ecolodges, boutiques, removals.",
+        "card1titre": "Fast refresh",
+        "card1description" : "No time to waste, our application loads in an instant to help you save time.",
+        "card2titre": "Analytics",
+        "card2description" : "Gain a clear view of your data and improve your results with our essential tool.",
+        "card3titre": "Data Center Security",
+        "card3description" : "We ensure the security and integrity of your data thanks to our advanced security features.",
+        "card4titre": "Build on your terms",
+        "card4description" : "Set up an ideal environment to provide quality services.",
+        "card5titre": "Secure use",
+        "card5description" : "Kumba uses the latest encryption technologies to protect your personal information.",
+        "card6titre": "Flexible",
+        "card6description" : "Kumba gives you unparalleled flexibility to personalize your experience."
+    },
+
+    "contact" : {
+        "titre": "Contact us",
+        "soustitre1" : "Questions?",
+        "soustitre2" : "Write to us or call us.",
+        "description" : "We would love to hear from you. Here's how to contact us..."
+    },
+
+    "faq" : {
+        "titre": "Frequently Asked Questions",
+        "question1" : "What is Kumba?",
+        "answer1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+        "question2" : "How does Kumba work?",
+        "answer2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+        "question3" : "What kind of services can I get on Kumba?",
+        "answer3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+        "question4" : "What kind of real estate is offered by Kumba?",
+        "answer4": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+        "question5" : "What payment methods does Kumba accept?",
+        "answer5": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+        "question6" : "What are the benefits of using Kumba?",
+        "answer6": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+        "question7" : "How does Kumba protect my personal data?",
+        "answer7": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+        "question8" : "What are the different types of villas offered?",
+        "answer8": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis."
+    },
+
+
+    "footer" : {
+        "section1Footer1": "Let's find your ideal home today!",
+        "section1Footer2": "Your dream home is just a click away.",
+        "entreprise": "Business",
+        "entreprise1": "Statistics",
+        "entreprise2": "Partners",
+        "entreprise3": "About",
+        "entreprise4": "Contact us",
+        "ressources": "Resources",
+        "ressources1": "FAQs",
+        "ressources2": "Support",
+        "ressources3": "Privacy Policy",
+        "ressources4": "Terms and conditions",
+        "contactus": "Contact us"
+    }
+}
