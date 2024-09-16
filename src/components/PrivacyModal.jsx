@@ -18,7 +18,7 @@ const Modal = ({ closeModalPolicies }) => {
       className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[9999]"
       onKeyDown={(e) => e.key === 'Escape' && closeModalPolicies()}
     >
-      <div className="bg-white h-[90%] overflow-auto p-10 rounded-lg shadow-lg max-w-4xl w-full relative">
+      <div className="bg-white md:h-[90%] h-[50%] overflow-auto p-10 rounded-lg shadow-lg max-w-4xl w-full relative">
         <div>
             <button
             onClick={closeModalPolicies}
@@ -29,14 +29,14 @@ const Modal = ({ closeModalPolicies }) => {
         </div>
         <div className='w-full text-xs'>
     <header class="bg-white shadow-md p-6">
-        <h1 class="text-3xl font-bold text-terre mb-2">Politique de Fonctionnalité</h1>
+        <h1 class="md:text-3xl text-xl font-bold text-terre mb-2">Politique de Fonctionnalité</h1>
         <p class="text-md text-gray-600">Dernière mise à jour : 16 septembre 2024</p>
     </header>
     
 
     <main class="container mx-auto px-4 py-8">
         <section id="introduction" class="mb-8">
-            <h2 class="text-2xl text-terre font-semibold mb-4">Introduction</h2>
+            <h2 class="md:text-2xl text-lg text-terre font-semibold mb-4">Introduction</h2>
             <p class="mb-4">
                 Cette Politique de Fonctionnalité décrit les fonctionnalités de Kumba, offrant des détails sur le fonctionnement de la plateforme, la manière dont les utilisateurs peuvent interagir avec les fonctionnalités, et les mesures de sécurité en place pour garantir une expérience utilisateur sûre et efficace. En utilisant Kumba, vous acceptez de respecter ces politiques et d'utiliser les services de manière responsable.
             </p>
@@ -44,7 +44,7 @@ const Modal = ({ closeModalPolicies }) => {
         
         <section id="search-functionality" class="mb-8">
 
-            <h2 class="text-2xl text-terre font-semibold mb-4">Fonctionnalité de Recherche</h2>
+            <h2 class="md:text-2xl text-lg text-terre font-semibold mb-4">Fonctionnalité de Recherche</h2>
             <p class="mb-4">
                 Kumba propose un système de recherche complet conçu pour faciliter la recherche de logements correspondant aux besoins spécifiques des utilisateurs. La fonctionnalité de recherche comprend plusieurs filtres et outils interactifs permettant aux utilisateurs de préciser leurs options. Voici quelques-unes des fonctionnalités clés de la recherche :
             </p>
@@ -68,7 +68,7 @@ const Modal = ({ closeModalPolicies }) => {
         </section>
 
         <section id="account-management" class="mb-8">
-            <h2 class="text-2xl text-terre font-semibold mb-4">Gestion des Comptes</h2>
+            <h2 class="md:text-2xl text-lg text-terre font-semibold mb-4">Gestion des Comptes</h2>
             <p class="mb-4">
                 La création d'un compte sur Kumba améliore l'expérience globale en offrant un accès à des fonctionnalités supplémentaires. La gestion des comptes sur Kumba est conçue pour être conviviale et sécurisée, garantissant que les utilisateurs peuvent gérer leurs activités et informations personnelles de manière efficace.
             </p>
@@ -83,7 +83,7 @@ const Modal = ({ closeModalPolicies }) => {
         </section>
 
         <section id="listing-management" class="mb-8">
-            <h2 class="text-2xl text-terre font-semibold mb-4">Gestion des Annonces</h2>
+            <h2 class="md:text-2xl text-lg text-terre font-semibold mb-4">Gestion des Annonces</h2>
             <p class="mb-4">
                 Kumba propose une plateforme robuste pour les propriétaires et agences immobilières pour publier leurs propriétés. Cette section décrit le processus de création et de gestion des annonces de propriétés :
             </p>
@@ -97,7 +97,7 @@ const Modal = ({ closeModalPolicies }) => {
         </section>
 
         <section id="communication-tools" class="mb-8">
-            <h2 class="text-2xl text-terre font-semibold mb-4">Outils de Communication</h2>
+            <h2 class="md:text-2xl text-lg text-terre font-semibold mb-4">Outils de Communication</h2>
             <p class="mb-4">
                 Kumba propose des outils de communication intégrés pour faciliter l'interaction entre les propriétaires et les locataires ou acheteurs potentiels. Ces outils incluent :
             </p>
@@ -109,7 +109,7 @@ const Modal = ({ closeModalPolicies }) => {
         </section>
 
         <section id="data-security" class="mb-8">
-            <h2 class="text-2xl text-terre font-semibold mb-4">Sécurité des Données</h2>
+            <h2 class="md:text-2xl text-lg text-terre font-semibold mb-4">Sécurité des Données</h2>
             <p class="mb-4">
                 Chez Kumba, la sécurité des données des utilisateurs est une priorité absolue. Nous prenons des mesures étendues pour protéger les informations personnelles et garantir que toutes les pratiques de gestion des données respectent les normes industrielles les plus récentes et les règlements légaux.
             </p>
@@ -122,7 +122,7 @@ const Modal = ({ closeModalPolicies }) => {
         </section>
 
         <section id="support" class="mb-8">
-            <h2 class="text-2xl text-terre font-semibold mb-4">Support et Assistance</h2>
+            <h2 class="md:text-2xl text-lg text-terre font-semibold mb-4">Support et Assistance</h2>
             <p class="mb-4">
                 Kumba propose des services de support complets pour aider les utilisateurs avec toutes les questions ou problèmes qu'ils pourraient rencontrer. Notre équipe de support est disponible par plusieurs canaux :
             </p>
@@ -134,7 +134,7 @@ const Modal = ({ closeModalPolicies }) => {
         </section>
 
         <section id="conclusion" class="mb-8">
-            <h2 class="text-2xl text-terre font-semibold mb-4">Conclusion</h2>
+            <h2 class="md:text-2xl text-lg text-terre font-semibold mb-4">Conclusion</h2>
             <p class="mb-4">
                 En utilisant Kumba, les utilisateurs acceptent ces politiques de fonctionnalités et comprennent qu'elles sont en place pour garantir une expérience sûre et conviviale. Si vous avez des questions ou avez besoin de plus de précisions, veuillez contacter notre équipe de support.
             </p>
