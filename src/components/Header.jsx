@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './css/style.css'
 import img1 from '../img-phone-1.png' 
 import logo_kumba from '../assets/img/LOGO_KUMBA_AUDACE-01.webp'
