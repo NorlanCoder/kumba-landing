@@ -33,13 +33,13 @@ function Navbar(){
     }, []);
 
     const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
-    const [menu_class, setMenuClass] = useState("menu-on-apear absolute flex-col w-[80%] left-1/2 transform hidden opacity-0 duration-500 -translate-x-1/2 z-30 bg-[#e5e7e6f5]")
+    const [menu_class, setMenuClass] = useState("menu-on-apear absolute flex-col w-[0%] transform hidden opacity-0 duration-500  z-30 bg-[#e5e7e6f5]")
     const [isMenuClicked, setIsMenuClicked] = useState(false)
 
     const updateMenu = () => {
         if(!isMenuClicked){
             setBurgerClass("burger-bar clicked");
-            setMenuClass("menu-on-apear absolute flex z-10 flex-col w-[80%] left-1/2 opacity-100 duration-500 -translate-x-1/2 z-30 bg-[#e5e7e6f5]")
+            setMenuClass("menu-on-apear absolute flex z-10 flex-col w-[100%] left-1/2 opacity-100 duration-500 -translate-x-1/2 z-30 bg-[#e5e7e6f5]")
         }else{
             setBurgerClass("burger-bar unclicked");
             setMenuClass("menu absolute flex flex-col z-10 w-[80%] left-1/2 opacity-0 duration-500 -translate-x-1/2 z-30 bg-[#e5e7e6f5]")
@@ -50,22 +50,26 @@ function Navbar(){
 
 
     return <>
-            <div className={menu_class}>
-                <div className="content mt-8 select-none">
-                    {/* <div className='logo flex justify-center mb-6'>
-                        <a href="#"><img className='w-16' src={logo_kumba} alt="" srcset="" /></a>
-                    </div> */}
+           <div className={menu_class}>
+                <div className="pt-6 px-6 select-none">
                     <div className="md:text-xl rounded-lg w-full flex flex-col justify-center gap-y-4 font-extralight">
-                        <a href="#home" className='w-full text-center border-terre py-3'><span className='mx-2'>{t("navbar.menu1")}</span></a>
-                        <a href="#about" className='border-t-2 w-full text-center border-terre py-3'><span className='mx-2'>{t("navbar.menu2")}</span></a>
-                        <a href="#faq" className='border-t-2 w-full text-center border-terre py-3'><span className='mx-2'>{t("navbar.menu3")}</span></a>
-                        <a href="#contact" className='border-y-2 rounded-b-xl w-full text-center border-terre pt-3 pb-7'><span className='mx-2'>{t("navbar.menu4")}</span></a>
+                        <div className='md:hidden flex z-20 justify-end text-terre'>
+                            <svg className={burger_class} onClick={updateMenu} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line className='line1' x1="3" y1="12" x2="21" y2="12"></line>
+                            <line className='line2' x1="3" y1="6" x2="21" y2="6"></line>
+                            <line className='line3' x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                        </div>
+                        <a href="#home" className='border-b-2 w-full text-center border-terre py-3'><span className='mx-4'>{t("navbar.menu1")}</span></a>
+                        <a href="#about" className='border-b-2 w-full text-center border-terre py-3'><span className='mx-4'>{t("navbar.menu2")}</span></a>
+                        <a href="#faq" className='border-b-2 w-full text-center border-terre py-3'><span className='mx-4'>{t("navbar.menu3")}</span></a>
+                        <a href="#contact" className='border-b-2 rounded-b-xl w-full text-center border-terre pt-3 pb-7'><span className='mx-4'>{t("navbar.menu4")}</span></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="navbar w-full md:pt-6 pt-2 z-40 flex items-center md:justify-around md:bg-white bg-[#e5e7e6] md:px-12 px-4 justify-between select-none">
+            <div className="navbar w-full z-40 flex items-center md:justify-around md:bg-white bg-[#e5e7e6] md:px-12 px-6 justify-between select-none">
                 <div className="logo z-10 mt-2">
-                    <a href="#"><img className='w-20' src={logo_kumba} alt="" srcset="" /></a>
+                    <a href="#"><img className='w-16 sm:w-20' src={logo_kumba} alt="" srcset="" /></a>
                 </div>
                 <div className="menu z-20 mt-2">
                     <div className="md:flex hidden font-extralight gap-x-8">
@@ -99,7 +103,7 @@ function Header(){
 
     return <>
     <section className="home mb-8">
-    <div className="header md:h-[90vh] ">
+    <div className="header sm:h-[60vh] md:h-[90vh] ">
         <div className=""><Navbar/></div>
         
         <div className="w-full md:h-[90vh] -mt-28 md:flex md:bg-white bg-[#e5e7e6]">

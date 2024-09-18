@@ -9,7 +9,7 @@ const Solution = () => {
 
 
   return (
-    <section className="py-14">
+    <section className="py-8 sm:py-14">
       <div className="max-w-3xl mx-auto px-4 text-gray-600 md:px-8 select-none relative">
         <div className="max-w-xl mx-auto text-center space-y-3">
             <h3 className="text-gray-800 text-3xl font-semibold sm:text-5xl sonia">{t("solutions.titre")}</h3>

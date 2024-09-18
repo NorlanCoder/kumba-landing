@@ -6,7 +6,7 @@ const Partner = () => {
     const [t, i18n] = useTranslation("global")
 
     return (
-        <div className="py-14" id="partners">
+        <div className="py-8 sm:py-14" id="partners">
             <div className="max-w-6xl mx-auto px-4 md:px-8 select-none">
                 <h3 className="text-gray-800 text-3xl text-center font-semibold sm:text-5xl sonia">{t("partner.titre")}</h3>
                 <div className="flex justify-center mt-8">
