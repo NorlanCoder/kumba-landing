@@ -1,107 +1,347 @@
 {
-    "navbar" : {
-        "menu1": "Accueil",
-        "menu2": "À propos",
-        "menu3": "FAQ",
-        "menu4": "Contactez-nous",
-        "menu5": "Télécharger"
-    },
+  "navbar": {
+    "menu1": "Accueil",
+    "menu2": "À propos",
+    "menu3": "FAQ",
+    "menu4": "Contactez-nous",
+    "menu5": "Télécharger"
+  },
 
-    "header" : {
-        "titre1": "Logement rapide",
-        "titre2": "simple et sûr",
-        "description": "Avec Kumba, explorez une vaste sélection de logements adaptés à vos besoins, avec des critères clairs et une interface intuitive. Simple, rapide, et toujours à votre service.",
-        "bouton2": "Lire plus",
-        "nbre": "3,875",
-        "texte1": "personnes ont téléchargé",
-        "texte2": "Kumba ce mois"
-    },
+  "header": {
+    "titre1": "Logement rapide",
+    "titre2": "simple et sûr",
+    "description": "Avec Kumba, explorez une vaste sélection de logements adaptés à vos besoins, avec des critères clairs et une interface intuitive. Simple, rapide, et toujours à votre service.",
+    "bouton2": "Lire plus",
+    "nbre": "3,875",
+    "texte1": "personnes ont téléchargé",
+    "texte2": "Kumba ce mois"
+  },
 
-    "partner" : {
-        "titre": "Nos partenaires"        
-    },
+  "partner": {
+    "titre": "Nos partenaires"
+  },
 
-    "statistical" : {
-        "titre" : "Nos clients sont toujours satisfaits",
-        "description" : "Chez Kumba, la satisfaction de nos utilisateurs est au cœur de notre mission. Nous nous engageons à offrir une expérience qui répond pleinement à vos attentes. Nous écoutons vos retours et améliorons constamment notre application pour garantir que vos besoins sont toujours au premier plan.",
-        "card1" : {
-            "data": "30+",
-            "title": "Utilisateurs"
-        },
-        "card2" : {
-            "data": "40+",
-            "title": "Pays"
-        },
-        "card3" : {
-            "data": "30+",
-            "title": "Services"
-        }
+  "statistical": {
+    "titre": "Nos clients sont toujours satisfaits",
+    "description": "Chez Kumba, la satisfaction de nos utilisateurs est au cœur de notre mission. Nous nous engageons à offrir une expérience qui répond pleinement à vos attentes. Nous écoutons vos retours et améliorons constamment notre application pour garantir que vos besoins sont toujours au premier plan.",
+    "card1": {
+      "data": "30+",
+      "title": "Utilisateurs"
     },
-    
-    "about" : {
-        "titre" : "À propos",
-        "soustitre" : "Des multitudes de services à votre disposition",
-        "description" : "Kumba est votre compagnon idéal pour découvrir une large gamme d'appartement, de villa, de maison, de bureau, de simple chambre, d'hôtel, de magasin, de boutique qui répondent parfaitement à vos attentes. Grâce à des filtres précis et une interface conviviale, trouver votre futur chez-vous n’a jamais été aussi simple. Profitez d'une expérience fluide, rapide et toujours adaptée à vos besoins."
+    "card2": {
+      "data": "40+",
+      "title": "Pays"
     },
-
-    "solutions" : {
-        "titre" : "Des solutions simples pour des problèmes complexes",
-        "description": "Avec Kumba trouvé la solution à vos problèmes d'immobiliers, de bureaux, de villas, d'appartements, de maisons, d'hôtels, de magasins, d'écolodges, de boutiques, de déménagements",
-        "card1titre": "Rafraîchissement rapide",
-        "card1description" : "Pas de temps à perdre, notre application se charge en un instant pour vous aider à gagner du temps.",
-        "card2titre": "Analytique",
-        "card2description" : "Obtenez une vision claire de vos données et améliorez vos résultats avec notre outil incontournable.",
-        "card3titre": "Sécurité des centres de données",
-        "card3description" : "Nous assurons la sécurité et l'intégrité de vos données grâce à nos fonctionnalités de sécurité avancées.",
-        "card4titre": "Construisez selon vos conditions",
-        "card4description" : "Mettez en place un environnement idéal pour fournir des services de qualité.",
-        "card5titre": "Utilisation sûre",
-        "card5description" : "Kumba utilise les dernières technologies de chiffrement pour protéger vos informations personnelles.",
-        "card6titre": "Flexible",
-        "card6description" : "Kumba vous offre une flexibilité inégalée pour personnaliser votre expérience."
-    },
-
-    "contact" : {
-        "titre": "Contactez-nous",
-        "soustitre1" : "Des questions ?",
-        "soustitre2" : "Écrivez-nous ou appelez-nous.",
-        "description" : "Nous aimerions avoir de vos nouvelles. Voici comment nous joindre..."
-    },
-    
-    "faq" : {
-        "titre": "Questions fréquemment posées",
-        "question1": "Qu'est-ce que Kumba ?",
-        "answer1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
-        "question2": "Comment fonctionne Kumba ?",
-        "answer2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
-        "question3": "Quels types de services puis-je avoir sur Kumba ?",
-        "answer3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
-        "question4": "Quels sont les différents types de biens immobiliers proposés par Kumba ?",
-        "answer4": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
-        "question5": "Quels sont les moyens de paiement acceptés par Kumba ?",
-        "answer5": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
-        "question6": "Quels sont les avantages d'utiliser Kumba ?",
-        "answer6": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
-        "question7": "Comment Kumba protège-t-elle mes données personnelles ?",
-        "answer7": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
-        "question8": "Quels sont les différents types de villas proposés ?",
-        "answer8": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis."
-    },
-
-
-    "footer" : {
-        "section1Footer1": "Trouvons votre habitation idéale aujourd'hui !",
-        "section1Footer2": "La maison de vos rêves est à portée de clic.",
-        "entreprise": "Entreprise",
-        "entreprise1": "Statistique",
-        "entreprise2": "Nos partenaires",
-        "entreprise3": "À propos",
-        "entreprise4": "Contactez-nous",
-        "ressources": "Ressources",
-        "ressources1": "FAQ",
-        "ressources2": "Support",
-        "ressources3": "Politique de confidentialité",
-        "ressources4": "Termes et conditions",
-        "contactus": "Contactez-nous"
+    "card3": {
+      "data": "30+",
+      "title": "Services"
     }
+  },
+
+  "about": {
+    "titre": "À propos",
+    "soustitre": "Des multitudes de services à votre disposition",
+    "description": "Kumba est votre compagnon idéal pour découvrir une large gamme d'appartement, de villa, de maison, de bureau, de simple chambre, d'hôtel, de magasin, de boutique qui répondent parfaitement à vos attentes. Grâce à des filtres précis et une interface conviviale, trouver votre futur chez-vous n’a jamais été aussi simple. Profitez d'une expérience fluide, rapide et toujours adaptée à vos besoins."
+  },
+
+  "solutions": {
+    "titre": "Des solutions simples pour des problèmes complexes",
+    "description": "Avec Kumba trouvé la solution à vos problèmes d'immobiliers, de bureaux, de villas, d'appartements, de maisons, d'hôtels, de magasins, d'écolodges, de boutiques, de déménagements",
+    "card1titre": "Rafraîchissement rapide",
+    "card1description": "Pas de temps à perdre, notre application se charge en un instant pour vous aider à gagner du temps.",
+    "card2titre": "Analytique",
+    "card2description": "Obtenez une vision claire de vos données et améliorez vos résultats avec notre outil incontournable.",
+    "card3titre": "Sécurité des centres de données",
+    "card3description": "Nous assurons la sécurité et l'intégrité de vos données grâce à nos fonctionnalités de sécurité avancées.",
+    "card4titre": "Construisez selon vos conditions",
+    "card4description": "Mettez en place un environnement idéal pour fournir des services de qualité.",
+    "card5titre": "Utilisation sûre",
+    "card5description": "Kumba utilise les dernières technologies de chiffrement pour protéger vos informations personnelles.",
+    "card6titre": "Flexible",
+    "card6description": "Kumba vous offre une flexibilité inégalée pour personnaliser votre expérience."
+  },
+
+  "contact": {
+    "titre": "Contactez-nous",
+    "soustitre1": "Des questions ?",
+    "soustitre2": "Écrivez-nous ou appelez-nous.",
+    "description": "Nous aimerions avoir de vos nouvelles. Voici comment nous joindre..."
+  },
+
+  "faq": {
+    "titre": "Questions fréquemment posées",
+    "question1": "Qu'est-ce que Kumba ?",
+    "answer1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+    "question2": "Comment fonctionne Kumba ?",
+    "answer2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+    "question3": "Quels types de services puis-je avoir sur Kumba ?",
+    "answer3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+    "question4": "Quels sont les différents types de biens immobiliers proposés par Kumba ?",
+    "answer4": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+    "question5": "Quels sont les moyens de paiement acceptés par Kumba ?",
+    "answer5": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+    "question6": "Quels sont les avantages d'utiliser Kumba ?",
+    "answer6": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+    "question7": "Comment Kumba protège-t-elle mes données personnelles ?",
+    "answer7": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
+    "question8": "Quels sont les différents types de villas proposés ?",
+    "answer8": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis."
+  },
+
+  "footer": {
+    "section1Footer1": "Trouvons votre habitation idéale aujourd'hui !",
+    "section1Footer2": "La maison de vos rêves est à portée de clic.",
+    "entreprise": "Entreprise",
+    "entreprise1": "Statistique",
+    "entreprise2": "Nos partenaires",
+    "entreprise3": "À propos",
+    "entreprise4": "Contactez-nous",
+    "ressources": "Ressources",
+    "ressources1": "FAQ",
+    "ressources2": "Support",
+    "ressources3": "Politique de confidentialité",
+    "ressources4": "Termes et conditions",
+    "contactus": "Contactez-nous"
+  },
+
+  "featurePolicy": {
+    "title": "Politique de Fonctionnalité",
+    "lastUpdated": "Dernière mise à jour : 16 Septembre 2024",
+    "sections": [
+      {
+        "id": "introduction",
+        "title": "Introduction",
+        "content": "Cette Politique de Fonctionnalité décrit les fonctionnalités de Kumba, fournissant des détails sur le fonctionnement de la plateforme, comment les utilisateurs peuvent interagir avec ces fonctionnalités, et les mesures de sécurité mises en place pour garantir une expérience utilisateur optimale. En utilisant Kumba, vous acceptez de respecter ces politiques et d’utiliser les services de manière responsable."
+      },
+      {
+        "id": "searchFunctionality",
+        "title": "Fonctionnalité de Recherche",
+        "content": "Kumba offre un système de recherche complet conçu pour aider les utilisateurs à trouver un logement correspondant à leurs besoins. La fonctionnalité de recherche comprend plusieurs filtres et outils interactifs qui permettent aux utilisateurs d’affiner leurs résultats. Voici quelques-unes des principales caractéristiques de recherche :",
+        "features": [
+          {
+            "title": "Recherche par Localisation : ",
+            "content": "Les utilisateurs peuvent entrer une ville, un quartier ou même une adresse spécifique pour rechercher des biens. La recherche basée sur la localisation est intégrée avec Google Maps pour garantir des résultats géographiques précis."
+          },
+          {
+            "title": "Recherche par Gamme de Prix : ",
+            "content": "Les utilisateurs peuvent filtrer les biens en fonction de leur budget. Un curseur permet de définir une fourchette de prix minimum et maximum afin de visualiser uniquement les propriétés correspondant à ces critères."
+          },
+          {
+            "title": "Filtres par Type de Propriété : ",
+            "content": "Les utilisateurs peuvent filtrer les biens en fonction du type de propriété : appartements, maisons, villas, studios ou locaux commerciaux, pour trouver des biens correspondant à leurs besoins spécifiques."
+          },
+          {
+            "title": "Filtres Avancés : ",
+            "content": "Les utilisateurs peuvent appliquer des filtres supplémentaires pour affiner davantage leurs résultats, notamment : nombre de chambres, surface totale, commodités telles que parking, balcon ou piscine, propriétés meublées ou non-meublées, et propriétés acceptant les animaux."
+          },
+          {
+            "title": "Recherche par Carte : ",
+            "content": "La carte interactive permet aux utilisateurs de visualiser les propriétés disponibles en fonction de leur emplacement. Ils peuvent cliquer sur les points pour afficher les détails des biens sans quitter la vue cartographique."
+          },
+          {
+            "title": "Recherches Enregistrées : ",
+            "content": "Les utilisateurs peuvent sauvegarder leurs critères de recherche pour un usage futur. Kumba enverra des notifications lorsque de nouvelles annonces correspondant à ces critères seront disponibles."
+          }
+        ]
+      },
+      {
+        "accountManagement": {
+          "title": "Gestion des Comptes",
+          "description": "La création d'un compte sur Kumba améliore l'expérience globale en offrant un accès à des fonctionnalités supplémentaires. La gestion des comptes sur Kumba est conçue pour être conviviale et sécurisée, garantissant que les utilisateurs peuvent gérer leurs activités et informations personnelles de manière efficace.",
+          "features": {
+            "accountCreation": {
+              "title": "Création de Compte",
+              "description": "Les utilisateurs peuvent créer un compte en utilisant leur adresse e-mail ou choisir de s'inscrire via des services tiers tels que Google ou Facebook pour un accès plus rapide. Toutes les données personnelles fournies sont stockées de manière sécurisée et protégées par cryptage."
+            },
+            "profileCustomization": {
+              "title": "Personnalisation du Profil",
+              "description": "Les utilisateurs peuvent créer un profil reflétant leurs préférences, y compris les types de logement, les lieux d'intérêt et les plages de prix. Cela permet à Kumba de personnaliser ses recommandations, rendant le processus de recherche plus efficace."
+            },
+            "favoritesWishlist": {
+              "title": "Favoris et Listes de Souhaits",
+              "description": "Les utilisateurs peuvent enregistrer des propriétés dans leur liste de favoris pour les revoir ou les comparer plus tard. Cette fonctionnalité est utile pour suivre les propriétés à travers différentes recherches et faciliter la prise de décision finale."
+            },
+            "notificationsAlerts": {
+              "title": "Notifications et Alertes",
+              "description": "Les utilisateurs peuvent configurer des notifications personnalisées lorsque de nouvelles propriétés correspondant à leurs critères deviennent disponibles. Ces notifications peuvent être envoyées par e-mail, SMS ou notifications push. Les utilisateurs peuvent également configurer des alertes pour les changements de prix des propriétés ou les nouvelles offres spéciales."
+            },
+            "accountSecurity": {
+              "title": "Sécurité du Compte",
+              "description": "Kumba utilise des mesures de sécurité de niveau industriel, y compris l'authentification à deux facteurs (2FA) et le cryptage des identifiants de connexion. Les utilisateurs peuvent mettre à jour leur mot de passe à tout moment ou récupérer leur compte en cas de perte de mot de passe via un processus de vérification par e-mail sécurisé."
+            },
+            "accountDeletion": {
+              "title": "Suppression des Comptes",
+              "description": "Les utilisateurs peuvent supprimer leur compte à tout moment depuis la page des paramètres. Une fois le compte supprimé, toutes les données personnelles, propriétés sauvegardées et historiques de recherche sont définitivement supprimés des bases de données de Kumba."
+            }
+          }
+        }
+      },
+
+      {
+        "id": "listingManagement",
+        "title": "Gestion des Annonces",
+        "content": "Kumba propose une plateforme robuste pour les propriétaires et agences immobilières pour publier leurs propriétés. Cette section décrit le processus de création et de gestion des annonces de propriétés :",
+        "features": [
+          {
+            "title": "Création d'Annonce",
+            "content": "Les propriétaires peuvent créer des annonces en fournissant des informations détaillées sur leur propriété. Cela inclut la description de la propriété, l'emplacement, le prix, la disponibilité, les photos et les équipements. Le processus de création d'annonce est intuitif et comprend des instructions étape par étape pour garantir que toutes les informations essentielles sont fournies."
+          },
+          {
+            "title": "Upload de Photos et Vidéos",
+            "content": "Les annonces peuvent inclure des photos et vidéos haute résolution de la propriété, offrant aux locataires ou acheteurs potentiels une visite visuelle avant de planifier une visite. Kumba prend en charge les visites virtuelles et les vues à 360 degrés pour une expérience immersive."
+          },
+          {
+            "title": "Promotion des Annonces",
+            "content": "Les propriétaires peuvent choisir de promouvoir leurs annonces pour une visibilité accrue. Les annonces promues apparaissent en haut des résultats de recherche et sur la page d'accueil, attirant davantage de vues."
+          },
+          {
+            "title": "Gestion des Annonces",
+            "content": "Les propriétaires et les agences peuvent modifier ou supprimer leurs annonces à tout moment. Cela inclut la mise à jour des prix, de la disponibilité et de tout autre détail lié à la propriété."
+          },
+          {
+            "title": "Conformité aux Normes Légales",
+            "content": "Toutes les annonces doivent être conformes aux lois et règlements locaux, y compris les lois sur l'équité en matière de logement. Les annonces qui violent ces normes seront supprimées, et les violations répétées peuvent entraîner la suspension du compte."
+          }
+        ]
+      },
+
+      {
+        "id": "communicationTools",
+        "title": "Outils de Communication",
+        "content": "Kumba propose des outils de communication intégrés pour faciliter l'interaction entre les propriétaires et les locataires ou acheteurs potentiels. Ces outils incluent :",
+        "features": [
+          {
+            "title": "Messagerie Directe",
+            "content": "Les utilisateurs peuvent envoyer des messages directement aux propriétaires via la plateforme pour demander des informations sur les propriétés, planifier des visites ou négocier les prix."
+          },
+          {
+            "title": "Planification des Rendez-vous",
+            "content": "Kumba intègre un système de calendrier qui permet aux utilisateurs de planifier des visites de propriétés. Les propriétaires et les agents peuvent définir leur disponibilité, et les utilisateurs peuvent choisir un moment qui leur convient."
+          },
+          {
+            "title": "Options d'Appel et d'E-mail",
+            "content": "En plus de la messagerie, les utilisateurs peuvent choisir de contacter les propriétaires par téléphone ou par e-mail via les options de communication sécurisées de la plateforme."
+          }
+        ]
+      },
+
+      {
+        "id": "dataSecurity",
+        "title": "Sécurité des Données",
+        "content": "Chez Kumba, la sécurité des données des utilisateurs est une priorité absolue. Nous prenons des mesures étendues pour protéger les informations personnelles et garantir que toutes les pratiques de gestion des données respectent les normes industrielles les plus récentes et les règlements légaux.",
+        "features": [
+          {
+            "title": "Cryptage des Données",
+            "content": "Toutes les données sensibles des utilisateurs, telles que les mots de passe et les détails de paiement, sont cryptées en transit et au repos. Cela garantit que même dans le cas improbable d'une violation de données, les informations des utilisateurs restent protégées."
+          },
+          {
+            "title": "Conformité au RGPD",
+            "content": "Kumba respecte les normes du Règlement Général sur la Protection des Données (RGPD), garantissant que les utilisateurs ont un contrôle total sur leurs données personnelles. Les utilisateurs peuvent demander l'accès à leurs données ou les supprimer complètement de nos systèmes à tout moment."
+          },
+          {
+            "title": "Traitement Sécurisé des Paiements",
+            "content": "Pour les utilisateurs effectuant des paiements via Kumba, nous collaborons avec des processeurs de paiement de confiance qui suivent les normes PCI-DSS pour protéger les transactions financières."
+          },
+          {
+            "title": "Minimisation des Données",
+            "content": "Kumba collecte uniquement les données nécessaires à la fourniture de ses services. Nous ne vendons pas les données des utilisateurs à des tiers ni ne les utilisons à des fins autres que celles spécifiées dans notre politique de confidentialité."
+          }
+        ]
+      },
+
+      {
+        "id": "support",
+        "title": "Support et Assistance",
+        "content": "Kumba offre des services de support complets pour aider les utilisateurs avec toutes les questions ou problèmes qu'ils peuvent rencontrer. Notre équipe de support est disponible via plusieurs canaux :",
+        "features": [
+          {
+            "title": "Centre d'Aide en Ligne",
+            "content": "Le Centre d'Aide de Kumba comprend une section FAQ détaillée, des guides d'utilisateur, et des conseils de dépannage. Il est disponible 24h/24 et 7j/7."
+          },
+          {
+            "title": "Support par Email",
+            "content": "Les utilisateurs peuvent contacter le support par email à support@kumba.com, et notre équipe répondra dans un délai de 24 heures."
+          },
+          {
+            "title": "Chat en Direct",
+            "content": "Pour une assistance immédiate, les utilisateurs peuvent accéder à notre service de chat en direct, disponible pendant les heures ouvrées."
+          }
+        ]
+      },
+      {
+        "id": "conclusion",
+        "title": "Conclusion",
+        "content": "En utilisant Kumba, les utilisateurs acceptent ces politiques de fonctionnalités et comprennent qu'elles sont en place pour garantir une expérience sûre et conviviale. Si vous avez des questions ou avez besoin de plus de précisions, veuillez contacter notre équipe de support."
+      },
+      {
+        "id": "footer",
+        "content": "2024 Kumba. Tous droits réservés."
+      }
+    ]
+  },
+
+  "terms_conditions": {
+    "title": "Termes et Conditions",
+    "last_updated": "Dernière mise à jour : 16 septembre 2024",
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "Les présents termes et conditions (ci-après \"les Conditions\") régissent l'utilisation de la plateforme Kumba. En accédant ou en utilisant les services de Kumba, vous acceptez d'être lié par ces Conditions. Si vous n'êtes pas d'accord avec l'une des dispositions de ces Conditions, veuillez ne pas utiliser Kumba."
+      },
+      "account_usage": {
+        "title": "Utilisation du Compte",
+        "content": "Pour accéder à certaines fonctionnalités de Kumba, vous devez créer un compte. En créant un compte, vous acceptez de fournir des informations exactes, à jour et complètes. Vous êtes responsable de la sécurité de votre mot de passe et de toutes les activités effectuées sous votre compte.",
+        "list_items": [
+          {
+            "title": "Âge Minimum",
+            "content": "Vous devez être âgé d'au moins 18 ans pour utiliser Kumba ou obtenir le consentement de vos parents ou tuteurs légaux."
+          },
+          {
+            "title": "Suppression de Compte",
+            "content": "Vous pouvez supprimer votre compte à tout moment via les paramètres. Une fois supprimé, toutes vos données seront définitivement effacées."
+          },
+          {
+            "title": "Propriétaire du Compte",
+            "content": "L'utilisateur est entièrement responsable de l'utilisation de son compte. Kumba ne peut être tenu responsable des actions ou omissions résultant d'une mauvaise gestion des identifiants de connexion par l'utilisateur."
+          }
+        ]
+      },
+      "services_usage": {
+        "title": "Utilisation des Services",
+        "content": "Kumba fournit des services visant à faciliter la recherche de logements. En utilisant nos services, vous acceptez de ne pas les détourner de leur objectif initial ni de les utiliser à des fins illégales ou non autorisées.",
+        "list_items": [
+          {
+            "title": "Interdiction d'Utilisation Abusive",
+            "content": "Vous ne devez pas utiliser Kumba pour publier des annonces mensongères, frauduleuses ou diffamatoires."
+          },
+          {
+            "title": "Propriété Intellectuelle",
+            "content": "Tous les contenus et éléments sur la plateforme, y compris les textes, graphiques, logos et logiciels, sont la propriété de Kumba ou de ses partenaires et protégés par les lois relatives à la propriété intellectuelle."
+          },
+          {
+            "title": "Suspension de Compte",
+            "content": "En cas de violation des présentes Conditions, nous nous réservons le droit de suspendre ou de supprimer votre compte sans préavis."
+          }
+        ]
+      },
+      "listing_creation": {
+        "title": "Création et Gestion d'Annonces",
+        "content": "En tant que propriétaire ou agence, vous pouvez publier des annonces de propriétés sur Kumba. Vous acceptez de respecter les lignes directrices suivantes :",
+        "list_items": [
+          {
+            "title": "Exactitude des Informations",
+            "content": "Les informations fournies dans vos annonces doivent être exactes et à jour."
+          },
+          {
+            "title": "Respect des Lois Locales",
+            "content": "Toutes les annonces doivent être conformes aux lois et réglementations locales en vigueur concernant l'immobilier."
+          },
+          {
+            "title": "Suppression ou Modification d'Annonce",
+            "content": "Nous nous réservons le droit de modifier ou de supprimer toute annonce qui ne respecte pas ces Conditions."
+          }
+        ]
+      }
+    }
+  }
 }
