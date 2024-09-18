@@ -153,7 +153,7 @@ const Modal = ({ closeModalTerms }) => {
             </section>
           </main>
 
-          <p className="text-terre text-sm">&copy; 2024 Kumba. {t('footer.rights_reserved')}</p>
+          <p class="text-terre text-sm">&copy; {t('featurePolicy.sections.8.content')}</p>
         </div>
       </div>
     </div>,

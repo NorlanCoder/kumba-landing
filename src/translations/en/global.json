@@ -367,41 +367,42 @@
           }
         ]
       },
+
       "liability": {
-        "title": "Limitation de Responsabilité",
-        "content": "Dans les limites de la loi applicable, Kumba ne sera pas responsable des dommages indirects, accidentels, ou consécutifs résultant de l'utilisation de la plateforme. Cela inclut, sans s'y limiter, les pertes de données, les pertes financières ou les atteintes à la réputation.",
+        "title": "Limitation of Liability",
+        "content": "To the extent permitted by applicable law, Kumba will not be liable for any indirect, incidental, or consequential damages resulting from the use of the platform. This includes, but is not limited to, data loss, financial loss, or reputational damage.",
         "list_items": [
           {
             "title": "Force Majeure",
-            "content": "Kumba ne peut être tenu responsable des retards ou de l'inexécution de ses obligations en raison d'événements indépendants de sa volonté (force majeure)."
+            "content": "Kumba cannot be held liable for delays or failures to perform its obligations due to events beyond its control (force majeure)."
           },
           {
-            "title": "Exactitude des Annonces",
-            "content": "Kumba ne garantit pas l'exactitude des informations fournies dans les annonces et ne peut être tenu responsable des litiges entre les utilisateurs et les propriétaires."
+            "title": "Listing Accuracy",
+            "content": "Kumba does not guarantee the accuracy of the information provided in listings and cannot be held responsible for disputes between users and property owners."
           }
         ]
       },
       "termination": {
-        "title": "Résiliation",
-        "content": "Nous nous réservons le droit de résilier ou de suspendre votre accès à Kumba à tout moment, sans préavis, en cas de violation des présentes Conditions.",
+        "title": "Termination",
+        "content": "We reserve the right to terminate or suspend your access to Kumba at any time, without notice, in case of violation of these Terms.",
         "list_items": [
           {
-            "title": "Résiliation par l'Utilisateur",
-            "content": "Vous pouvez fermer votre compte à tout moment via vos paramètres de compte."
+            "title": "Termination by User",
+            "content": "You can close your account at any time through your account settings."
           },
           {
-            "title": "Effet de la Résiliation",
-            "content": "Une fois le compte supprimé ou résilié, vous perdrez l'accès à toutes les fonctionnalités liées à votre compte. Kumba n'a aucune obligation de conserver vos données après la résiliation."
+            "title": "Effect of Termination",
+            "content": "Once your account is deleted or terminated, you will lose access to all account-related features. Kumba has no obligation to retain your data after termination."
           }
         ]
       },
       "changes_to_terms": {
-        "title": "Modifications des Termes et Conditions",
-        "content": "Nous nous réservons le droit de modifier ces Termes et Conditions à tout moment. En cas de modification, nous vous informerons via la plateforme ou par e-mail. Votre utilisation continue de Kumba après les modifications vaut acceptation des nouvelles conditions."
+        "title": "Changes to Terms and Conditions",
+        "content": "We reserve the right to modify these Terms and Conditions at any time. In case of modification, we will notify you through the platform or by email. Your continued use of Kumba after modifications constitutes acceptance of the new terms."
       },
       "contact_info": {
         "title": "Contact",
-        "content": "Pour toute question concernant ces Termes et Conditions, vous pouvez nous contacter à l'adresse suivante :",
+        "content": "For any questions regarding these Terms and Conditions, you can contact us at the following address:",
         "details": {
           "name": "Kumba Support",
           "email": "support@kumba.com",

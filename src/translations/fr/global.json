@@ -341,6 +341,65 @@
             "content": "Nous nous réservons le droit de modifier ou de supprimer toute annonce qui ne respecte pas ces Conditions."
           }
         ]
+      },
+      "payment_terms": {
+        "title": "Conditions de Paiement",
+        "content": "Kumba peut offrir des services payants, tels que la promotion des annonces. Les paiements effectués via la plateforme sont sécurisés et soumis aux conditions suivantes :",
+        "list_items": [
+          {
+            "title": "Frais",
+            "content": "Les frais pour les services payants seront clairement indiqués avant l'achat. Vous acceptez de payer tous les frais applicables."
+          },
+          {
+            "title": "Politique de Remboursement",
+            "content": "Sauf indication contraire, tous les paiements sont non remboursables. En cas de problème avec un service payé, veuillez contacter le support pour une assistance."
+          },
+          {
+            "title": "Sécurité des Paiements",
+            "content": "Nous utilisons des processeurs de paiement sécurisés pour traiter vos paiements. Vos informations de carte de crédit ne sont ni stockées ni traitées directement par Kumba."
+          }
+        ]
+      },
+      "liability": {
+        "title": "Limitation de Responsabilité",
+        "content": "Dans les limites de la loi applicable, Kumba ne sera pas responsable des dommages indirects, accidentels, ou consécutifs résultant de l'utilisation de la plateforme. Cela inclut, sans s'y limiter, les pertes de données, les pertes financières ou les atteintes à la réputation.",
+        "list_items": [
+          {
+            "title": "Force Majeure",
+            "content": "Kumba ne peut être tenu responsable des retards ou de l'inexécution de ses obligations en raison d'événements indépendants de sa volonté (force majeure)."
+          },
+          {
+            "title": "Exactitude des Annonces",
+            "content": "Kumba ne garantit pas l'exactitude des informations fournies dans les annonces et ne peut être tenu responsable des litiges entre les utilisateurs et les propriétaires."
+          }
+        ]
+      },
+      "termination": {
+        "title": "Résiliation",
+        "content": "Nous nous réservons le droit de résilier ou de suspendre votre accès à Kumba à tout moment, sans préavis, en cas de violation des présentes Conditions.",
+        "list_items": [
+          {
+            "title": "Résiliation par l'Utilisateur",
+            "content": "Vous pouvez fermer votre compte à tout moment via vos paramètres de compte."
+          },
+          {
+            "title": "Effet de la Résiliation",
+            "content": "Une fois le compte supprimé ou résilié, vous perdrez l'accès à toutes les fonctionnalités liées à votre compte. Kumba n'a aucune obligation de conserver vos données après la résiliation."
+          }
+        ]
+      },
+      "changes_to_terms": {
+        "title": "Modifications des Termes et Conditions",
+        "content": "Nous nous réservons le droit de modifier ces Termes et Conditions à tout moment. En cas de modification, nous vous informerons via la plateforme ou par e-mail. Votre utilisation continue de Kumba après les modifications vaut acceptation des nouvelles conditions."
+      },
+      "contact_info": {
+        "title": "Contact",
+        "content": "Pour toute question concernant ces Termes et Conditions, vous pouvez nous contacter à l'adresse suivante :",
+        "details": {
+          "name": "Kumba Support",
+          "email": "support@kumba.com",
+          "phone": "+33 1 23 45 67 89"
+        }
       }
     }
   }
