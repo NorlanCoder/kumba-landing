@@ -5,7 +5,7 @@ import { MdOutlineHomeRepairService } from 'react-icons/md'
 import Drapeau from '../assets/img/drapeau.svg';
 import Service from '../assets/img/service-client.svg';
 import Utilisateur from '../assets/img/utilisateurs.svg';
-import Forme7 from '../assets/img/forme7.png';
+import Forme7 from '../assets/img/forme7.webp';
 import { useTranslation } from 'react-i18next';
 
 const Statistical = () => {
@@ -48,7 +48,7 @@ const Statistical = () => {
         </div>
 
         <section className="hidden sm:block opacity-50 absolute left-10 -bottom-72 -z-20 transform -rotate-6">
-          <img src={Forme7} className="w-[13rem]" alt="Bilan Image" title='Bilan Image' />
+          <img src={Forme7} className="w-[3rem]" alt="Bilan Image" title='Bilan Image' />
         </section>
       </div>
   </section>

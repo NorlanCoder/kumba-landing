@@ -54,7 +54,7 @@ function Navbar(){
                 <div className="pt-6 px-6 select-none">
                     <div className="md:text-xl rounded-lg w-full flex flex-col justify-center gap-y-4 font-extralight">
                         <div className='md:hidden flex z-20 justify-end text-terre'>
-                            <svg className={burger_class} onClick={updateMenu} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg className={burger_class} onClick={updateMenu} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <line className='line1' x1="3" y1="12" x2="21" y2="12"></line>
                             <line className='line2' x1="3" y1="6" x2="21" y2="6"></line>
                             <line className='line3' x1="3" y1="18" x2="21" y2="18"></line>
@@ -69,7 +69,7 @@ function Navbar(){
                 </div>
             <div className="navbar w-full z-40 flex items-center md:justify-around md:bg-white bg-[#e5e7e6] md:px-12 px-6 justify-between select-none">
                 <div className="logo z-10 mt-2">
-                    <a href="#"><img className='w-16 sm:w-20' src={logo_kumba} alt="" srcset="" /></a>
+                    <a href="#"><img className='w-16 sm:w-20' src={logo_kumba} alt="" srcSet="" /></a>
                 </div>
                 <div className="menu z-20 mt-2">
                     <div className="md:flex hidden font-extralight gap-x-8">
@@ -79,7 +79,7 @@ function Navbar(){
                         <a href="#contact">{t("navbar.menu4")}</a>
                     </div>
                     <div className='md:hidden flex z-20 justify-end text-terre'>
-                        <svg className={burger_class} onClick={updateMenu} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg className={burger_class} onClick={updateMenu} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <line className='line1' x1="3" y1="12" x2="21" y2="12"></line>
                             <line className='line2' x1="3" y1="6" x2="21" y2="6"></line>
                             <line className='line3' x1="3" y1="18" x2="21" y2="18"></line>
@@ -124,7 +124,7 @@ function Header(){
                     </div>
                 </div>
                 <div className="img lg:flex hidden z-10 lg:w-[45%] mr-[8%] px-8 justify-center items-center mt-10">
-                    <img src={img1} className='w-[730px]' alt="" srcset="" />
+                    <img src={img1} className='w-[730px]' alt="" srcSet="" />
                 </div>
             </div>
             <div className="absolute md:block hidden z-0 right-shape rounded-l-3xl w-[38%] h-[95vh] right-0 bg-[#e5e7e6]"></div>

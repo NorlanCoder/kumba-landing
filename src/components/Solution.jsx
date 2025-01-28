@@ -1,6 +1,6 @@
 import React from 'react';
-import Forme8 from '../assets/img/forme8.png';
-import Forme9 from '../assets/img/forme9.png';
+import Forme8 from '../assets/img/forme8.webp';
+import Forme9 from '../assets/img/forme9.webp';
 import { useTranslation } from 'react-i18next';
 
 const Solution = () => {
@@ -16,8 +16,8 @@ const Solution = () => {
             <p>{t("solutions.description")}</p>
         </div>
 
-        <section className="hidden sm:block opacity-65 absolute left-5 -top-10 -z-20 transform">
-            <img src={Forme8} className="w-[11rem]" alt="Bilan Image" title='Bilan Image' />
+        <section className="hidden sm:block opacity-65 absolute left-16 -top-10 -z-20 transform">
+            <img src={Forme8} className="w-[4rem]" alt="Bilan Image" title='Bilan Image' />
         </section>
 
         <div className="mt-12">
@@ -108,8 +108,8 @@ const Solution = () => {
             </ul>
         </div>
 
-        <section className="hidden sm:block opacity-30 absolute -left-36 bottom-20 -z-20 transform">
-            <img src={Forme9} className="w-[12rem]" alt="Bilan Image" title='Bilan Image' />
+        <section className="hidden sm:block opacity-30 absolute -left-7 bottom-20 -z-20 transform">
+            <img src={Forme9} className="w-[4rem]" alt="Bilan Image" title='Bilan Image' />
         </section>
       </div>
     </section>

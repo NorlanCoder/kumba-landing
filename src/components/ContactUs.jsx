@@ -15,7 +15,7 @@ const ContactUs = () => {
         </div>
         <section className="bg-white py-4 mx-2 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row items-center justify-between">
           <div className="relative mb-8 md:mb-0 md:w-1/2 flex justify-center">
-            <img src={ContactUsImg} width={80} alt="" className="z-10 relative w-52 md:w-80 h-auto"/>
+            <img src={ContactUsImg} width={80} alt="" className="z-10 relative w-52 md:w-96 h-auto"/>
           </div>
 
 

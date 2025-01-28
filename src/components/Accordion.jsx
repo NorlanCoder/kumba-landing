@@ -1,8 +1,8 @@
 import DOMPurify from "dompurify";
 import { useState } from "react";
 import { FaPlus } from "react-icons/fa6";
-import Forme1 from "../assets/img/forme1.png";
-import Forme2 from "../assets/img/forme2.png";
+import Forme1 from "../assets/img/forme1.webp";
+import Forme2 from "../assets/img/forme2.webp";
 import { useTranslation } from "react-i18next";
 
 function Accordion() {
@@ -26,7 +26,7 @@ function Accordion() {
           <h1 className="text-gray-800 text-3xl text-center font-semibold sm:text-5xl sonia">{t("faq.titre")}</h1>
 
           <section className="hidden sm:block opacity-30 absolute right-10 -top-20 -z-20 transform -rotate-6">
-            <img src={Forme2} className="w-[11rem]" alt="Bilan Image" title="Bilan Image" />
+            <img src={Forme2} className="w-[4rem]" alt="Bilan Image" title="Bilan Image" />
           </section>
 
 
@@ -145,12 +145,7 @@ function Accordion() {
           </section>
 
           <section className="hidden sm:block opacity-30 absolute left-10 -bottom-20 -z-20 transform -rotate-6">
-            <img
-              src={Forme1}
-              className="w-[11rem]"
-              alt="Bilan Image"
-              title="Bilan Image"
-            />
+            <img  src={Forme1}  className="w-[4rem]"  alt="Bilan Image"  title="Bilan Image"/>
           </section>
         </section>
       </section>
