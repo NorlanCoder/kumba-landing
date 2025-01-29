@@ -62,7 +62,7 @@ const Modal = ({ closeModalPolicies }) => {
             <p class="text-lg text-gray-600">Dernière mise à jour : 16 septembre 2024</p>
           </header>
 
-          <main class="container mx-auto px-4 py-5 max-h-[80vh] overflow-y-auto">
+          <main class="container mx-auto px-4 py-12  max-h-[80vh] overflow-y-auto">
             <section id="introduction" class="mb-8">
               <h2 class="md:text-2xl text-xl text-terre font-semibold mb-4">Introduction</h2>
               <p class="text-lg mb-4">Cette Politique de Fonctionnalité décrit les fonctionnalités de Kumba, offrant des détails sur le fonctionnement de la plateforme, la manière dont les utilisateurs peuvent interagir avec les fonctionnalités, et les mesures de sécurité en place pour garantir une expérience utilisateur sûre et efficace. En utilisant Kumba, vous acceptez de respecter ces politiques et d'utiliser les services de manière responsable.</p>
