@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './css/style.css'
-import img1 from '../img-phone-1.png' 
+import img1 from '../assets/img/phones_mobile_kumba.webp' 
 import logo_kumba from '../assets/img/LOGO_KUMBA_AUDACE-01.webp'
 import { useTranslation } from 'react-i18next';
 
@@ -124,7 +124,7 @@ function Header(){
                     </div>
                 </div>
                 <div className="img lg:flex hidden z-10 lg:w-[45%] mr-[8%] px-8 justify-center items-center mt-10">
-                    <img src={img1} className='w-[730px]' alt="" srcSet="" />
+                    <img src={img1} className='w-[780px]' alt="" srcSet="" />
                 </div>
             </div>
             <div className="absolute md:block hidden z-0 right-shape rounded-l-3xl w-[38%] h-[95vh] right-0 bg-[#e5e7e6]"></div>

@@ -1,4 +1,3 @@
-import img1 from '../img-phone-1.png';
 import Iphone15 from '../assets/img/iphone15_mockup2.webp';
 import Forme4 from '../assets/img/forme4.webp';
 import { useTranslation } from 'react-i18next';
