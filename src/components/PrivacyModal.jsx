@@ -39,7 +39,7 @@ const Modal = ({ closeModalPolicies }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.5 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 bg-black"
+        className="fixed inset-0 bg-black z-40"
         onKeyDown={(e) => e.key === 'Escape' && closeModalPolicies()}
         onClick={closeModalPolicies}
       >

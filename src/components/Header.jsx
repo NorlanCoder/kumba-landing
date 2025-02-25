@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 // navbar component
 function Navbar() {
   const [t, i18n] = useTranslation("global");
-
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 }, 
@@ -45,9 +45,27 @@ function Navbar() {
     };
   }, []);
 
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 50) { // Vous pouvez ajuster cette valeur selon vos besoins
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
   const [menu_class, setMenuClass] = useState(
-    "menu-on-apear absolute flex-col w-[0%] transform hidden opacity-0 duration-500  z-30 bg-[#e5e7e6f5]"
+    "menu-on-apear flex-col transform hidden opacity-0 duration-500 z-30 bg-[#e5e7e6f5]"
   );
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
@@ -145,7 +163,7 @@ function Navbar() {
   
       {/* Animer la navbar principale */}
       <motion.div
-        className="max-w-6xl mx-auto navbar w-full z-40 flex items-center md:justify-between md:bg-white bg-[#e5e7e6] justify-between select-none"
+        className={`max-w-6xl mx-auto navbar w-full z-40 flex items-center md:justify-between  bg-white justify-between select-none ${ isScrolled ? 'backdrop-blur-sm bg-opacity-80' : '' }`}
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -247,6 +265,7 @@ function Navbar() {
 // Header component
 function Header() {
   const [t, i18n] = useTranslation("global");
+  
 
   const textVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -258,16 +277,17 @@ function Header() {
     hidden: { opacity: 0, x: 100, opacity: 0 },
     visible: { opacity: 1, x: 0, opacity: 1 },
   };
+  
 
   return (
     <>
       <section className="home mb-8">
-        <div className="header sm:h-[90vh] md:h-[90vh] ">
-          <div className="fixed top-0 w-full bg-white z-50">
+        <div className="header sm:h-[90vh] md:h-[90vh] bg-white ">
+          <div className="fixed top-0 w-full z-40 backdrop-blur-sm bg-opacity-80">
             <Navbar />
           </div>
 
-          <div className="max-w-4xl lg:max-w-6xl mx-auto px-2 md:px-0 md:h-[90vh] flex md:flex-row flex-col justify-between items-center md:bg-white bg-[#e5e7e6] pt-[15vh]">
+          <div className="max-w-4xl lg:max-w-6xl mx-auto px-2 md:px-0 md:h-[90vh] flex md:flex-row flex-col justify-between items-center md:bg-white bg-[#e5e7e6] pt-[20vh]">
             {/* Première div : Contenu texte */}
             <motion.div
               className="flex justify-center w-full lg:w-[45%] order-1 md:order-1" // Ordre 1 sur mobile et desktop
