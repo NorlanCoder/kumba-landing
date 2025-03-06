@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
-import Mobile1 from '../assets/img/iphone15_mockup.png';
-import Fleche from '../assets/img/fleche.png';
-import Forme5 from '../assets/img/forme5.png';
+import Mobile1 from '../assets/img/iphone15_mockup.webp';
+import Fleche from '../assets/img/fleche.webp';
+import Forme5 from '../assets/img/forme5.webp';
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 function Footer({openModalPolicies,openModalTerms}) {
   
@@ -62,12 +63,34 @@ function Footer({openModalPolicies,openModalTerms}) {
 
   return (
     <>
-      <section id="footer" className="max-w-3xl mx-auto">
+      <section id="footer" className="max-w-4xl mx-auto">
         <section className="my-5 mx-5 bg-terre p-2 rounded-xl sm:flex sm:items-center sm:justify-between relative">
-          <div className="text-white p-2 sm:pl-8 sm:pt-8 sm:pb-8">
-            <h1 className="text-xl sm:text-2xl text-center sm:text-left font-extrabold mb-2 sm:w-2/3">{t("footer.section1Footer1")}</h1>
+          <motion.div
+            className="text-white p-2 sm:pl-8 sm:pt-8 sm:pb-8"
+            initial={{ opacity: 0, y: 20 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            viewport={{ once: true }} 
+            transition={{ duration: 0.6, delay: 0.2 }} 
+          >
+            <motion.h1
+              className="text-xl sm:text-2xl text-center sm:text-left font-extrabold mb-2 sm:w-2/3"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              {t("footer.section1Footer1")}
+            </motion.h1>
             
-            <p className="text-xs  text-center sm:text-left font-light text-gray-200 sm:w-2/3 mb-2">{t("footer.section1Footer2")}</p>
+            <motion.p
+              className="text-xs text-center sm:text-left font-light text-gray-200 sm:w-2/3 mb-2"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              {t("footer.section1Footer2")}
+            </motion.p>
             
             <div className="flex flex-wrap justify-center sm:justify-start items-center gap-3 mt-2">
               <a href="#">
@@ -189,12 +212,12 @@ function Footer({openModalPolicies,openModalTerms}) {
                       y2="63.662"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#00A0FF" />
-                      <stop offset=".007" stop-color="#00A1FF" />
-                      <stop offset=".26" stop-color="#00BEFF" />
-                      <stop offset=".512" stop-color="#00D2FF" />
-                      <stop offset=".76" stop-color="#00DFFF" />
-                      <stop offset="1" stop-color="#00E3FF" />
+                      <stop stopColor="#00A0FF" />
+                      <stop offset=".007" stopColor="#00A1FF" />
+                      <stop offset=".26" stopColor="#00BEFF" />
+                      <stop offset=".512" stopColor="#00D2FF" />
+                      <stop offset=".76" stopColor="#00DFFF" />
+                      <stop offset="1" stopColor="#00E3FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_3_178167"
@@ -204,10 +227,10 @@ function Footer({openModalPolicies,openModalTerms}) {
                       y2="50.003"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#FFE000" />
-                      <stop offset=".409" stop-color="#FFBD00" />
-                      <stop offset=".775" stop-color="orange" />
-                      <stop offset="1" stop-color="#FF9C00" />
+                      <stop stopColor="#FFE000" />
+                      <stop offset=".409" stopColor="#FFBD00" />
+                      <stop offset=".775" stopColor="orange" />
+                      <stop offset="1" stopColor="#FF9C00" />
                     </linearGradient>
                     <linearGradient
                       id="paint2_linear_3_178167"
@@ -217,8 +240,8 @@ function Footer({openModalPolicies,openModalTerms}) {
                       y2="112.324"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#FF3A44" />
-                      <stop offset="1" stop-color="#C31162" />
+                      <stop stopColor="#FF3A44" />
+                      <stop offset="1" stopColor="#C31162" />
                     </linearGradient>
                     <linearGradient
                       id="paint3_linear_3_178167"
@@ -228,11 +251,11 @@ function Footer({openModalPolicies,openModalTerms}) {
                       y2="25.967"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#32A071" />
-                      <stop offset=".069" stop-color="#2DA771" />
-                      <stop offset=".476" stop-color="#15CF74" />
-                      <stop offset=".801" stop-color="#06E775" />
-                      <stop offset="1" stop-color="#00F076" />
+                      <stop stopColor="#32A071" />
+                      <stop offset=".069" stopColor="#2DA771" />
+                      <stop offset=".476" stopColor="#15CF74" />
+                      <stop offset=".801" stopColor="#06E775" />
+                      <stop offset="1" stopColor="#00F076" />
                     </linearGradient>
                     <linearGradient
                       id="paint4_linear_3_178167"
@@ -242,10 +265,10 @@ function Footer({openModalPolicies,openModalTerms}) {
                       y2="50.004"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#CCB300" />
-                      <stop offset=".409" stop-color="#CC9700" />
-                      <stop offset=".775" stop-color="#CC8400" />
-                      <stop offset="1" stop-color="#CC7D00" />
+                      <stop stopColor="#CCB300" />
+                      <stop offset=".409" stopColor="#CC9700" />
+                      <stop offset=".775" stopColor="#CC8400" />
+                      <stop offset="1" stopColor="#CC7D00" />
                     </linearGradient>
                     <linearGradient
                       id="paint5_linear_3_178167"
@@ -255,8 +278,8 @@ function Footer({openModalPolicies,openModalTerms}) {
                       y2="112.324"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#CC2E36" />
-                      <stop offset="1" stop-color="#9C0E4E" />
+                      <stop stopColor="#CC2E36" />
+                      <stop offset="1" stopColor="#9C0E4E" />
                     </linearGradient>
                     <linearGradient
                       id="paint6_linear_3_178167"
@@ -266,12 +289,12 @@ function Footer({openModalPolicies,openModalTerms}) {
                       y2="63.662"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#008DE0" />
-                      <stop offset=".007" stop-color="#008DE0" />
-                      <stop offset=".26" stop-color="#00A7E0" />
-                      <stop offset=".512" stop-color="#00B8E0" />
-                      <stop offset=".76" stop-color="#00C4E0" />
-                      <stop offset="1" stop-color="#00C7E0" />
+                      <stop stopColor="#008DE0" />
+                      <stop offset=".007" stopColor="#008DE0" />
+                      <stop offset=".26" stopColor="#00A7E0" />
+                      <stop offset=".512" stopColor="#00B8E0" />
+                      <stop offset=".76" stopColor="#00C4E0" />
+                      <stop offset="1" stopColor="#00C7E0" />
                     </linearGradient>
                     <linearGradient
                       id="paint7_linear_3_178167"
@@ -281,8 +304,8 @@ function Footer({openModalPolicies,openModalTerms}) {
                       y2="112.327"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#E0333C" />
-                      <stop offset="1" stop-color="#AB0F56" />
+                      <stop stopColor="#E0333C" />
+                      <stop offset="1" stopColor="#AB0F56" />
                     </linearGradient>
                     <linearGradient
                       id="paint8_linear_3_178167"
@@ -292,10 +315,10 @@ function Footer({openModalPolicies,openModalTerms}) {
                       y2="50.003"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#E0C500" />
-                      <stop offset=".409" stop-color="#E0A600" />
-                      <stop offset=".775" stop-color="#E09100" />
-                      <stop offset="1" stop-color="#E08900" />
+                      <stop stopColor="#E0C500" />
+                      <stop offset=".409" stopColor="#E0A600" />
+                      <stop offset=".775" stopColor="#E09100" />
+                      <stop offset="1" stopColor="#E08900" />
                     </linearGradient>
                     <linearGradient
                       id="paint9_linear_3_178167"
@@ -305,10 +328,10 @@ function Footer({openModalPolicies,openModalTerms}) {
                       y2="50.003"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#FFE840" />
-                      <stop offset=".409" stop-color="#FFCE40" />
-                      <stop offset=".775" stop-color="#FFBC40" />
-                      <stop offset="1" stop-color="#FFB540" />
+                      <stop stopColor="#FFE840" />
+                      <stop offset=".409" stopColor="#FFCE40" />
+                      <stop offset=".775" stopColor="#FFBC40" />
+                      <stop offset="1" stopColor="#FFB540" />
                     </linearGradient>
                     <linearGradient
                       id="paint10_linear_3_178167"
@@ -318,12 +341,12 @@ function Footer({openModalPolicies,openModalTerms}) {
                       y2="63.662"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#40B8FF" />
-                      <stop offset=".007" stop-color="#40B9FF" />
-                      <stop offset=".26" stop-color="#40CEFF" />
-                      <stop offset=".512" stop-color="#40DDFF" />
-                      <stop offset=".76" stop-color="#40E7FF" />
-                      <stop offset="1" stop-color="#40EAFF" />
+                      <stop stopColor="#40B8FF" />
+                      <stop offset=".007" stopColor="#40B9FF" />
+                      <stop offset=".26" stopColor="#40CEFF" />
+                      <stop offset=".512" stopColor="#40DDFF" />
+                      <stop offset=".76" stopColor="#40E7FF" />
+                      <stop offset="1" stopColor="#40EAFF" />
                     </linearGradient>
                     <linearGradient
                       id="paint11_linear_3_178167"
@@ -333,18 +356,18 @@ function Footer({openModalPolicies,openModalTerms}) {
                       y2="25.967"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#65B895" />
-                      <stop offset=".069" stop-color="#62BD95" />
-                      <stop offset=".476" stop-color="#50DB97" />
-                      <stop offset=".801" stop-color="#44ED98" />
-                      <stop offset="1" stop-color="#40F498" />
+                      <stop stopColor="#65B895" />
+                      <stop offset=".069" stopColor="#62BD95" />
+                      <stop offset=".476" stopColor="#50DB97" />
+                      <stop offset=".801" stopColor="#44ED98" />
+                      <stop offset="1" stopColor="#40F498" />
                     </linearGradient>
                   </defs>
                 </svg>
               </a>
               <a href="#">
                 <svg className="w-32" fill="none" viewBox="0 0 320 100">
-                  <g clip-path="url(#clip0_3_178097)">
+                  <g clipPath="url(#clip0_3_178097)">
                     <path
                       fill="#A6A6A6"
                       d="M275.749 0h-251.5c-.917 0-1.823 0-2.737.005-.765.005-1.524.02-2.297.032-1.679.02-3.354.167-5.01.442-1.654.28-3.256.808-4.752 1.567a16.094 16.094 0 00-4.047 2.947 15.646 15.646 0 00-2.945 4.053 16.503 16.503 0 00-1.563 4.758 32.483 32.483 0 00-.448 5.005c-.023.766-.026 1.535-.038 2.302v57.786c.012.776.015 1.528.038 2.304.02 1.678.17 3.351.448 5.005a16.468 16.468 0 001.563 4.76 15.52 15.52 0 002.945 4.037 15.687 15.687 0 004.047 2.946 16.754 16.754 0 004.752 1.578 33.64 33.64 0 005.01.441c.773.017 1.532.027 2.297.027.914.005 1.82.005 2.737.005h251.5c.899 0 1.812 0 2.71-.005.762 0 1.543-.01 2.305-.027a33.196 33.196 0 005-.442 17.011 17.011 0 004.77-1.577 15.678 15.678 0 004.043-2.946 15.95 15.95 0 002.954-4.036 16.509 16.509 0 001.548-4.76c.279-1.655.434-3.328.464-5.006.01-.776.01-1.528.01-2.304.019-.909.019-1.812.019-2.735V23.84c0-.915 0-1.823-.019-2.729 0-.767 0-1.536-.01-2.302a33.726 33.726 0 00-.464-5.005 16.53 16.53 0 00-1.548-4.758 16.163 16.163 0 00-6.997-7 16.915 16.915 0 00-4.77-1.568 32.618 32.618 0 00-5-.441c-.762-.013-1.543-.027-2.305-.032C277.561 0 276.648 0 275.749 0z"
@@ -370,30 +393,43 @@ function Footer({openModalPolicies,openModalTerms}) {
                 </svg>
               </a>
             </div>
-          </div>
+          </motion.div>
 
 
-          <div className="hidden sm:block absolute top-1/2 left-1/2 right-0 bottom-44 transform sm:-rotate-12 md:-rotate-6 -translate-y-1/2">
+          <div className="hidden sm:block absolute top-1/3 left-1/2 right-0 bottom-44 transform sm:-rotate-12 md:-rotate-6 -translate-y-1/2">
             <img src={Fleche} className="sm:w-[5rem] md:w-[6rem]" alt="Bilan Image" title='Bilan Image' />
           </div>
 
-          <div className="hidden sm:block absolute sm:top-16 md:top-8 right-0 -bottom-2 transform -rotate-6 -translate-y-1/2">
-            <img src={Mobile1} className="sm:w-[13rem] md:w-[15rem]" alt="Bilan Image" title='Bilan Image' />
-          </div>
+          <motion.div
+            className="hidden sm:block absolute sm:top-16 md:-top-8 right-0 -bottom-2 transform -rotate-6 -translate-y-1/2"
+            initial={{ opacity: 0, x: 20, scale: 0.5 }} 
+            whileInView={{ opacity: 1, x: 0, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ type: "spring", stiffness: 300 }} 
+          >
+            <img src={Mobile1} className="sm:w-[12rem] md:w-[15rem]" alt="Bilan Image" title="Bilan Image" />
+          </motion.div>
         </section>
       </section>
 
       <footer className="bg-white text-white pt-7">
         <section className="max-w-6xl mx-auto">
-          <div className="px-4 sm:px-6 text-gray-700 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto  select-none">
-            <div className="p-5">
+          <div className="px-4 sm:px-6 text-gray-700 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto select-none">
+            {/* Logo avec animation simple */}
+            <motion.div
+              className="p-5"
+              initial={{ opacity: 0, y: 20 }} // État initial : invisible et décalé vers le bas
+              whileInView={{ opacity: 1, y: 0 }} // Animation : visible et à sa position normale
+              viewport={{ once: true }} // L'animation ne se déclenche qu'une fois
+              transition={{ duration: 0.6 }} // Durée de l'animation
+            >
               <h3 className="font-bold text-2xl text-terre sonia">Kumba</h3>
-            </div>
+            </motion.div>
 
+            {/* Autres sections du footer */}
             <div className="p-5">
               <div className="text-sm uppercase text-terre font-bold select-none">{t("footer.entreprise")}</div>
               <a className="my-2 block text-sm" href="#statistical">{t("footer.entreprise1")}</a>
-              <a className="my-2 block text-sm" href="#partners">{t("footer.entreprise2")}</a>
               <a className="my-2 block text-sm" href="#about">{t("footer.entreprise3")}</a>
               <a className="my-2 block text-sm" href="#contact">{t("footer.entreprise4")}</a>
             </div>
@@ -401,7 +437,6 @@ function Footer({openModalPolicies,openModalTerms}) {
             <div className="p-5">
               <div className="text-sm uppercase text-terre font-bold select-none">{t("footer.ressources")}</div>
               <a className="my-2 block text-sm" href="#faq">{t("footer.ressources1")}</a>
-              <a className="my-2 block text-sm" href="/#">{t("footer.ressources2")}</a>
               <a className="my-2 block text-sm" onClick={handleClickPolicies} href="/#">{t("footer.ressources3")}</a>
               <a className="my-2 block text-sm" onClick={handleClickTerms} href="/#">{t("footer.ressources4")}</a>
             </div>
@@ -447,14 +482,14 @@ function Footer({openModalPolicies,openModalTerms}) {
             </div>
 
             <div className="flex sm:justify-end justify-center my-5 text-sm w-full sm:w-1/3">
-            <select value={selectedLang} onChange={handleChangeLanguage} name="" id="" className="border rounded-full border-gray-700 px-3 py-2 pr-5 w-2/3 outline-none">
-              <option value="fr">Français</option>
-              <option value="en">English</option>
-            </select>
+              <select value={selectedLang} onChange={handleChangeLanguage} name="" id="" className="border rounded-full border-gray-700 px-3 py-2 pr-5 w-2/3 outline-none">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+              </select>
             </div>
 
             <section className="hidden sm:block opacity-20 absolute left-10 -top-20 z-20 transform">
-              <img src={Forme5} className="w-[5rem]" alt="Bilan Image" title='Bilan Image' />
+              <img src={Forme5} className="w-[3rem]" alt="Bilan Image" title="Bilan Image" />
             </section>
           </div>
         </section>

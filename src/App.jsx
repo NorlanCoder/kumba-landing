@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Partner />
+      {/* <Partner /> */}
       <Statistical />
       <AboutUs />
       <Solution />
