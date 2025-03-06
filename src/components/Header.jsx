@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./css/style.css";
 import BG_Header from "../assets/ressource_kumba/img_header_1.webp";
-import logo_kumba from "../assets/img/LOGO_KUMBA_AUDACE-01.webp";
+import logo_kumba from "../assets/img/logo.png";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -176,7 +176,7 @@ function Navbar() {
           transition={transition(0.5)}
         >
           <a href="#">
-            <img className="w-16 sm:w-20" src={logo_kumba} alt="" srcSet="" />
+            <img className="w-16 sm:w-16" src={logo_kumba} alt="" srcSet="" />
           </a>
         </motion.div>
         <div className="menu z-20 mt-2">
