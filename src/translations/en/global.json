@@ -14,7 +14,11 @@
         "bouton2": "Read more",
         "nbre": "3,875",
         "texte1": "people downloaded",
-        "texte2": "Kumba this month"
+        "texte2": "Kumba this month",
+        "btn1":"GET IT ON",
+        "btn1-text":"Google Play",
+        "btn2":"Download from",
+        "btn1-text":"App Store"
     },
 
 
@@ -89,6 +93,47 @@
         "answer8": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis."
     },
 
+    "testimonial": {
+        "title": "TESTIMONIALS",
+        "subtitle": "They trusted us",
+        "stat_title": "3,875",
+        "stat_subtitle": "People downloaded the Kumba app this month",
+        "icon1": {
+            "number": "100+",
+            "label": "Properties"
+        },
+        "icon2": {
+            "number": "40+",
+            "label": "Users"
+        },
+        "icon3": {
+            "number": "50+",
+            "label": "Services"
+        },
+        "satisfaction_title": "User satisfaction",
+        "satisfaction_text": "At Kumba, user satisfaction is at the heart of our mission. We are committed to providing an experience that fully meets your expectations. We listen to your feedback and constantly improve our application to ensure your needs are always at the forefront.",
+        "testimonials": [
+            {
+                "name": "Nehem",
+                "title": "Graphic Designer",
+                "text": "Thanks to the Kumba app, I was able to easily find my apartment in Agla. This platform is really cool."
+            },
+            {
+                "name": "Charles",
+                "title": "Entrepreneur",
+                "text": "With your application, I was able to get a new apartment without traveling too much on endless viewing trips. It saved me a lot of time."
+            },
+            {
+                "name": "Monique",
+                "title": "Teacher",
+                "text": "Very effective application. Helps you save time. The apartment guided tour is very good, I recommend this application to anyone looking for an apartment."
+            }
+        ],
+        "download": {
+            "playstore": "GET IT ON",
+            "appstore": "Download from"
+        }
+    },
 
     "footer" : {
         "section1Footer1": "Let's find your ideal home today!",

@@ -8,13 +8,17 @@
     },
 
     "header" : {
-        "titre1": "Logement rapide",
-        "titre2": "simple et sûr",
-        "description": "Avec Kumba, explorez une vaste sélection de logements adaptés à vos besoins, avec des critères clairs et une interface intuitive. Simple, rapide, et toujours à votre service.",
+        "titre1": "La plateforme intuitive pour trouver votre logement",
+        "titre2": "",
+        "description": "KUMBA est une nouvelle application de logement qui réinvente la recherche locative. Elle offre une plateforme conviviale et intuitive pour trouver des maisons, des appartements, des guesthouses, des bureaux, des agences immobilières et bien plus encore, le tout pour vous faire gagner du temps",
         "bouton2": "Lire plus",
         "nbre": "3,875",
         "texte1": "personnes ont téléchargé",
-        "texte2": "Kumba ce mois"
+        "texte2": "Kumba ce mois",
+        "btn1":"TÉLÉCHARGER SUR",
+        "btn1-text":"Google Play",
+        "btn2":"Télécharger depuis",
+        "btn2-text":"App Store"
     },
 
     "partner" : {
@@ -41,7 +45,7 @@
     "about" : {
         "titre" : "À propos",
         "soustitre" : "Des multitudes de services à votre disposition",
-        "description" : "Kumba est votre compagnon idéal pour découvrir une large gamme d'appartement, de villa, de maison, de bureau, de simple chambre, d'hôtel, de magasin, de boutique qui répondent parfaitement à vos attentes. Grâce à des filtres précis et une interface conviviale, trouver votre futur chez-vous n’a jamais été aussi simple. Profitez d'une expérience fluide, rapide et toujours adaptée à vos besoins."
+        "description" : "Kumba est votre compagnon idéal pour découvrir une large gamme d'appartement, de villa, de maison, de bureau, de simple chambre, d'hôtel, de magasin, de boutique qui répondent parfaitement à vos attentes. Grâce à des filtres précis et une interface conviviale, trouver votre futur chez-vous n'a jamais été aussi simple. Profitez d'une expérience fluide, rapide et toujours adaptée à vos besoins."
     },
 
     "solutions" : {
@@ -88,6 +92,47 @@
         "answer8": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis."
     },
 
+    "testimonial": {
+        "title":"TÉMOIGNAGES",
+        "subtitle":"Ils nous ont faits confiance",
+        "stat_title": "3 875",
+        "stat_subtitle": "Personnes ont téléchargé l'application Kumba ce mois",
+        "icon1": {
+            "number": "100+",
+            "label": "Propriétés"
+        },
+        "icon2": {
+            "number": "40+",
+            "label": "Utilisateurs"
+        },
+        "icon3": {
+            "number": "50+",
+            "label": "Services"
+        },
+        "satisfaction_title": "La satisfaction des utilisateurs",
+        "satisfaction_text": "Chez Kumba, la satisfaction de nos utilisateurs est au cœur de notre mission. Nous nous engageons à offrir une expérience qui répond pleinement à vos attentes. Nous écoutons vos retours et améliorons constamment notre application pour garantir que vos besoins sont toujours au premier plan.",
+        "testimonials": [
+            {
+                "name": "Nehem",
+                "title": "Graphiste",
+                "text": "Grâce à l'appli Kumba, j'ai pu trouver facilement mon appart à Agla. Très cool cette plateforme."
+            },
+            {
+                "name": "Charles",
+                "title": "Entrepreneur",
+                "text": "Avec votre application, j'ai pu prendre un nouvel appartement sans trop me déplacer dans des courses de visite à ne pas en finir. Cela m'a permis de gagner du temps."
+            },
+            {
+                "name": "Monique",
+                "title": "Enseignante",
+                "text": "Application très efficace. Vous permet de gagner du temps. Elle visite guide des appartements est très bien, je recommande cette application à tous ceux qui cherchent un appartement."
+            }
+        ],
+        "download": {
+            "playstore": "Télécharger sur",
+            "appstore": "Télécharger sur"
+        }
+    },
 
     "footer" : {
         "section1Footer1": "Trouvons votre habitation idéale aujourd'hui !",

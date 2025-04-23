@@ -1,24 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
-import Mobile1 from '../assets/img/iphone15_mockup.webp';
-import Fleche from '../assets/img/fleche.webp';
-import Forme5 from '../assets/img/forme5.webp';
+import Mobile1 from "../assets/img/iphone15_mockup.webp";
+import Fleche from "../assets/img/fleche.webp";
+import Forme5 from "../assets/img/forme5.webp";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
-function Footer({openModalPolicies,openModalTerms}) {
-  
-  const [t, i18n] = useTranslation("global")
-  const storedLang = localStorage.getItem('langvalue');
+function Footer({ openModalPolicies, openModalTerms }) {
+  const [t, i18n] = useTranslation("global");
+  const storedLang = localStorage.getItem("langvalue");
 
   const [selectedLang, setSelectedLang] = useState(() => {
-    return storedLang || 'fr';
+    return storedLang || "fr";
   });
 
   useEffect(() => {
-    i18n.changeLanguage(selectedLang); 
-  }, [selectedLang, i18n]); 
+    i18n.changeLanguage(selectedLang);
+  }, [selectedLang, i18n]);
 
   const handleChangeLanguage = (event) => {
     const newLang = event.target.value;
@@ -51,15 +50,13 @@ function Footer({openModalPolicies,openModalTerms}) {
 
   const handleClickPolicies = (e) => {
     e.preventDefault();
-    openModalPolicies()
+    openModalPolicies();
   };
 
   const handleClickTerms = (e) => {
     e.preventDefault();
-    openModalTerms()
+    openModalTerms();
   };
-  
-
 
   return (
     <>
@@ -67,10 +64,10 @@ function Footer({openModalPolicies,openModalTerms}) {
         <section className="my-5 mx-5 bg-terre p-2 rounded-xl sm:flex sm:items-center sm:justify-between relative">
           <motion.div
             className="text-white p-2 sm:pl-8 sm:pt-8 sm:pb-8"
-            initial={{ opacity: 0, y: 20 }} 
-            whileInView={{ opacity: 1, y: 0 }} 
-            viewport={{ once: true }} 
-            transition={{ duration: 0.6, delay: 0.2 }} 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
           >
             <motion.h1
               className="text-xl sm:text-2xl text-center sm:text-left font-extrabold mb-2 sm:w-2/3"
@@ -81,7 +78,7 @@ function Footer({openModalPolicies,openModalTerms}) {
             >
               {t("footer.section1Footer1")}
             </motion.h1>
-            
+
             <motion.p
               className="text-xs text-center sm:text-left font-light text-gray-200 sm:w-2/3 mb-2"
               initial={{ opacity: 0, y: 20 }}
@@ -91,7 +88,7 @@ function Footer({openModalPolicies,openModalTerms}) {
             >
               {t("footer.section1Footer2")}
             </motion.p>
-            
+
             <div className="flex flex-wrap justify-center sm:justify-start items-center gap-3 mt-2">
               <a href="#">
                 <svg className="w-32" fill="none" viewBox="0 0 338 100">
@@ -395,19 +392,28 @@ function Footer({openModalPolicies,openModalTerms}) {
             </div>
           </motion.div>
 
-
           <div className="hidden sm:block absolute top-1/3 left-1/2 right-0 bottom-44 transform sm:-rotate-12 md:-rotate-6 -translate-y-1/2">
-            <img src={Fleche} className="sm:w-[5rem] md:w-[6rem]" alt="Bilan Image" title='Bilan Image' />
+            <img
+              src={Fleche}
+              className="sm:w-[5rem] md:w-[6rem]"
+              alt="Bilan Image"
+              title="Bilan Image"
+            />
           </div>
 
           <motion.div
             className="hidden sm:block absolute sm:top-16 md:-top-8 right-0 -bottom-2 transform -rotate-6 -translate-y-1/2"
-            initial={{ opacity: 0, x: 20, scale: 0.5 }} 
+            initial={{ opacity: 0, x: 20, scale: 0.5 }}
             whileInView={{ opacity: 1, x: 0, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 300 }} 
+            transition={{ type: "spring", stiffness: 300 }}
           >
-            <img src={Mobile1} className="sm:w-[12rem] md:w-[15rem]" alt="Bilan Image" title="Bilan Image" />
+            <img
+              src={Mobile1}
+              className="sm:w-[12rem] md:w-[15rem]"
+              alt="Bilan Image"
+              title="Bilan Image"
+            />
           </motion.div>
         </section>
       </section>
@@ -428,22 +434,50 @@ function Footer({openModalPolicies,openModalTerms}) {
 
             {/* Autres sections du footer */}
             <div className="p-5">
-              <div className="text-sm uppercase text-terre font-bold select-none">{t("footer.entreprise")}</div>
-              <a className="my-2 block text-sm" href="#statistical">{t("footer.entreprise1")}</a>
-              <a className="my-2 block text-sm" href="#about">{t("footer.entreprise3")}</a>
-              <a className="my-2 block text-sm" href="#contact">{t("footer.entreprise4")}</a>
+              <div className="text-sm uppercase text-terre font-bold select-none">
+                {t("footer.entreprise")}
+              </div>
+              <a className="my-2 block text-sm" href="#statistical">
+                {t("footer.entreprise1")}
+              </a>
+              <a className="my-2 block text-sm" href="#about">
+                {t("footer.entreprise3")}
+              </a>
+              <a className="my-2 block text-sm" href="#contact">
+                {t("footer.entreprise4")}
+              </a>
             </div>
 
             <div className="p-5">
-              <div className="text-sm uppercase text-terre font-bold select-none">{t("footer.ressources")}</div>
-              <a className="my-2 block text-sm" href="#faq">{t("footer.ressources1")}</a>
-              <a className="my-2 block text-sm" onClick={handleClickPolicies} href="/#">{t("footer.ressources3")}</a>
-              <a className="my-2 block text-sm" onClick={handleClickTerms} href="/#">{t("footer.ressources4")}</a>
+              <div className="text-sm uppercase text-terre font-bold select-none">
+                {t("footer.ressources")}
+              </div>
+              <a className="my-2 block text-sm" href="#faq">
+                {t("footer.ressources1")}
+              </a>
+              <a
+                className="my-2 block text-sm"
+                onClick={handleClickPolicies}
+                href="/#"
+              >
+                {t("footer.ressources3")}
+              </a>
+              <a
+                className="my-2 block text-sm"
+                onClick={handleClickTerms}
+                href="/#"
+              >
+                {t("footer.ressources4")}
+              </a>
             </div>
 
             <div className="p-5">
-              <div className="text-sm uppercase text-terre font-bold">{t("footer.contactus")}</div>
-              <a className="my-2 block text-sm">XXX XXXX, Floor 4 San Francisco, CA</a>
+              <div className="text-sm uppercase text-terre font-bold">
+                {t("footer.contactus")}
+              </div>
+              <a className="my-2 block text-sm">
+                XXX XXXX, Floor 4 San Francisco, CA
+              </a>
               <a className="my-2 block text-sm">contact@company.com</a>
             </div>
           </div>
@@ -482,14 +516,25 @@ function Footer({openModalPolicies,openModalTerms}) {
             </div>
 
             <div className="flex sm:justify-end justify-center my-5 text-sm w-full sm:w-1/3">
-              <select value={selectedLang} onChange={handleChangeLanguage} name="" id="" className="border rounded-full border-gray-700 px-3 py-2 pr-5 w-2/3 outline-none">
+              <select
+                value={selectedLang}
+                onChange={handleChangeLanguage}
+                name=""
+                id=""
+                className="border rounded-full border-gray-700 px-3 py-2 pr-5 w-2/3 outline-none"
+              >
                 <option value="fr">Français</option>
                 <option value="en">English</option>
               </select>
             </div>
 
             <section className="hidden sm:block opacity-20 absolute left-10 -top-20 z-20 transform">
-              <img src={Forme5} className="w-[3rem]" alt="Bilan Image" title="Bilan Image" />
+              <img
+                src={Forme5}
+                className="w-[3rem]"
+                alt="Bilan Image"
+                title="Bilan Image"
+              />
             </section>
           </div>
         </section>
