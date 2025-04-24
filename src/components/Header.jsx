@@ -23,12 +23,12 @@ function Header() {
   return (
     <header>
       {/* Navbar sticky - reste visible pendant le scroll */}
-      <div className="sticky top-0 w-full z-50 bg-white">
+      <div className="fixed top-0 w-full z-50 bg-white shadow-md">
         <Navbar />
       </div>
       
       {/* Hero section avec id pour la navigation */}
-      <section id="home">
+      <section id="home" className="pt-16">
         <Hero />
       </section>
     </header>
