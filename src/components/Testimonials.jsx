@@ -166,12 +166,12 @@ function Testimonials() {
       </div>
 
       {/* Témoignages */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-16 px-4 md:px-6 max-w-6xl mx-auto relative z-10">
+      <div className="grid grid-cols-1 mt-8 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8  px-4 md:px-6 max-w-6xl mx-auto relative z-10">
         {t("testimonial.testimonials", { returnObjects: true }).map(
           (testimonial, index) => (
             <motion.div
               key={index}
-              className="border-2 border-[#c0976b] rounded-full p-4 md:p-8 flex flex-col items-center text-center"
+              className="border-2 border-[#c0976b] rounded-3xl md:rounded-[6rem] p-4 md:p-8 flex flex-col items-center text-center"
               variants={itemVariants}
               initial="hidden"
               animate="visible"
@@ -180,10 +180,10 @@ function Testimonials() {
               <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-[#c0976b] mb-4 flex items-center justify-center">
                 <span className="text-white text-sm md:text-base">Photo</span>
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-terre">
+              <h3 className="text-lg md:text-xl font-bold">
                 {testimonial.name}
               </h3>
-              <p className="text-terre mb-2 md:mb-4 text-sm md:text-base">{testimonial.title}</p>
+              <p className=" mb-2 md:mb-4 text-sm md:text-base">{testimonial.title}</p>
               <p className="text-xs md:text-sm">{testimonial.text}</p>
             </motion.div>
           )

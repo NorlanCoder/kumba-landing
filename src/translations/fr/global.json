@@ -44,7 +44,8 @@
     
     "about" : {
         "titre" : "À propos",
-        "soustitre" : "Des multitudes de services à votre disposition",
+        "soustitre" : "Le logement idéal à portée de main",
+        "section2":"SOLUTIONS SIMPLES",
         "description" : "Kumba est votre compagnon idéal pour découvrir une large gamme d'appartement, de villa, de maison, de bureau, de simple chambre, d'hôtel, de magasin, de boutique qui répondent parfaitement à vos attentes. Grâce à des filtres précis et une interface conviviale, trouver votre futur chez-vous n'a jamais été aussi simple. Profitez d'une expérience fluide, rapide et toujours adaptée à vos besoins."
     },
 
@@ -73,7 +74,7 @@
     },
     
     "faq" : {
-        "titre": "Questions fréquemment posées",
+        "titre": "FAQ",
         "question1": "Qu'est-ce que Kumba ?",
         "answer1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
         "question2": "Comment fonctionne Kumba ?",
@@ -147,6 +148,12 @@
         "ressources2": "Support",
         "ressources3": "Politique de confidentialité",
         "ressources4": "Termes et conditions",
-        "contactus": "Contactez-nous"
+        "contactus": "Contactez-nous",
+        "adresses": "Adresses",
+        "adresse1": "Akpakpa sodjatimè",
+        "adresse2": "Rue 1423, Cotonou - Bénin",
+        "tel": "Tél : +229 01 97 17 36 87",
+        "mail": "Mail : kumbabenin@gmail.com",
+        "copyright": "Copyright Kumba 2025"
     }
 }

@@ -45,8 +45,9 @@
 
     "about" : {
         "titre" : "About",
-        "soustitre" : "Multitudes of services at your disposal",
-        "description" : "Kumba is your ideal companion to discover a wide range of apartements, villas, houses, offices, single rooms, hotels, stores and boutiques that perfectly meet your expectations. Thanks to precise filters and a user-friendly interface, finding your future home has never been easy. Enjoy a smooth, fast experience that is always tailored to your needs."
+        "soustitre" : "The ideal housing at your fingertips",
+        "section2":"SIMPLE SOLUTIONS",
+        "description" : "Kumba is your ideal companion to discover a wide range of apartments, villas, houses, offices, single rooms, hotels, stores and boutiques that perfectly meet your expectations. Thanks to precise filters and a user-friendly interface, finding your future home has never been easier. Enjoy a smooth, fast experience that is always tailored to your needs."
     },
 
     "solutions" : {
@@ -74,7 +75,7 @@
     },
 
     "faq" : {
-        "titre": "Frequently Asked Questions",
+        "titre": "FAQ",
         "question1" : "What is Kumba?",
         "answer1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
         "question2" : "How does Kumba work?",
@@ -148,6 +149,12 @@
         "ressources2": "Support",
         "ressources3": "Privacy Policy",
         "ressources4": "Terms and conditions",
-        "contactus": "Contact us"
+        "contactus": "Contact us",
+        "adresses": "Addresses",
+        "adresse1": "Akpakpa sodjatimè",
+        "adresse2": "Street 1423, Cotonou - Benin",
+        "tel": "Tel: +229 01 97 17 36 87",
+        "mail": "Email: kumbabenin@gmail.com",
+        "copyright": "Copyright Kumba 2025"
     }
 }

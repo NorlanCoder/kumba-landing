@@ -24,24 +24,27 @@ const AboutUs = () => {
     };
 
     return (
-      <section className="py-8 sm:py-14 max-w-6xl mx-auto relative select-none" id="about">
+      <section className="pt-8 sm:pt-14 max-w-6xl mx-auto relative select-none" id="about">
         {/* Titre */}
         <motion.div
-          className="flex item-center justify-center"
+          className="flex flex-col items-center justify-center text-center mb-6"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6 }}
           variants={textVariants}
         >
-          <h2 className="text-gray-800 text-3xl text-center font-semibold sm:text-5xl sonia">
-            {t('about.titre')}
+          <h2 className="text-gray-800 text-3xl font-semibold sm:text-5xl mb-2">
+           {t('about.titre')}
           </h2>
+          <h3 className="text-terre text-xl sm:text-3xl md:text-4xl font-semibold mt-1 mb-8">
+          {t('about.soustitre')}
+          </h3>
         </motion.div>
 
         {/* Contenu principal */}
-        <section className="bg-white py-12 mx-2 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row items-center justify-between">
-          {/* Image (img1) */}
+        <section className="bg-white mx-2 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row items-start justify-between gap-8">
+          {/* Image (logo) */}
           <motion.div
             className="relative mb-8 md:mb-0 md:w-1/2 flex justify-center"
             initial="hidden"
@@ -50,38 +53,49 @@ const AboutUs = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             variants={imageVariants}
           >
-            <img src={img1} alt="" className="z-10 relative w-[17rem] md:w-[28rem] h-auto" />
+            <img src={img1} alt="Téléphone mobile avec application Kumba" className="z-10 relative w-[17rem] md:w-[28rem] h-auto" />
           </motion.div>
 
-          {/* Image de fond (Forme4) */}
-          <motion.section
-            className="hidden sm:block opacity-50 absolute right-10 -top-10 z-20 rotate-12"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            variants={shapeVariants}
-          >
-            <img src={Forme4} className="w-[1.5rem]" alt="Bilan Image" title="Bilan Image" />
-          </motion.section>
+          <div className="md:w-1/2 flex flex-col">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              variants={textVariants}
+            >
+              <p className="text-gray-600 mb-12 text-justify">
+                {t('about.description')}
+              </p>
+            </motion.div>
 
-          {/* Contenu texte */}
-          <motion.div
-            className="md:w-1/2"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            variants={textVariants}
-          >
-            <h3 className="text-xl sm:text-2xl text-gray-800 font-semibold mb-6">
-              {t('about.soustitre')}
-            </h3>
-            <p className="text-gray-600 mb-6 text-justify">
-              {t('about.description')}
-            </p>
-          </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              variants={textVariants}
+            >
+              <h2 className="text-terre text-2xl font-semibold sm:text-3xl mb-6">
+               {t('about.section2')}
+              </h2>
+              <p className="text-gray-600 text-lg">
+                {t('solutions.description')}
+              </p>
+            </motion.div>
+          </div>
         </section>
+
+        <motion.section
+          className="hidden sm:block opacity-50 absolute right-10 -top-10 z-20 rotate-12"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          variants={shapeVariants}
+        >
+          <img src={Forme4} className="w-[1.5rem]" alt="Forme décorative" title="Forme décorative" />
+        </motion.section>
       </section>
     );
 };

@@ -38,7 +38,7 @@ function Accordion() {
       <section className="relative select-none">
         {/* Titre */}
         <motion.h1
-          className="text-gray-800 text-3xl text-center font-semibold sm:text-5xl sonia"
+          className="text-terre text-3xl text-center font-bold sm:text-5xl "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
