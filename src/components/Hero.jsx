@@ -67,7 +67,7 @@ function Hero() {
       <div className="absolute inset-0 bg-terre opacity-10"></div>
       
       {/* Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 md:py-16 relative z-10 flex items-center justify-center w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-16 relative z-10 flex items-center justify-center w-full">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full">
           {/* Text Content */}
           <motion.div
