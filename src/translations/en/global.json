@@ -116,18 +116,39 @@
         "testimonials": [
             {
                 "name": "Nehem",
+                "image": "https://images.unsplash.com/photo-1531384441138-2736e62e0919?q=80&w=774&auto=format&fit=crop",
                 "title": "Graphic Designer",
                 "text": "Thanks to the Kumba app, I was able to easily find my apartment in Agla. This platform is really cool."
             },
             {
                 "name": "Charles",
+                "image": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?q=80&w=435&auto=format&fit=crop",
                 "title": "Entrepreneur",
                 "text": "With your application, I was able to get a new apartment without traveling too much on endless viewing trips. It saved me a lot of time."
             },
             {
                 "name": "Monique",
+                "image": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=774&auto=format&fit=crop",
                 "title": "Teacher",
                 "text": "Very effective application. Helps you save time. The apartment guided tour is very good, I recommend this application to anyone looking for an apartment."
+            },
+            {
+                "name": "Sophie",
+                "title": "Doctor",
+                "image": "https://images.unsplash.com/photo-1507152832244-10d45c7eda57?q=80&w=774&auto=format&fit=crop",
+                "text": "I found my dream villa through Kumba. The interface is intuitive and the property descriptions are very accurate."
+            },
+            {
+                "name": "Jean",
+                "title": "Software Engineer",
+                "image": "https://images.unsplash.com/photo-1514222788835-3a1a1d5b32f8?q=80&w=449&auto=format&fit=crop",
+                "text": "Kumba made my relocation to Cotonou so much easier. I was able to secure housing before even arriving in the city."
+            },
+            {
+                "name": "Amina",
+                "image": "https://images.unsplash.com/photo-1589156280159-27698a70f29e?q=80&w=772&auto=format&fit=crop",
+                "title": "Business Consultant",
+                "text": "The service providers on Kumba are professional and reliable. I've used the platform for both housing and additional services."
             }
         ],
         "download": {

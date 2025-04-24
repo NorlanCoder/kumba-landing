@@ -116,17 +116,38 @@
             {
                 "name": "Nehem",
                 "title": "Graphiste",
+                "image": "https://images.unsplash.com/photo-1531384441138-2736e62e0919?q=80&w=774&auto=format&fit=crop",
                 "text": "Grâce à l'appli Kumba, j'ai pu trouver facilement mon appart à Agla. Très cool cette plateforme."
             },
             {
                 "name": "Charles",
                 "title": "Entrepreneur",
+                "image": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?q=80&w=435&auto=format&fit=crop",
                 "text": "Avec votre application, j'ai pu prendre un nouvel appartement sans trop me déplacer dans des courses de visite à ne pas en finir. Cela m'a permis de gagner du temps."
             },
             {
                 "name": "Monique",
                 "title": "Enseignante",
+                "image": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=774&auto=format&fit=crop",
                 "text": "Application très efficace. Vous permet de gagner du temps. Elle visite guide des appartements est très bien, je recommande cette application à tous ceux qui cherchent un appartement."
+            },
+            {
+                "name": "Sophie",
+                "title": "Médecin",
+                "image": "https://images.unsplash.com/photo-1507152832244-10d45c7eda57?q=80&w=774&auto=format&fit=crop",
+                "text": "J'ai trouvé ma villa de rêve grâce à Kumba. L'interface est intuitive et les descriptions des propriétés sont très précises."
+            },
+            {
+                "name": "Jean",
+                "title": "Ingénieur Logiciel",
+                "image": "https://images.unsplash.com/photo-1514222788835-3a1a1d5b32f8?q=80&w=449&auto=format&fit=crop",
+                "text": "Kumba a rendu mon déménagement à Cotonou beaucoup plus facile. J'ai pu sécuriser un logement avant même d'arriver dans la ville."
+            },
+            {
+                "name": "Amina",
+                "title": "Consultante en Affaires",
+                "image": "https://images.unsplash.com/photo-1589156280159-27698a70f29e?q=80&w=772&auto=format&fit=crop",
+                "text": "Les prestataires de services sur Kumba sont professionnels et fiables. J'ai utilisé la plateforme à la fois pour le logement et pour des services supplémentaires."
             }
         ],
         "download": {

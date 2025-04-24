@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useCallback, useState } from "react";
 import Section from "./Section";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import useEmblaCarousel from 'embla-carousel-react';
 import testimonial_img from "../assets/img/test.png";
 import BG_Header from "../assets/img/BG.png";
 import service_1 from "../assets/img/1.png";
@@ -10,6 +11,43 @@ import service_3 from "../assets/img/3.png";
 
 function Testimonials() {
   const [t] = useTranslation("global");
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  // Initialisation du carrousel Embla
+  const [emblaRef, emblaApi] = useEmblaCarousel({ 
+    loop: true, 
+    align: 'start',
+    slidesToScroll: 1,
+    startIndex: 0,
+    dragFree: false,
+    speed: 15,
+    skipSnaps: false
+  });
+  
+  // Fonctions de navigation du carrousel
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
+  // Mettre à jour l'index sélectionné lorsque le carrousel change
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    const onSelect = () => {
+      setSelectedIndex(emblaApi.selectedScrollSnap());
+    };
+
+    emblaApi.on("select", onSelect);
+    onSelect(); // Initialiser avec la valeur actuelle
+
+    return () => {
+      emblaApi.off("select", onSelect);
+    };
+  }, [emblaApi]);
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -165,29 +203,79 @@ function Testimonials() {
         </motion.div>
       </div>
 
-      {/* Témoignages */}
-      <div className="grid grid-cols-1 mt-8 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8  px-4 md:px-6 max-w-6xl mx-auto relative z-10">
-        {t("testimonial.testimonials", { returnObjects: true }).map(
-          (testimonial, index) => (
-            <motion.div
+      {/* Témoignages - Transformé en carrousel */}
+      <div className="mb-12 pt-24 md:pt-2 max-w-6xl mx-auto relative z-10 px-4 md:px-6">
+        <div className="embla overflow-hidden" ref={emblaRef}>
+          <div className="embla__container flex">
+            {t("testimonial.testimonials", { returnObjects: true }).map(
+              (testimonial, index) => (
+                <motion.div
+                  key={index}
+                  className="embla__slide flex-[0_0_90%] min-w-0 sm:flex-[0_0_45%] md:flex-[0_0_33%] lg:flex-[0_0_33%] mx-1 px-2"
+                  variants={itemVariants}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ duration: 0.5, delay: 0.2 + index * 0.2 }}
+                >
+                  <div className="border-2 border-[#c0976b] rounded-3xl md:rounded-[6rem] p-4 md:p-8 flex flex-col items-center text-center h-full">
+                    <div className="w-16 h-16 md:w-24 md:h-24 rounded-full mb-4 flex items-center justify-center overflow-hidden">
+                      {testimonial.image ? (
+                        <img 
+                          src={testimonial.image} 
+                          alt={testimonial.name}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <span className="text-white text-sm md:text-base bg-[#c0976b] w-full h-full flex items-center justify-center">
+                          {testimonial.name.charAt(0)}
+                        </span>
+                      )}
+                    </div>
+                    <h3 className="text-lg md:text-xl font-bold">
+                      {testimonial.name}
+                    </h3>
+                    <p className=" mb-2 md:mb-4 text-sm md:text-base">{testimonial.title}</p>
+                    <p className="text-xs md:text-sm">{testimonial.text}</p>
+                  </div>
+                </motion.div>
+              )
+            )}
+          </div>
+        </div>
+        
+        {/* Indicateurs de défilement */}
+        <div className="flex justify-center mt-6 gap-2">
+          {t("testimonial.testimonials", { returnObjects: true }).map((_, index) => (
+            <button
               key={index}
-              className="border-2 border-[#c0976b] rounded-3xl md:rounded-[6rem] p-4 md:p-8 flex flex-col items-center text-center"
-              variants={itemVariants}
-              initial="hidden"
-              animate="visible"
-              transition={{ duration: 0.5, delay: 0.2 + index * 0.2 }}
-            >
-              <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-[#c0976b] mb-4 flex items-center justify-center">
-                <span className="text-white text-sm md:text-base">Photo</span>
-              </div>
-              <h3 className="text-lg md:text-xl font-bold">
-                {testimonial.name}
-              </h3>
-              <p className=" mb-2 md:mb-4 text-sm md:text-base">{testimonial.title}</p>
-              <p className="text-xs md:text-sm">{testimonial.text}</p>
-            </motion.div>
-          )
-        )}
+              className={`w-3 h-3 rounded-full transition-colors ${
+                selectedIndex === index
+                  ? 'bg-[#c0976b]'
+                  : 'bg-gray-300'
+              }`}
+              onClick={() => emblaApi && emblaApi.scrollTo(index)}
+              aria-label={`Aller au témoignage ${index + 1}`}
+            />
+          ))}
+        </div>
+        
+        {/* Boutons de navigation du carrousel */}
+        <div className="flex justify-center mt-6 gap-4">
+          <button 
+            className="bg-[#c0976b] text-white px-6 py-3 rounded-full hover:bg-[#a37d53] transition-colors"
+            onClick={scrollPrev}
+            aria-label="Précédent"
+          >
+            &lt;
+          </button>
+          <button 
+            className="bg-[#c0976b] text-white px-6 py-3 rounded-full hover:bg-[#a37d53] transition-colors"
+            onClick={scrollNext}
+            aria-label="Suivant"
+          >
+            &gt;
+          </button>
+        </div>
       </div>
     </div>
   );

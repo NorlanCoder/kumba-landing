@@ -1,10 +1,47 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import hero_img from "../assets/ressource_kumba/img_header_1.webp";
+import { useCallback, useEffect, useState } from "react";
+import useEmblaCarousel from 'embla-carousel-react';
+import hero_img from "../assets/img/img_header_1.png";
 import BG_Header from "../assets/img/BG.png";
 
 function Hero() {
   const [t] = useTranslation("global");
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  // Initialisation du carrousel Embla pour l'image
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    align: 'center',
+    speed: 8,
+    dragFree: false,
+    skipSnaps: false
+  });
+
+  // Navigation du carrousel
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
+  // Mettre à jour l'index sélectionné quand le carrousel change
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    const onSelect = () => {
+      setSelectedIndex(emblaApi.selectedScrollSnap());
+    };
+
+    emblaApi.on("select", onSelect);
+    onSelect();
+
+    return () => {
+      emblaApi.off("select", onSelect);
+    };
+  }, [emblaApi]);
 
   const textVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -115,7 +152,7 @@ function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Image */}
+          {/* Image transformée en carrousel */}
           <motion.div
             className="w-full md:w-1/2 mt-6 md:mt-0"
             initial="hidden"
@@ -123,11 +160,53 @@ function Hero() {
             variants={imageVariants}
             transition={{ duration: 0.8 }}
           >
-            <img
-              className="w-full max-w-xl mx-auto rounded-3xl"
-              src={hero_img}
-              alt="Hero"
-            />
+            <div className="embla overflow-hidden rounded-3xl relative" ref={emblaRef}>
+              <div className="embla__container flex">
+                {[...Array(4)].map((_, index) => (
+                  <div key={index} className="embla__slide flex-[0_0_100%] min-w-0">
+                    <img
+                      className="w-full h-auto max-w-none max-h-[500px] md:max-h-[650px] lg:max-h-[700px] rounded-3xl object-cover shadow-lg"
+                      src={hero_img}
+                      alt={`Hero slide ${index + 1}`}
+                    />
+                  </div>
+                ))}
+              </div>
+              
+              {/* Boutons de navigation du carrousel */}
+              <button 
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-[#c0976b]/90 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-md z-10 hover:bg-[#c0976b] transition-colors"
+                onClick={scrollPrev}
+                aria-label="Image précédente"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+              </button>
+              <button 
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-[#c0976b]/90 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-md z-10 hover:bg-[#c0976b] transition-colors"
+                onClick={scrollNext}
+                aria-label="Image suivante"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+            </div>
+            
+            {/* Indicateurs du carrousel */}
+            <div className="flex justify-center mt-4 gap-3">
+              {[...Array(4)].map((_, index) => (
+                <button
+                  key={index}
+                  className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+                    selectedIndex === index ? 'bg-[#c0976b] w-6' : 'bg-gray-300'
+                  }`}
+                  onClick={() => emblaApi && emblaApi.scrollTo(index)}
+                  aria-label={`Aller à l'image ${index + 1}`}
+                />
+              ))}
+            </div>
           </motion.div>
         </div>
       </div>
