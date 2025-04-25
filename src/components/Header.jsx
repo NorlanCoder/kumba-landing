@@ -7,7 +7,7 @@ function Header() {
   useEffect(() => {
     // Récupère l'identifiant de fragment de l'URL
     const { hash } = window.location;
-    
+
     // Si un hash existe, faites défiler jusqu'à cet élément après le chargement
     if (hash) {
       // Petit délai pour s'assurer que tous les éléments sont chargés
@@ -26,7 +26,7 @@ function Header() {
       <div className="fixed top-0 w-full z-50 bg-white shadow-md">
         <Navbar />
       </div>
-      
+
       {/* Hero section avec id pour la navigation */}
       <section id="home" className="pt-16">
         <Hero />

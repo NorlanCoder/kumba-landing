@@ -34,7 +34,7 @@ const Solution = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-terre opacity-10"></div>
+      <div className="absolute inset-0 bg-heroBackground opacity-60"></div>
       <div className="max-w-4xl mx-auto px-4 text-gray-600 md:px-8 select-none relative">
         <motion.section
           className="hidden sm:block opacity-65 absolute left-16 -top-10 -z-20 transform"
@@ -85,7 +85,7 @@ const Solution = () => {
                       />
                     </svg>
                   </div>
-                  <h4 className="text-lg text-gray-800 font-semibold">
+                  <h4 className="text-lg text-terre font-semibold">
                     {t("solutions.card1titre")}
                   </h4>
                 </div>
@@ -117,7 +117,7 @@ const Solution = () => {
                       />
                     </svg>
                   </div>
-                  <h4 className="text-lg text-gray-800 font-semibold">
+                  <h4 className="text-lg text-terre font-semibold">
                     {t("solutions.card2titre")}
                   </h4>
                 </div>
@@ -149,7 +149,7 @@ const Solution = () => {
                       />
                     </svg>
                   </div>
-                  <h4 className="text-lg text-gray-800 font-semibold">
+                  <h4 className="text-lg text-terre font-semibold">
                     {t("solutions.card3titre")}
                   </h4>
                 </div>
@@ -181,7 +181,7 @@ const Solution = () => {
                       />
                     </svg>
                   </div>
-                  <h4 className="text-lg text-gray-800 font-semibold">
+                  <h4 className="text-lg text-terre font-semibold">
                     {t("solutions.card4titre")}
                   </h4>
                 </div>
@@ -213,7 +213,7 @@ const Solution = () => {
                       />
                     </svg>
                   </div>
-                  <h4 className="text-lg text-gray-800 font-semibold">
+                  <h4 className="text-lg text-terre font-semibold">
                     {t("solutions.card5titre")}
                   </h4>
                 </div>
@@ -245,7 +245,7 @@ const Solution = () => {
                       />
                     </svg>
                   </div>
-                  <h4 className="text-lg text-gray-800 font-semibold">
+                  <h4 className="text-lg text-terre font-semibold">
                     {t("solutions.card6titre")}
                   </h4>
                 </div>

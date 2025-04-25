@@ -2,7 +2,7 @@ import React, { useEffect, useCallback, useState } from "react";
 import Section from "./Section";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import useEmblaCarousel from 'embla-carousel-react';
+import useEmblaCarousel from "embla-carousel-react";
 import testimonial_img from "../assets/img/test.png";
 import BG_Header from "../assets/img/BG.png";
 import service_1 from "../assets/img/1.png";
@@ -14,16 +14,16 @@ function Testimonials() {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   // Initialisation du carrousel Embla
-  const [emblaRef, emblaApi] = useEmblaCarousel({ 
-    loop: true, 
-    align: 'start',
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    align: "start",
     slidesToScroll: 1,
     startIndex: 0,
     dragFree: false,
     speed: 15,
-    skipSnaps: false
+    skipSnaps: false,
   });
-  
+
   // Fonctions de navigation du carrousel
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -60,7 +60,7 @@ function Testimonials() {
   return (
     <div className="relative overflow-x-hidden">
       <motion.div
-        className="text-center relative z-10 mt-24 px-4"
+        className="text-center relative z-10 my-24  px-4"
         initial="hidden"
         animate="visible"
         transition={{ staggerChildren: 0.2 }}
@@ -81,6 +81,7 @@ function Testimonials() {
           {t("testimonial.subtitle")}
         </motion.p>
       </motion.div>
+
       <div
         className="absolute inset-0"
         style={{
@@ -89,6 +90,7 @@ function Testimonials() {
           backgroundPosition: "center",
         }}
       ></div>
+
       <div className="max-w-4xl lg:max-w-6xl mx-auto px-4 md:px-6 md:h-auto lg:h-[90vh] flex md:flex-row flex-col justify-between items-center md:bg-transparent bg-transparent relative z-10">
         {/* Partie statistiques */}
         <div className="w-full md:w-1/2 mb-10 md:mb-0">
@@ -102,6 +104,7 @@ function Testimonials() {
             >
               {t("testimonial.stat_title")}
             </motion.h2>
+
             <motion.p
               className="text-gray-700 mb-8 md:mb-12 w-full md:w-[60%]"
               variants={itemVariants}
@@ -112,6 +115,7 @@ function Testimonials() {
               {t("testimonial.stat_subtitle")}
             </motion.p>
           </div>
+
           <div className="flex flex-wrap justify-center md:justify-start gap-4 md:space-x-8 mb-12">
             {/* Icônes avec chiffres */}
             <motion.div
@@ -122,11 +126,17 @@ function Testimonials() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <div className="w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-[#c0976b] bg-gray-100 flex items-center justify-center mb-2">
-                <img src={service_1} className="w-10 h-10 md:w-12 md:h-12" alt="service 1" />
+                <img
+                  src={service_1}
+                  className="w-10 h-10 md:w-12 md:h-12"
+                  alt="service 1"
+                />
               </div>
+
               <h3 className="text-xl md:text-2xl font-semibold text-[#c0976b]">
                 {t("testimonial.icon1.number")}
               </h3>
+
               <p className="text-xs md:text-sm text-gray-600">
                 {t("testimonial.icon1.label")}
               </p>
@@ -140,11 +150,17 @@ function Testimonials() {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <div className="w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-[#c0976b] bg-gray-100 flex items-center justify-center mb-2">
-              <img src={service_2} className="w-10 h-10 md:w-12 md:h-12" alt="service 2" />
+                <img
+                  src={service_2}
+                  className="w-10 h-10 md:w-12 md:h-12"
+                  alt="service 2"
+                />
               </div>
+
               <h3 className="text-xl md:text-2xl font-semibold text-[#c0976b]">
                 {t("testimonial.icon2.number")}
               </h3>
+
               <p className="text-xs md:text-sm text-gray-600">
                 {t("testimonial.icon2.label")}
               </p>
@@ -158,19 +174,26 @@ function Testimonials() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <div className="w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-[#c0976b] bg-gray-100 flex items-center justify-center mb-2">
-              <img src={service_3} className="w-10 h-10 md:w-12 md:h-12" alt="service 3" />
+                <img
+                  src={service_3}
+                  className="w-10 h-10 md:w-12 md:h-12"
+                  alt="service 3"
+                />
               </div>
+
               <h3 className="text-xl md:text-2xl font-semibold text-[#c0976b]">
                 {t("testimonial.icon3.number")}
               </h3>
+
               <p className="text-xs md:text-sm text-gray-600">
                 {t("testimonial.icon3.label")}
               </p>
             </motion.div>
           </div>
+
           {/* Wrapper pour la section de satisfaction avec fond pleine largeur */}
           <div className="relative w-full py-8 flex flex-col items-start justify-center">
-            <div className="absolute inset-x-[-50vw] w-[200vw] h-full bg-terre opacity-10"></div>
+            <div className="absolute inset-x-[-50vw] w-[200vw] h-full bg-heroBackground "></div>
             <motion.h3
               className="text-xl md:text-2xl font-semibold mb-4 text-terre relative z-10 px-4 md:px-0"
               variants={itemVariants}
@@ -180,6 +203,7 @@ function Testimonials() {
             >
               {t("testimonial.satisfaction_title")}
             </motion.h3>
+
             <motion.p
               className="text-gray-700 max-w-md relative z-10 px-4 md:px-0"
               variants={itemVariants}
@@ -191,6 +215,7 @@ function Testimonials() {
             </motion.p>
           </div>
         </div>
+
         {/* Image de l'application */}
         <motion.div
           className="w-full md:w-1/2 flex justify-center z-20"
@@ -199,7 +224,11 @@ function Testimonials() {
           animate="visible"
           transition={{ duration: 0.7 }}
         >
-            <img src={testimonial_img} className="h-auto max-h-[580px] w-auto max-w-full" alt="testimonial" />
+          <img
+            src={testimonial_img}
+            className="h-auto max-h-[580px] w-auto max-w-full"
+            alt="testimonial"
+          />
         </motion.div>
       </div>
 
@@ -220,8 +249,8 @@ function Testimonials() {
                   <div className="border-2 border-[#c0976b] rounded-3xl md:rounded-[6rem] p-4 md:p-8 flex flex-col items-center text-center h-full">
                     <div className="w-16 h-16 md:w-24 md:h-24 rounded-full mb-4 flex items-center justify-center overflow-hidden">
                       {testimonial.image ? (
-                        <img 
-                          src={testimonial.image} 
+                        <img
+                          src={testimonial.image}
                           alt={testimonial.name}
                           className="w-full h-full object-cover"
                         />
@@ -234,7 +263,9 @@ function Testimonials() {
                     <h3 className="text-lg md:text-xl font-bold">
                       {testimonial.name}
                     </h3>
-                    <p className=" mb-2 md:mb-4 text-sm md:text-base">{testimonial.title}</p>
+                    <p className=" mb-2 md:mb-4 text-sm md:text-base">
+                      {testimonial.title}
+                    </p>
                     <p className="text-xs md:text-sm">{testimonial.text}</p>
                   </div>
                 </motion.div>
@@ -242,33 +273,33 @@ function Testimonials() {
             )}
           </div>
         </div>
-        
+
         {/* Indicateurs de défilement */}
         <div className="flex justify-center mt-6 gap-2">
-          {t("testimonial.testimonials", { returnObjects: true }).map((_, index) => (
-            <button
-              key={index}
-              className={`w-3 h-3 rounded-full transition-colors ${
-                selectedIndex === index
-                  ? 'bg-[#c0976b]'
-                  : 'bg-gray-300'
-              }`}
-              onClick={() => emblaApi && emblaApi.scrollTo(index)}
-              aria-label={`Aller au témoignage ${index + 1}`}
-            />
-          ))}
+          {t("testimonial.testimonials", { returnObjects: true }).map(
+            (_, index) => (
+              <button
+                key={index}
+                className={`w-3 h-3 rounded-full transition-colors ${
+                  selectedIndex === index ? "bg-[#c0976b]" : "bg-gray-300"
+                }`}
+                onClick={() => emblaApi && emblaApi.scrollTo(index)}
+                aria-label={`Aller au témoignage ${index + 1}`}
+              />
+            )
+          )}
         </div>
-        
+
         {/* Boutons de navigation du carrousel */}
         <div className="flex justify-center mt-6 gap-4">
-          <button 
+          <button
             className="bg-[#c0976b] text-white px-6 py-3 rounded-full hover:bg-[#a37d53] transition-colors"
             onClick={scrollPrev}
             aria-label="Précédent"
           >
             &lt;
           </button>
-          <button 
+          <button
             className="bg-[#c0976b] text-white px-6 py-3 rounded-full hover:bg-[#a37d53] transition-colors"
             onClick={scrollNext}
             aria-label="Suivant"
