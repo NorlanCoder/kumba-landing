@@ -27,7 +27,7 @@ const Solution = () => {
 
   return (
     <section
-      className="py-8   sm:py-2 relative overflow-hidden md:h-[80vh] flex items-center justify-center "
+      className="py-8 sm:py-2 relative overflow-hidden md:h-[90vh] flex items-center justify-center "
       style={{
         backgroundImage: `url(${BG_Header})`,
         backgroundSize: "cover",
@@ -117,6 +117,7 @@ const Solution = () => {
                       />
                     </svg>
                   </div>
+
                   <h4 className="text-lg text-terre font-semibold">
                     {t("solutions.card2titre")}
                   </h4>
@@ -149,10 +150,12 @@ const Solution = () => {
                       />
                     </svg>
                   </div>
+
                   <h4 className="text-lg text-terre font-semibold">
                     {t("solutions.card3titre")}
                   </h4>
                 </div>
+
                 <p className="">{t("solutions.card3description")}</p>
               </div>
             </motion.li>
@@ -181,6 +184,7 @@ const Solution = () => {
                       />
                     </svg>
                   </div>
+
                   <h4 className="text-lg text-terre font-semibold">
                     {t("solutions.card4titre")}
                   </h4>
@@ -245,10 +249,12 @@ const Solution = () => {
                       />
                     </svg>
                   </div>
+
                   <h4 className="text-lg text-terre font-semibold">
                     {t("solutions.card6titre")}
                   </h4>
                 </div>
+
                 <p className="">{t("solutions.card6description")}</p>
               </div>
             </motion.li>

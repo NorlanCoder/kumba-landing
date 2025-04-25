@@ -65,7 +65,7 @@ function Hero() {
         }}
       ></div>
 
-      <div className="absolute inset-0 bg-heroBackground "></div>
+      <div className="absolute in set-0 bg-heroBackground opacity-30 "></div>
 
       {/* Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-10 py-6 md:py-8 relative z-10 flex items-center justify-center w-full">

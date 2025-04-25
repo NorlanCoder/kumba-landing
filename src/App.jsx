@@ -39,24 +39,26 @@ function App() {
         <section id="testimonials" className="py-16">
           <Testimonials />
         </section>
+
         <section id="about" className="py-16">
           <AboutUs />
         </section>
+
         <section id="features" className="py-16 bg-gray-50">
           <Solution />
         </section>
 
         <section id="contact" className="py-16 bg-gray-50">
           <Accordion />
-        </section>  
-         {/* <section id="contact" className="py-16 bg-gray-50">
+        </section>
+        {/* <section id="contact" className="py-16 bg-gray-50">
           <ContactUs />
         </section>   */}
       </main>
 
-      <Footer 
-        openModalPolicies={openModalPolicies} 
-        openModalTerms={openModalTerms} 
+      <Footer
+        openModalPolicies={openModalPolicies}
+        openModalTerms={openModalTerms}
       />
 
       {/* Modales */}

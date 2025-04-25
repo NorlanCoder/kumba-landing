@@ -233,7 +233,7 @@ function Testimonials() {
       </div>
 
       {/* Témoignages - Transformé en carrousel */}
-      <div className="mb-12 pt-24 md:pt-2 max-w-6xl mx-auto relative z-10 px-4 md:px-6">
+      <div className="mb-12 pt-24 md:pt-24 select-none cursor-grab max-w-6xl mx-auto relative z-10 px-4 md:px-6">
         <div className="embla overflow-hidden" ref={emblaRef}>
           <div className="embla__container flex">
             {t("testimonial.testimonials", { returnObjects: true }).map(
@@ -260,12 +260,15 @@ function Testimonials() {
                         </span>
                       )}
                     </div>
+
                     <h3 className="text-lg md:text-xl font-bold">
                       {testimonial.name}
                     </h3>
+
                     <p className=" mb-2 md:mb-4 text-sm md:text-base">
                       {testimonial.title}
                     </p>
+
                     <p className="text-xs md:text-sm">{testimonial.text}</p>
                   </div>
                 </motion.div>
@@ -299,6 +302,7 @@ function Testimonials() {
           >
             &lt;
           </button>
+
           <button
             className="bg-[#c0976b] text-white px-6 py-3 rounded-full hover:bg-[#a37d53] transition-colors"
             onClick={scrollNext}
