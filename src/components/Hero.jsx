@@ -188,7 +188,7 @@ function Hero() {
 
               {/* Boutons de navigation du carrousel */}
               <button
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-[#c0976b]/90 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-md z-10 hover:bg-[#c0976b] transition-colors"
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-[#c0976b]/80  text-white w-12 h-12 rounded-full flex items-center justify-center shadow-md z-10  transition-colors"
                 onClick={scrollPrev}
                 aria-label="Image précédente"
               >
@@ -206,8 +206,9 @@ function Hero() {
                   <path d="M15 18l-6-6 6-6" />
                 </svg>
               </button>
+
               <button
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-[#c0976b]/90 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-md z-10 hover:bg-[#c0976b] transition-colors"
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-[#c0976b]/80 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-md z-10 transition-colors"
                 onClick={scrollNext}
                 aria-label="Image suivante"
               >

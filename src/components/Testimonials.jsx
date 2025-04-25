@@ -296,7 +296,7 @@ function Testimonials() {
         {/* Boutons de navigation du carrousel */}
         <div className="flex justify-center mt-6 gap-4">
           <button
-            className="bg-[#c0976b] text-white px-6 py-3 rounded-full hover:bg-[#a37d53] transition-colors"
+            className="absolute -left-10 top-1/2 transform -translate-y-1/2 bg-[#c0976b] text-white px-6 py-3 rounded-full hover:bg-[#a37d53] transition-colors"
             onClick={scrollPrev}
             aria-label="Précédent"
           >
@@ -304,7 +304,7 @@ function Testimonials() {
           </button>
 
           <button
-            className="bg-[#c0976b] text-white px-6 py-3 rounded-full hover:bg-[#a37d53] transition-colors"
+            className="absolute -right-10 top-1/2 transform -translate-y-1/2 bg-[#c0976b] text-white px-6 py-3 rounded-full hover:bg-[#a37d53] transition-colors"
             onClick={scrollNext}
             aria-label="Suivant"
           >
