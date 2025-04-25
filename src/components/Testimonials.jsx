@@ -193,7 +193,7 @@ function Testimonials() {
 
           {/* Wrapper pour la section de satisfaction avec fond pleine largeur */}
           <div className="relative w-full py-8 flex flex-col items-start justify-center">
-            <div className="absolute inset-x-[-50vw] w-[200vw] h-full bg-heroBackground "></div>
+            <div className="absolute inset-x-[-50vw] w-[200vw] h-full bg-heroBackground opacity-60"></div>
             <motion.h3
               className="text-xl md:text-2xl font-semibold mb-4 text-terre relative z-10 px-4 md:px-0"
               variants={itemVariants}

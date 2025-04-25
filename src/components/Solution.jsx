@@ -233,7 +233,7 @@ const Solution = () => {
             >
               <div className="space-y-3">
                 <div className="flex items-center gap-4">
-                  <div className="flex-none w-12 h-12 bg-terre text-white rounded-lg flex items-center justify-center">
+                  <div className="flex-none w-12 h-12 bg-terre  text-white rounded-lg flex items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"

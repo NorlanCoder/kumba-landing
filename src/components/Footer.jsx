@@ -52,7 +52,7 @@ function Footer({ openModalPolicies, openModalTerms }) {
       }}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-14 lg:gap-24 mx-2 md:mx-2">
           <div>
             <h3 className="text-terre font-bold mb-2">
               {t("footer.ressources")}
