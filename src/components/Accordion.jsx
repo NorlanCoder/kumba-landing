@@ -347,6 +347,347 @@ function Accordion() {
               </section>
             </div>
           </motion.div>
+
+          {/* Question 9 */}
+          <motion.div
+            className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
+            variants={cardVariants}
+            transition={{ duration: 0.5, delay: 1.4 }}
+          >
+            <div
+              className="cursor-pointer flex justify-between items-center font-medium"
+              onClick={() => handleToggle("9")}
+            >
+              <div
+                className={`text-md text-gray-700 font-bold ${
+                  activeQuestion === "9" ? "text-terre" : ""
+                }`}
+              >
+                {t("faq.question9")}
+              </div>
+              <FaPlus
+                className={`m-2 ml-2 transition-all duration-200 ${
+                  activeQuestion === "9" ? "rotate-90 text-terre" : ""
+                }`}
+              />
+            </div>
+            <div
+              className={`overflow-hidden transition-max-height duration-500 ${
+                activeQuestion === "9" ? "max-h-screen" : "max-h-0"
+              }`}
+            >
+              <section className="my-3 px-3 rounded-md text-md text-justify">
+                <div>{t("faq.answer9")}</div>
+              </section>
+            </div>
+          </motion.div>
+
+          {/* Question 10 */}
+          <motion.div
+            className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
+            variants={cardVariants}
+            transition={{ duration: 0.5, delay: 1.4 }}
+          >
+            <div
+              className="cursor-pointer flex justify-between items-center font-medium"
+              onClick={() => handleToggle("10")}
+            >
+              <div
+                className={`text-md text-gray-700 font-bold ${
+                  activeQuestion === "10" ? "text-terre" : ""
+                }`}
+              >
+                {t("faq.question10")}
+              </div>
+              <FaPlus
+                className={`m-2 ml-2 transition-all duration-200 ${
+                  activeQuestion === "10" ? "rotate-90 text-terre" : ""
+                }`}
+              />
+            </div>
+            <div
+              className={`overflow-hidden transition-max-height duration-500 ${
+                activeQuestion === "10" ? "max-h-screen" : "max-h-0"
+              }`}
+            >
+              <section className="my-3 px-3 rounded-md text-md text-justify">
+                <div>{t("faq.answer10")}</div>
+              </section>
+            </div>
+          </motion.div>
+
+          {/* Question 11 */}
+          <motion.div
+            className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
+            variants={cardVariants}
+            transition={{ duration: 0.5, delay: 1.4 }}
+          >
+            <div
+              className="cursor-pointer flex justify-between items-center font-medium"
+              onClick={() => handleToggle("11")}
+            >
+              <div
+                className={`text-md text-gray-700 font-bold ${
+                  activeQuestion === "11" ? "text-terre" : ""
+                }`}
+              >
+                {t("faq.question11")}
+              </div>
+              <FaPlus
+                className={`m-2 ml-2 transition-all duration-200 ${
+                  activeQuestion === "11" ? "rotate-90 text-terre" : ""
+                }`}
+              />
+            </div>
+            <div
+              className={`overflow-hidden transition-max-height duration-500 ${
+                activeQuestion === "11" ? "max-h-screen" : "max-h-0"
+              }`}
+            >
+              <section className="my-3 px-3 rounded-md text-md text-justify">
+                <div>{t("faq.answer11")}</div>
+              </section>
+            </div>
+          </motion.div>
+
+          {/* Question 12 */}
+          <motion.div
+            className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
+            variants={cardVariants}
+            transition={{ duration: 0.5, delay: 1.4 }}
+          >
+            <div
+              className="cursor-pointer flex justify-between items-center font-medium"
+              onClick={() => handleToggle("12")}
+            >
+              <div
+                className={`text-md text-gray-700 font-bold ${
+                  activeQuestion === "12" ? "text-terre" : ""
+                }`}
+              >
+                {t("faq.question12")}
+              </div>
+              <FaPlus
+                className={`m-2 ml-2 transition-all duration-200 ${
+                  activeQuestion === "12" ? "rotate-90 text-terre" : ""
+                }`}
+              />
+            </div>
+            <div
+              className={`overflow-hidden transition-max-height duration-500 ${
+                activeQuestion === "12" ? "max-h-screen" : "max-h-0"
+              }`}
+            >
+              <section className="my-3 px-3 rounded-md text-md text-justify">
+                <div>{t("faq.answer12")}</div>
+              </section>
+            </div>
+          </motion.div>
+
+          {/* Question 13 */}
+          <motion.div
+            className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
+            variants={cardVariants}
+            transition={{ duration: 0.5, delay: 1.4 }}
+          >
+            <div
+              className="cursor-pointer flex justify-between items-center font-medium"
+              onClick={() => handleToggle("13")}
+            >
+              <div
+                className={`text-md text-gray-700 font-bold ${
+                  activeQuestion === "13" ? "text-terre" : ""
+                }`}
+              >
+                {t("faq.question13")}
+              </div>
+              <FaPlus
+                className={`m-2 ml-2 transition-all duration-200 ${
+                  activeQuestion === "13" ? "rotate-90 text-terre" : ""
+                }`}
+              />
+            </div>
+            <div
+              className={`overflow-hidden transition-max-height duration-500 ${
+                activeQuestion === "13" ? "max-h-screen" : "max-h-0"
+              }`}
+            >
+              <section className="my-3 px-3 rounded-md text-md text-justify">
+                <div>{t("faq.answer13")}</div>
+              </section>
+            </div>
+          </motion.div>
+
+          {/* Question 14 */}
+          <motion.div
+            className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
+            variants={cardVariants}
+            transition={{ duration: 0.5, delay: 1.4 }}
+          >
+            <div
+              className="cursor-pointer flex justify-between items-center font-medium"
+              onClick={() => handleToggle("14")}
+            >
+              <div
+                className={`text-md text-gray-700 font-bold ${
+                  activeQuestion === "14" ? "text-terre" : ""
+                }`}
+              >
+                {t("faq.question9")}
+              </div>
+              <FaPlus
+                className={`m-2 ml-2 transition-all duration-200 ${
+                  activeQuestion === "14" ? "rotate-90 text-terre" : ""
+                }`}
+              />
+            </div>
+            <div
+              className={`overflow-hidden transition-max-height duration-500 ${
+                activeQuestion === "14" ? "max-h-screen" : "max-h-0"
+              }`}
+            >
+              <section className="my-3 px-3 rounded-md text-md text-justify">
+                <div>{t("faq.answer9")}</div>
+              </section>
+            </div>
+          </motion.div>
+
+          {/* Question 15 */}
+          <motion.div
+            className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
+            variants={cardVariants}
+            transition={{ duration: 0.5, delay: 1.4 }}
+          >
+            <div
+              className="cursor-pointer flex justify-between items-center font-medium"
+              onClick={() => handleToggle("15")}
+            >
+              <div
+                className={`text-md text-gray-700 font-bold ${
+                  activeQuestion === "15" ? "text-terre" : ""
+                }`}
+              >
+                {t("faq.question15")}
+              </div>
+              <FaPlus
+                className={`m-2 ml-2 transition-all duration-200 ${
+                  activeQuestion === "15" ? "rotate-90 text-terre" : ""
+                }`}
+              />
+            </div>
+            <div
+              className={`overflow-hidden transition-max-height duration-500 ${
+                activeQuestion === "15" ? "max-h-screen" : "max-h-0"
+              }`}
+            >
+              <section className="my-3 px-3 rounded-md text-md text-justify">
+                <div>{t("faq.answer15")}</div>
+              </section>
+            </div>
+          </motion.div>
+
+          {/* Question 16 */}
+          <motion.div
+            className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
+            variants={cardVariants}
+            transition={{ duration: 0.5, delay: 1.4 }}
+          >
+            <div
+              className="cursor-pointer flex justify-between items-center font-medium"
+              onClick={() => handleToggle("16")}
+            >
+              <div
+                className={`text-md text-gray-700 font-bold ${
+                  activeQuestion === "16" ? "text-terre" : ""
+                }`}
+              >
+                {t("faq.question16")}
+              </div>
+              <FaPlus
+                className={`m-2 ml-2 transition-all duration-200 ${
+                  activeQuestion === "16" ? "rotate-90 text-terre" : ""
+                }`}
+              />
+            </div>
+            <div
+              className={`overflow-hidden transition-max-height duration-500 ${
+                activeQuestion === "16" ? "max-h-screen" : "max-h-0"
+              }`}
+            >
+              <section className="my-3 px-3 rounded-md text-md text-justify">
+                <div>{t("faq.answer16")}</div>
+              </section>
+            </div>
+          </motion.div>
+ 
+          {/* Question 17 */}
+          <motion.div
+            className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
+            variants={cardVariants}
+            transition={{ duration: 0.5, delay: 1.4 }}
+          >
+            <div
+              className="cursor-pointer flex justify-between items-center font-medium"
+              onClick={() => handleToggle("17")}
+            >
+              <div
+                className={`text-md text-gray-700 font-bold ${
+                  activeQuestion === "17" ? "text-terre" : ""
+                }`}
+              >
+                {t("faq.question17")}
+              </div>
+              <FaPlus
+                className={`m-2 ml-2 transition-all duration-200 ${
+                  activeQuestion === "17" ? "rotate-90 text-terre" : ""
+                }`}
+              />
+            </div>
+            <div
+              className={`overflow-hidden transition-max-height duration-500 ${
+                activeQuestion === "17" ? "max-h-screen" : "max-h-0"
+              }`}
+            >
+              <section className="my-3 px-3 rounded-md text-md text-justify">
+                <div>{t("faq.answer17")}</div>
+              </section>
+            </div>
+          </motion.div>
+
+          {/* Question 18 */}
+          <motion.div
+            className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
+            variants={cardVariants}
+            transition={{ duration: 0.5, delay: 1.4 }}
+          >
+            <div
+              className="cursor-pointer flex justify-between items-center font-medium"
+              onClick={() => handleToggle("18")}
+            >
+              <div
+                className={`text-md text-gray-700 font-bold ${
+                  activeQuestion === "18" ? "text-terre" : ""
+                }`}
+              >
+                {t("faq.question18")}
+              </div>
+              <FaPlus
+                className={`m-2 ml-2 transition-all duration-200 ${
+                  activeQuestion === "18" ? "rotate-90 text-terre" : ""
+                }`}
+              />
+            </div>
+            <div
+              className={`overflow-hidden transition-max-height duration-500 ${
+                activeQuestion === "18" ? "max-h-screen" : "max-h-0"
+              }`}
+            >
+              <section className="my-3 px-3 rounded-md text-md text-justify">
+                <div>{t("faq.answer18")}</div>
+              </section>
+            </div>
+          </motion.div>
+          
         </motion.section>
 
         {/* Image de fond (Forme1) */}
