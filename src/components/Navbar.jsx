@@ -83,12 +83,12 @@ function Navbar() {
   };
 
   return (
-    <nav className={`w-full bg-white py-3 ${isScrolled ? 'shadow-md' : ''}`}>
+    <nav className={`w-full bg-white py-1  ${isScrolled ? 'shadow-md' : ''}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full flex items-center justify-between">
         {/* Logo */}
         <div className="logo z-10">
-          <a href="#" onClick={handleLinkClick}>
-            <img className="h-10 sm:h-12 w-auto" src={logo_kumba} alt="Kumba Logo" />
+          <a href="#home" onClick={handleLinkClick}>
+            <img className="h-16 sm:h-20 sm:w-20 md:w-28 md:h-28 " src={logo_kumba} alt="Kumba Logo" />
           </a>
         </div>
 
@@ -113,7 +113,7 @@ function Navbar() {
                 alt={currentLang === "fr" ? "Français" : "English"} 
                 className="w-6 h-6 rounded-full"
               />
-              <span className="text-sm font-medium hidden sm:inline-block">{currentLang === "fr" ? "Français" : "English"}</span>
+              <span className="text-sm font-medium hidden sm:inline-block">{currentLang === "fr" ? "Fr" : "En"} </span>
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 className={`h-4 w-4 transition-transform duration-300 ${isLangMenuOpen ? 'rotate-180' : ''}`} 
@@ -127,10 +127,10 @@ function Navbar() {
             
             {/* Dropdown Menu */}
             {isLangMenuOpen && (
-              <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50 py-1 border border-gray-100">
+              <div className="absolute right-0 mt-2 w-44 bg-white rounded-md shadow-lg z-50 py-1 border border-gray-100">
                 <button
                   onClick={() => changeLanguage("fr")}
-                  className={`flex items-center space-x-3 w-full px-4 py-2 text-sm text-left hover:bg-gray-100 ${currentLang === "fr" ? "bg-gray-50 text-[#c0976b]" : ""}`}
+                  className={`flex items-center space-x-3 w-full px-2 py-2 text-sm text-left hover:bg-gray-100 ${currentLang === "fr" ? "bg-gray-50 text-[#c0976b]" : ""}`}
                 >
                   <img src={frFlag} alt="Français" className="w-5 h-5 rounded-full" />
                   <span>Français</span>
@@ -142,7 +142,7 @@ function Navbar() {
                 </button>
                 <button
                   onClick={() => changeLanguage("en")}
-                  className={`flex items-center space-x-3 w-full px-4 py-2 text-sm text-left hover:bg-gray-100 ${currentLang === "en" ? "bg-gray-50 text-[#c0976b]" : ""}`}
+                  className={`flex items-center space-x-3 w-full px-2 py-2 text-sm text-left hover:bg-gray-100 ${currentLang === "en" ? "bg-gray-50 text-[#c0976b]" : ""}`}
                 >
                   <img src={enFlag} alt="English" className="w-5 h-5 rounded-full" />
                   <span>English</span>
@@ -226,7 +226,8 @@ function Navbar() {
           <a href="#contact" onClick={handleLinkClick} className="text-black hover:border-b-2 hover:border-[#c0976b] pb-1">{t("navbar.menu4")}</a>
           
           {/* Language selector in mobile menu */}
-          <div className="flex items-center space-x-6 mt-8">
+
+          {/* <div className="flex items-center space-x-6 mt-8">
             <select
               onChange={(e) => {
                 changeLanguage(e.target.value);
@@ -238,7 +239,7 @@ function Navbar() {
               <option value="fr">Français</option>
               <option value="en">English</option>
             </select>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

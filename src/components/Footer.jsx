@@ -6,6 +6,8 @@ import facebook_icon from "../assets/img/facebook-circular-logo.png";
 import twiter_icon from "../assets/img/twitter (6).png";
 import instagram_icon from "../assets/img/instagram (2).png";
 import tiktok_icon from "../assets/img/tiktok (3).png";
+import google_app from "../assets/img/dispo-gplay.png";
+import app_store from "../assets/img/dispo-ios.png"
 
 import BG_Header from "../assets/img/BG.png";
 
@@ -94,9 +96,9 @@ function Footer({ openModalPolicies, openModalTerms }) {
           </div>
         </div>
 
-        <div className="mt-8 pt-6 border-t border-gray-200">
-          <div className="flex flex-wrap justify-between items-center">
-            <div className="flex space-x-3 mb-4 sm:mb-0">
+        <div className="mt-8 pt-6 border-t border-gray-200 items-center ">
+          <div className="flex flex-wrap justify-between items-center  gap-6">
+            <div className="flex space-x-3 ">
               <a
                 href="#"
                 className="w-8 h-8 rounded-full bg-white flex items-center justify-center"
@@ -148,15 +150,15 @@ function Footer({ openModalPolicies, openModalTerms }) {
 
             <div className="flex items-center gap-3">
               <img
-                src="https://play.google.com/intl/en_us/badges/static/images/badges/fr_badge_web_generic.png"
+                src={google_app}
                 alt="Google Play"
                 className="h-10"
               />
 
               <img
-                src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg"
+                src={app_store}
                 alt="App Store"
-                className="h-8"
+                className="h-10"
               />
             </div>
           </div>

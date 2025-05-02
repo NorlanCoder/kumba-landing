@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Navbar from "./Navbar";
-import Hero from "./Hero";
 
 function Header() {
   // Assurer que le scroll fonctionne correctement avec l'id
@@ -27,10 +26,7 @@ function Header() {
         <Navbar />
       </div>
 
-      {/* Hero section avec id pour la navigation */}
-      <section id="home" className="pt-16">
-        <Hero />
-      </section>
+      
     </header>
   );
 }
