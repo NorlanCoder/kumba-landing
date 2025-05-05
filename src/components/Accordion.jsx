@@ -10,7 +10,8 @@ import { motion } from "framer-motion";
 
 function Accordion() {
   const [t, i18n] = useTranslation("global");
-  const [activeQuestion, setActiveQuestion] = useState(null);
+  // const [activeQuestion, setActiveQuestion] = useState(null);
+  const [activeQuestion, setActiveQuestion] = useState({});
 
   const handleToggle = (id) => {
     setActiveQuestion(activeQuestion === id ? null : id);
@@ -417,7 +418,7 @@ function Accordion() {
           </motion.div>
 
           {/* Question 11 */}
-          <motion.div
+          {/* <motion.div
             className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
             variants={cardVariants}
             transition={{ duration: 0.5, delay: 1.4 }}
@@ -448,10 +449,10 @@ function Accordion() {
                 <div>{t("faq.answer11")}</div>
               </section>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Question 12 */}
-          <motion.div
+          {/* <motion.div
             className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
             variants={cardVariants}
             transition={{ duration: 0.5, delay: 1.4 }}
@@ -482,10 +483,10 @@ function Accordion() {
                 <div>{t("faq.answer12")}</div>
               </section>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Question 13 */}
-          <motion.div
+          {/* <motion.div
             className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
             variants={cardVariants}
             transition={{ duration: 0.5, delay: 1.4 }}
@@ -516,10 +517,10 @@ function Accordion() {
                 <div>{t("faq.answer13")}</div>
               </section>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Question 14 */}
-          <motion.div
+          {/* <motion.div
             className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
             variants={cardVariants}
             transition={{ duration: 0.5, delay: 1.4 }}
@@ -550,10 +551,10 @@ function Accordion() {
                 <div>{t("faq.answer9")}</div>
               </section>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Question 15 */}
-          <motion.div
+          {/* <motion.div
             className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
             variants={cardVariants}
             transition={{ duration: 0.5, delay: 1.4 }}
@@ -584,10 +585,10 @@ function Accordion() {
                 <div>{t("faq.answer15")}</div>
               </section>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Question 16 */}
-          <motion.div
+          {/* <motion.div
             className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
             variants={cardVariants}
             transition={{ duration: 0.5, delay: 1.4 }}
@@ -618,10 +619,10 @@ function Accordion() {
                 <div>{t("faq.answer16")}</div>
               </section>
             </div>
-          </motion.div>
+          </motion.div> */}
  
           {/* Question 17 */}
-          <motion.div
+          {/* <motion.div
             className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
             variants={cardVariants}
             transition={{ duration: 0.5, delay: 1.4 }}
@@ -652,10 +653,10 @@ function Accordion() {
                 <div>{t("faq.answer17")}</div>
               </section>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Question 18 */}
-          <motion.div
+          {/* <motion.div
             className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
             variants={cardVariants}
             transition={{ duration: 0.5, delay: 1.4 }}
@@ -686,7 +687,7 @@ function Accordion() {
                 <div>{t("faq.answer18")}</div>
               </section>
             </div>
-          </motion.div>
+          </motion.div> */}
           
         </motion.section>
 
@@ -707,3 +708,123 @@ function Accordion() {
 }
 
 export default Accordion;
+
+
+
+
+// const questionsData = [
+//   { id: "1", question: t("faq.question1"), answer: t("faq.answer1") },
+//   { id: "2", question: t("faq.question2"), answer: t("faq.answer2") },
+//   // Ajouter les autres questions ici...
+// ];
+
+// return (
+//   <motion.section
+//     className="flex-grow mx-4 sm:px-2 max-w-4xl md:mx-auto rounded-xl bg-white mt-5"
+//     initial="hidden"
+//     whileInView="visible"
+//     viewport={{ once: true, amount: 0.5 }}
+//     transition={{ staggerChildren: 0.2 }}
+//   >
+//     <motion.h1
+//       className="text-terre text-3xl text-center font-bold sm:text-5xl mt-5"
+//       initial="hidden"
+//       whileInView="visible"
+//       viewport={{ once: true, amount: 0.5 }}
+//       transition={{ duration: 0.6 }}
+//       variants={textVariants}
+//     >
+//       {t("faq.titre")}
+//     </motion.h1>
+
+//     {questionsData.map(({ id, question, answer }) => (
+//       <motion.div
+//         key={id}
+//         className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
+//         variants={cardVariants}
+//         transition={{ duration: 0.5 }}
+//       >
+//         <div
+//           className="cursor-pointer flex justify-between items-center font-medium"
+//           onClick={() => handleToggle(id)}
+//         >
+//           <div
+//             className={`text-md text-gray-700 font-bold ${
+//               activeQuestions[id] ? "text-terre" : ""
+//             }`}
+//           >
+//             {question}
+//           </div>
+//           <FaPlus
+//             className={`m-2 ml-2 transition-all duration-200 ${
+//               activeQuestions[id] ? "rotate-90 text-terre" : ""
+//             }`}
+//           />
+//         </div>
+//         <div
+//           className={`overflow-hidden transition-max-height duration-500 ${
+//             activeQuestions[id] ? "max-h-screen" : "max-h-0"
+//           }`}
+//         >
+//           <section className="my-3 px-3 rounded-md text-md text-justify">
+//             <div>{answer}</div>
+//           </section>
+//         </div>
+//       </motion.div>
+//     ))}
+//   </motion.section>
+// );
+
+
+// 1. Problème d'état (activeQuestion) :
+// Actuellement, tu utilises un seul état activeQuestion pour gérer l'ouverture et la fermeture des questions. Quand tu ajoutes plus de questions, tu devrais peut-être changer la gestion de cet état pour permettre de gérer plusieurs questions ouvertes en même temps. Une approche plus flexible serait d'utiliser un objet ou un tableau pour stocker les états d'ouverture de chaque question.
+
+// Par exemple, au lieu de cela :
+
+// js
+// Copier
+// Modifier
+// const [activeQuestion, setActiveQuestion] = useState(null);
+// Tu pourrais essayer d'utiliser :
+
+// js
+// Copier
+// Modifier
+// const [activeQuestions, setActiveQuestions] = useState({});
+// Et modifie le handleToggle comme suit :
+
+// js
+// Copier
+// Modifier
+// const handleToggle = (id) => {
+//   setActiveQuestions((prev) => ({
+//     ...prev,
+//     [id]: !prev[id],
+//   }));
+// };
+// Puis, dans le rendu des questions, tu vérifies si une question est ouverte en utilisant activeQuestions[id] au lieu de activeQuestion.
+
+// 2. Gestion des animations et transitions :
+// Si tu ajoutes beaucoup de questions, tu peux rencontrer des conflits dans les animations si certaines transitions ne sont pas bien gérées. Assure-toi que chaque motion.div a une clé (key) unique pour chaque élément dans la liste.
+
+// Par exemple, dans ton rendu de questions :
+
+// jsx
+// Copier
+// Modifier
+// {questionsData.map((question, index) => (
+//   <motion.div
+//     key={question.id}  // Assurez-vous que chaque question a une ID unique
+//     className="group my-2 text-gray-700 select-none bg-gray-100 border border-gray-100 rounded-t-md p-2"
+//     variants={cardVariants}
+//     transition={{ duration: 0.5 }}
+//   >
+//     {/* Rendu des questions ici */}
+//   </motion.div>
+// ))}
+// Cela garantit que React peut bien gérer les mises à jour du DOM pour chaque question.
+
+// 3. Simplification du code pour une meilleure lisibilité :
+// Tu pourrais extraire la logique des questions dans un tableau de données et générer le JSX pour chaque question à partir de ce tableau. Cela simplifie énormément le code et permet de rendre facilement toutes les questions tout en conservant la gestion de l'état de chaque question.
+
+// Exemple avec un tableau questionsData :
