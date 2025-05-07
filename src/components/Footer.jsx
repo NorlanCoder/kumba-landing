@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
-import { RiTwitterXFill } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
 import facebook_icon from "../assets/img/facebook-circular-logo.png";
 import twiter_icon from "../assets/img/twitter (6).png";
@@ -44,16 +42,18 @@ function Footer({ openModalPolicies, openModalTerms }) {
 
   return (
     <footer
-      className="bg-heroBackground text-gray-700 pt-10 pb-5"
       style={{
         backgroundImage: `url(${BG_Header})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
+      className="w-full flex flex-col gap-8 items-start text-gray-700"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-14 lg:gap-24 mx-2 md:mx-2">
-          <div>
+      {/* max-w-6xl mx-auto  */}
+      <div className="w-full px-6 lg:px-14 py-4 lg:py-6 bg-[#f1eee9] bg-opacity-50 space-y-8">
+        <div className="max-w-full lg:max-w-4xl mx-auto w-full grid grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="text-start">
             <h3 className="text-terre font-bold mb-2">
               {t("footer.ressources")}
             </h3>
@@ -73,7 +73,7 @@ function Footer({ openModalPolicies, openModalTerms }) {
             </ul>
           </div>
 
-          <div>
+          <div className="lg:text-center text-end">
             <h3 className="text-terre font-bold mb-2">
               {t("footer.adresses")}
             </h3>
@@ -83,7 +83,7 @@ function Footer({ openModalPolicies, openModalTerms }) {
             <p className="text-sm">{t("footer.adresse2")}</p>
           </div>
 
-          <div>
+          <div className="text-start lg:text-end">
             <h3 className="text-terre font-bold mb-2">
               {t("footer.contactus")}
             </h3>
@@ -94,78 +94,76 @@ function Footer({ openModalPolicies, openModalTerms }) {
           </div>
         </div>
 
-        <div className="mt-8 pt-6 border-t border-gray-200">
-          <div className="flex flex-wrap justify-between items-center">
-            <div className="flex space-x-3 mb-4 sm:mb-0">
-              <a
-                href="#"
-                className="w-8 h-8 rounded-full bg-white flex items-center justify-center"
-              >
-                {/* <FaFacebookF className="text-gray-700" /> */}
-                <img
-                  src={facebook_icon}
-                  alt="Facebook Icon"
-                  className="w-full h-auto object-cover"
-                />
-              </a>
-
-              <a
-                href="#"
-                className="w-8 h-8 rounded-full bg-white flex items-center justify-center"
-              >
-                {/* <RiTwitterXFill className="text-gray-700" /> */}
-                <img
-                  src={twiter_icon}
-                  alt="Twitter Icon"
-                  className="w-full h-auto object-cover"
-                />
-              </a>
-
-              <a
-                href="#"
-                className="w-8 h-8 rounded-full bg-white flex items-center justify-center"
-              >
-                {/* <FaTiktok className="text-gray-700" /> */}
-                <img
-                  src={tiktok_icon}
-                  alt="Tiktok Icon"
-                  className="w-full h-auto object-cover"
-                />
-              </a>
-
-              <a
-                href="#"
-                className="w-8 h-8 rounded-full bg-white flex items-center justify-center"
-              >
-                {/* <FaInstagram className="text-gray-700" /> */}
-                <img
-                  src={instagram_icon}
-                  alt="Instagram Icon"
-                  className="w-full h-auto object-cover"
-                />
-              </a>
-            </div>
-
-            <div className="flex items-center gap-3">
+        <div className="w-full flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
+          <div className="flex space-x-3">
+            <a
+              href="#"
+              className="w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-white flex items-center justify-center"
+            >
+              {/* <FaFacebookF className="text-gray-700" /> */}
               <img
-                src="https://play.google.com/intl/en_us/badges/static/images/badges/fr_badge_web_generic.png"
-                alt="Google Play"
-                className="h-10"
+                src={facebook_icon}
+                alt="Facebook Icon"
+                className="w-full h-auto object-cover"
               />
+            </a>
 
+            <a
+              href="#"
+              className="w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-white flex items-center justify-center"
+            >
+              {/* <RiTwitterXFill className="text-gray-700" /> */}
               <img
-                src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg"
-                alt="App Store"
-                className="h-8"
+                src={twiter_icon}
+                alt="Twitter Icon"
+                className="w-full h-auto object-cover"
               />
-            </div>
+            </a>
+
+            <a
+              href="#"
+              className="w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-white flex items-center justify-center"
+            >
+              {/* <FaTiktok className="text-gray-700" /> */}
+              <img
+                src={tiktok_icon}
+                alt="Tiktok Icon"
+                className="w-full h-auto object-cover"
+              />
+            </a>
+
+            <a
+              href="#"
+              className="w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-white flex items-center justify-center"
+            >
+              {/* <FaInstagram className="text-gray-700" /> */}
+              <img
+                src={instagram_icon}
+                alt="Instagram Icon"
+                className="w-full h-auto object-cover"
+              />
+            </a>
           </div>
 
-          <div className="text-center mt-5">
-            <p className="text-sm">{t("footer.copyright")}</p>
+          <div className="flex items-center gap-3">
+            <img
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/fr_badge_web_generic.png"
+              alt="Google Play"
+              className="h-10"
+            />
+
+            <img
+              src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg"
+              alt="App Store"
+              className="h-8"
+            />
           </div>
         </div>
       </div>
+
+      <p className="w-full text-center py-2 lg:py-6 text-sm">
+        {t("footer.copyright")}
+      </p>
     </footer>
   );
 }
