@@ -1,180 +1,217 @@
 {
-    "navbar" : {
-        "menu1": "Accueil",
-        "menu2": "À propos",
-        "menu3": "FAQ",
-        "menu4": "Contactez-nous",
-        "menu5": "Télécharger"
-    },
+  "navbar": {
+    "menu1": "Accueil",
+    "menu2": "À propos",
+    "menu3": "FAQ",
+    "menu4": "Contactez-nous",
+    "menu5": "Télécharger"
+  },
 
-    "header" : {
-        "titre1": "La plateforme intuitive pour trouver votre logement",
-        "titre2": "",
-        "description": "KUMBA est une nouvelle application de logement qui réinvente la recherche locative. Elle offre une plateforme conviviale et intuitive pour trouver des maisons, des appartements, des guesthouses, des bureaux, des agences immobilières et bien plus encore, le tout pour vous faire gagner du temps",
-        "bouton2": "Lire plus",
-        "nbre": "3,875",
-        "texte1": "personnes ont téléchargé",
-        "texte2": "Kumba ce mois",
-        "btn1":"TÉLÉCHARGER SUR",
-        "btn1-text":"Google Play",
-        "btn2":"Télécharger depuis",
-        "btn2-text":"App Store"
-    },
+  "header": {
+    "titre1": "La plateforme intuitive pour trouver votre logement",
+    "titre2": "",
+    "description": "KUMBA est une nouvelle application de logement qui réinvente la recherche locative. Elle offre une plateforme conviviale et intuitive pour trouver des maisons, des appartements, des guesthouses, des bureaux, des agences immobilières et bien plus encore, le tout pour vous faire gagner du temps",
+    "bouton2": "Lire plus",
+    "nbre": "3,875",
+    "texte1": "personnes ont téléchargé",
+    "texte2": "Kumba ce mois",
+    "btn1": "TÉLÉCHARGER SUR",
+    "btn1-text": "Google Play",
+    "btn2": "Télécharger depuis",
+    "btn2-text": "App Store"
+  },
 
-    "partner" : {
-        "titre": "Nos partenaires"        
-    },
+  "partner": {
+    "titre": "Nos partenaires"
+  },
 
-    "statistical" : {
-        "titre" : "Nos clients sont toujours satisfaits",
-        "description" : "Chez Kumba, la satisfaction de nos utilisateurs est au cœur de notre mission. Nous nous engageons à offrir une expérience qui répond pleinement à vos attentes. Nous écoutons vos retours et améliorons constamment notre application pour garantir que vos besoins sont toujours au premier plan.",
-        "card1" : {
-            "data": "30+",
-            "title": "Utilisateurs"
-        },
-        "card2" : {
-            "data": "40+",
-            "title": "Propriétées"
-        },
-        "card3" : {
-            "data": "30+",
-            "title": "Services"
-        }
+  "statistical": {
+    "titre": "Nos clients sont toujours satisfaits",
+    "description": "Chez Kumba, la satisfaction de nos utilisateurs est au cœur de notre mission. Nous nous engageons à offrir une expérience qui répond pleinement à vos attentes. Nous écoutons vos retours et améliorons constamment notre application pour garantir que vos besoins sont toujours au premier plan.",
+    "card1": {
+      "data": "30+",
+      "title": "Utilisateurs"
     },
-    
-    "about" : {
-        "titre" : "À propos",
-        "soustitre" : "Le logement idéal à portée de main",
-        "section2":"SOLUTIONS SIMPLES",
-        "description" : "Kumba est votre compagnon idéal pour découvrir une large gamme d'appartement, de villa, de maison, de bureau, de simple chambre, d'hôtel, de magasin, de boutique qui répondent parfaitement à vos attentes. Grâce à des filtres précis et une interface conviviale, trouver votre futur chez-vous n'a jamais été aussi simple. Profitez d'une expérience fluide, rapide et toujours adaptée à vos besoins."
+    "card2": {
+      "data": "40+",
+      "title": "Propriétées"
     },
-
-    "solutions" : {
-        "titre" : "Des solutions simples pour des problèmes complexes",
-        "description": "Avec Kumba trouvé la solution à vos problèmes d'immobiliers, de bureaux, de villas, d'appartements, de maisons, d'hôtels, de magasins, d'écolodges, de boutiques, de déménagements",
-        "card1titre": "Rafraîchissement rapide",
-        "card1description" : "Pas de temps à perdre, notre application se charge en un instant pour vous aider à gagner du temps.",
-        "card2titre": "Analytique",
-        "card2description" : "Obtenez une vision claire de vos données et améliorez vos résultats avec notre outil incontournable.",
-        "card3titre": "Sécurité des centres de données",
-        "card3description" : "Nous assurons la sécurité et l'intégrité de vos données grâce à nos fonctionnalités de sécurité avancées.",
-        "card4titre": "Construisez selon vos conditions",
-        "card4description" : "Mettez en place un environnement idéal pour fournir des services de qualité.",
-        "card5titre": "Utilisation sûre",
-        "card5description" : "Kumba utilise les dernières technologies de chiffrement pour protéger vos informations personnelles.",
-        "card6titre": "Flexible",
-        "card6description" : "Kumba vous offre une flexibilité inégalée pour personnaliser votre expérience."
-    },
-
-    "contact" : {
-        "titre": "Contactez-nous",
-        "soustitre1" : "Des questions ?",
-        "soustitre2" : "Écrivez-nous ou appelez-nous.",
-        "description" : "Nous aimerions avoir de vos nouvelles. Voici comment nous joindre..."
-    },
-    
-    "faq" : {
-        "titre": "FAQ",
-        "question1": "Qu'est-ce que Kumba ?",
-        "answer1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
-        "question2": "Comment fonctionne Kumba ?",
-        "answer2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
-        "question3": "Quels types de services puis-je avoir sur Kumba ?",
-        "answer3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
-        "question4": "Quels sont les différents types de biens immobiliers proposés par Kumba ?",
-        "answer4": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
-        "question5": "Quels sont les moyens de paiement acceptés par Kumba ?",
-        "answer5": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
-        "question6": "Quels sont les avantages d'utiliser Kumba ?",
-        "answer6": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
-        "question7": "Comment Kumba protège-t-elle mes données personnelles ?",
-        "answer7": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis.",
-        "question8": "Quels sont les différents types de villas proposés ?",
-        "answer8": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quo consectetur veniam, debitis ad nam incidunt cum eveniet sed eos laboriosam doloribus sapiente voluptatem veritatis."
-    },
-
-    "testimonial": {
-        "title":"TÉMOIGNAGES",
-        "subtitle":"Ils nous ont faits confiance",
-        "stat_title": "3 875",
-        "stat_subtitle": "Personnes ont téléchargé l'application Kumba ce mois",
-        "icon1": {
-            "number": "100+",
-            "label": "Propriétés"
-        },
-        "icon2": {
-            "number": "40+",
-            "label": "Utilisateurs"
-        },
-        "icon3": {
-            "number": "50+",
-            "label": "Services"
-        },
-        "satisfaction_title": "La satisfaction des utilisateurs",
-        "satisfaction_text": "Chez Kumba, la satisfaction de nos utilisateurs est au cœur de notre mission. Nous nous engageons à offrir une expérience qui répond pleinement à vos attentes. Nous écoutons vos retours et améliorons constamment notre application pour garantir que vos besoins sont toujours au premier plan.",
-        "testimonials": [
-            {
-                "name": "Nehem",
-                "title": "Graphiste",
-                "image": "https://images.unsplash.com/photo-1531384441138-2736e62e0919?q=80&w=774&auto=format&fit=crop",
-                "text": "Grâce à l'appli Kumba, j'ai pu trouver facilement mon appart à Agla. Très cool cette plateforme."
-            },
-            {
-                "name": "Charles",
-                "title": "Entrepreneur",
-                "image": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?q=80&w=435&auto=format&fit=crop",
-                "text": "Avec votre application, j'ai pu prendre un nouvel appartement sans trop me déplacer dans des courses de visite à ne pas en finir. Cela m'a permis de gagner du temps."
-            },
-            {
-                "name": "Monique",
-                "title": "Enseignante",
-                "image": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=774&auto=format&fit=crop",
-                "text": "Application très efficace. Vous permet de gagner du temps. Elle visite guide des appartements est très bien, je recommande cette application à tous ceux qui cherchent un appartement."
-            },
-            {
-                "name": "Sophie",
-                "title": "Médecin",
-                "image": "https://images.unsplash.com/photo-1507152832244-10d45c7eda57?q=80&w=774&auto=format&fit=crop",
-                "text": "J'ai trouvé ma villa de rêve grâce à Kumba. L'interface est intuitive et les descriptions des propriétés sont très précises."
-            },
-            {
-                "name": "Jean",
-                "title": "Ingénieur Logiciel",
-                "image": "https://images.unsplash.com/photo-1514222788835-3a1a1d5b32f8?q=80&w=449&auto=format&fit=crop",
-                "text": "Kumba a rendu mon déménagement à Cotonou beaucoup plus facile. J'ai pu sécuriser un logement avant même d'arriver dans la ville."
-            },
-            {
-                "name": "Amina",
-                "title": "Consultante en Affaires",
-                "image": "https://images.unsplash.com/photo-1589156280159-27698a70f29e?q=80&w=772&auto=format&fit=crop",
-                "text": "Les prestataires de services sur Kumba sont professionnels et fiables. J'ai utilisé la plateforme à la fois pour le logement et pour des services supplémentaires."
-            }
-        ],
-        "download": {
-            "playstore": "Télécharger sur",
-            "appstore": "Télécharger sur"
-        }
-    },
-
-    "footer" : {
-        "section1Footer1": "Trouvons votre habitation idéale aujourd'hui !",
-        "section1Footer2": "La maison de vos rêves est à portée de clic.",
-        "entreprise": "Entreprise",
-        "entreprise1": "Statistique",
-        "entreprise2": "Nos partenaires",
-        "entreprise3": "À propos",
-        "entreprise4": "Contactez-nous",
-        "ressources": "Ressources",
-        "ressources1": "FAQ",
-        "ressources2": "Support",
-        "ressources3": "Politique de confidentialité",
-        "ressources4": "Termes et conditions",
-        "contactus": "Contactez-nous",
-        "adresses": "Adresses",
-        "adresse1": "Akpakpa sodjatimè",
-        "adresse2": "Rue 1423, Cotonou - Bénin",
-        "tel": "Tél : +229 01 97 17 36 87",
-        "mail": "Mail : kumbabenin@gmail.com",
-        "copyright": "Copyright Kumba 2025"
+    "card3": {
+      "data": "30+",
+      "title": "Services"
     }
+  },
+
+  "about": {
+    "titre": "À propos",
+    "soustitre": "Le logement idéal à portée de main",
+    "section2": "SOLUTIONS SIMPLES",
+    "description": "Kumba est votre compagnon idéal pour découvrir une large gamme d'appartement, de villa, de maison, de bureau, de simple chambre, d'hôtel, de magasin, de boutique qui répondent parfaitement à vos attentes. Grâce à des filtres précis et une interface conviviale, trouver votre futur chez-vous n'a jamais été aussi simple. Profitez d'une expérience fluide, rapide et toujours adaptée à vos besoins."
+  },
+
+  "solutions": {
+    "titre": "Des solutions simples pour des problèmes complexes",
+    "description": "Avec Kumba trouvé la solution à vos problèmes d'immobiliers, de bureaux, de villas, d'appartements, de maisons, d'hôtels, de magasins, d'écolodges, de boutiques, de déménagements",
+    "card1titre": "Rafraîchissement rapide",
+    "card1description": "Pas de temps à perdre, notre application se charge en un instant pour vous aider à gagner du temps.",
+    "card2titre": "Analytique",
+    "card2description": "Obtenez une vision claire de vos données et améliorez vos résultats avec notre outil incontournable.",
+    "card3titre": "Sécurité des centres de données",
+    "card3description": "Nous assurons la sécurité et l'intégrité de vos données grâce à nos fonctionnalités de sécurité avancées.",
+    "card4titre": "Construisez selon vos conditions",
+    "card4description": "Mettez en place un environnement idéal pour fournir des services de qualité.",
+    "card5titre": "Utilisation sûre",
+    "card5description": "Kumba utilise les dernières technologies de chiffrement pour protéger vos informations personnelles.",
+    "card6titre": "Flexible",
+    "card6description": "Kumba vous offre une flexibilité inégalée pour personnaliser votre expérience."
+  },
+
+  "contact": {
+    "titre": "Contactez-nous",
+    "soustitre1": "Des questions ?",
+    "soustitre2": "Écrivez-nous ou appelez-nous.",
+    "description": "Nous aimerions avoir de vos nouvelles. Voici comment nous joindre..."
+  },
+
+  "faq": {
+    "titre": "FAQ",
+    "question1": "Qu'est-ce que KUMBA ?",
+    "answer1": "KUMBA est une nouvelle application de logement qui réinvente la recherche locative. Elle offre une plateforme conviviale et intuitive pour trouver des maisons, des appartements, des guesthouses, des bureaux, des agences immobilières et bien plus encore, le tout sans avoir à passer par des démarcheurs.",
+
+    "question2": "Comment KUMBA simplifie-t-il la recherche de logement ?",
+    "answer2": "KUMBA simplifie la recherche de logement en évitant les tracas liés aux démarcheurs et en assurant une correspondance parfaite entre les propositions de propriétés locatives et les locataires. Vous pouvez trouver un logement de manière fluide et agréable.",
+
+    "question3": "Quels types de logements puis-je trouver sur KUMBA ?",
+    "answer3": "KUMBA propose une vaste sélection de logements disponibles à la location, notamment des maisons, des appartements, des guesthouses, des bureaux, service de déménagement et bien d'autres options.",
+
+    "question4": "Comment KUMBA élimine-t-il les intermédiaires ?",
+    "answer4": "KUMBA élimine les intermédiaires en vous permettant de rechercher et de trouver des logements directement sur sa plateforme, sans passer par des agents immobiliers ou des courtiers afin de éviter les longue attentes.",
+
+    "question5": "Comment commencer à utiliser KUMBA ?",
+    "answer5": "Pour commencer à utiliser KUMBA, il vous suffit de télécharger l'application, de créer un compte, puis de parcourir les annonces de logements disponibles. Vous pouvez également spécifier vos préférences pour affiner vos résultats de recherche.",
+
+    "question6": "KUMBA est-il disponible dans ma région ?",
+    "answer6": "Pour savoir si KUMBA est disponible dans votre région, vous pouvez consulter la liste des zones couvertes sur le site web de l'application ou dans l'application elle-même.",
+
+    "question7": "Comment puis-je contacter les propriétaires ou les gestionnaires de logements sur KUMBA ?",
+    "answer7": "Sur KUMBA, vous pouvez généralement trouver les informations de contact des propriétaires ou des gestionnaires de logements directement dans les annonces. Vous pouvez les contacter via la messagerie ou appel intégré de l'application.",
+
+    "question8": "KUMBA propose-t-il des fonctionnalités de sécurité pour les locataires ?", 
+    "answer8": "Oui, KUMBA prend la sécurité au sérieux. L'application inclut des fonctionnalités telles que des vérifications d'identité des propriétaires et des locataires, des évaluations et des commentaires des utilisateurs, ainsi que des conseils pour sécuriser vos transactions.",
+
+    "question9": "Y a-t-il des frais associés à l'utilisation de KUMBA ?",
+    "answer9": "Les frais associés à l'utilisation de KUMBA peuvent varier en fonction des services proposés par l'application. Certains services peuvent être gratuits, tandis que d'autres peuvent impliquer des frais d'abonnement ou de réservation. Consultez les détails dans l'application pour en savoir plus.",
+
+    "question10": "Comment puis-je signaler un problème ou obtenir de l'aide avec l'application KUMBA ?",
+    "answer10": "Si vous rencontrez un problème ou avez besoin d'aide avec l'application KUMBA, vous pouvez généralement contacter le service client via l'application elle-même. Il devrait y avoir une section d'assistance ou de support où vous pouvez soumettre vos questions ou préoccupations.",
+
+    "question11": "Comment fonctionne le programme d'affiliation de KUMBA ?",
+    "answer11": "Le programme d'affiliation de KUMBA vous permet de gagner de l'argent en recommandant notre application à d'autres utilisateurs. Une fois inscrit à notre programme d'affiliation, vous recevrez un lien de parrainage unique que vous pouvez partager avec vos amis, votre famille ou votre réseau.",
+
+    "question12": "Comment puis-je m'inscrire au programme d'affiliation de KUMBA ?",
+    "answer12": "Pour vous inscrire au programme d'affiliation de KUMBA, vous devez généralement créer un compte utilisateur sur notre plateforme. Suivez les instructions fournies pour vous inscrire et obtenir votre lien de parrainage unique.",
+
+    "question13": "Comment gagner de l'argent avec le programme d'affiliation ?",
+    "answer13": "Vous gagnerez de l'argent chaque fois qu'une personne s'inscrit sur KUMBA en utilisant votre lien de parrainage. Vous recevrez une commission sur chaque location effectuée par ce dernier.",
+
+    "question14": "Comment puis-je suivre mes commissions et mes gains d'affiliation ?",
+    "answer14": "Une fois inscrit au programme d'affiliation, vous devriez avoir accès à un tableau de bord où vous pourrez suivre vos commissions, le nombre d'inscriptions réussies et vos gains. Vous pourrez également obtenir des rapports réguliers sur vos performances (historique).",
+
+    "question15": "Quels sont les avantages du programme d'affiliation de KUMBA ?",
+    "answer15": "Les avantages du programme d'affiliation de KUMBA incluent la possibilité de gagner de l'argent supplémentaire en recommandant notre application, la flexibilité pour travailler à votre rythme, et la chance de contribuer à l'expansion de notre communauté.",
+
+    "question16": "Y a-t-il des exigences particulières pour devenir affilié de KUMBA ?",
+    "answer16": "Vous devrez avoir un compte actif sur notre application et respecter les conditions d'utilisation de l'application et du programme d'affiliation.",
+
+    "question17": "Comment puis-je retirer mes gains du programme d'affiliation ?",
+    "answer17": "Vous devrez atteindre un certain seuil de gains avant de pouvoir demander un retrait, et vous pourrez choisir parmi différentes options de paiement notamment MTN MONEY, MOOV MONEY, CELTIS MONEY.",
+
+    "question18": "Où puis-je trouver plus d'informations sur le programme d'affiliation de KUMBA ?",
+    "answer18": "Pour plus d'informations sur notre programme d'affiliation, vous pouvez consulter la section \"Affiliation\" sur notre site web ou dans l'application. Vous y trouverez des détails sur les commissions, les conditions et la manière de commencer."
+  },
+
+  "testimonial": {
+    "title": "TÉMOIGNAGES",
+    "subtitle": "Ils nous ont faits confiance",
+    "stat_title": "3 875",
+    "stat_subtitle": "Personnes ont téléchargé l'application Kumba ce mois",
+    "icon1": {
+      "number": "100+",
+      "label": "Propriétés"
+    },
+    "icon2": {
+      "number": "40+",
+      "label": "Utilisateurs"
+    },
+    "icon3": {
+      "number": "50+",
+      "label": "Services"
+    },
+    "satisfaction_title": "La satisfaction des utilisateurs",
+    "satisfaction_text": "Chez Kumba, la satisfaction de nos utilisateurs est au cœur de notre mission. Nous nous engageons à offrir une expérience qui répond pleinement à vos attentes. Nous écoutons vos retours et améliorons constamment notre application pour garantir que vos besoins sont toujours au premier plan.",
+    "testimonials": [
+      {
+        "name": "Nehem",
+        "title": "Graphiste",
+        "image": "https://images.unsplash.com/photo-1531384441138-2736e62e0919?q=80&w=774&auto=format&fit=crop",
+        "text": "Grâce à l'appli Kumba, j'ai pu trouver facilement mon appart à Agla. Très cool cette plateforme."
+      },
+      {
+        "name": "Charles",
+        "title": "Entrepreneur",
+        "image": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?q=80&w=435&auto=format&fit=crop",
+        "text": "Avec votre application, j'ai pu prendre un nouvel appartement sans trop me déplacer dans des courses de visite à ne pas en finir. Cela m'a permis de gagner du temps."
+      },
+      {
+        "name": "Monique",
+        "title": "Enseignante",
+        "image": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=774&auto=format&fit=crop",
+        "text": "Application très efficace. Vous permet de gagner du temps. Elle visite guide des appartements est très bien, je recommande cette application à tous ceux qui cherchent un appartement."
+      },
+      {
+        "name": "Sophie",
+        "title": "Médecin",
+        "image": "https://images.unsplash.com/photo-1507152832244-10d45c7eda57?q=80&w=774&auto=format&fit=crop",
+        "text": "J'ai trouvé ma villa de rêve grâce à Kumba. L'interface est intuitive et les descriptions des propriétés sont très précises."
+      },
+      {
+        "name": "Jean",
+        "title": "Ingénieur Logiciel",
+        "image": "https://images.unsplash.com/photo-1514222788835-3a1a1d5b32f8?q=80&w=449&auto=format&fit=crop",
+        "text": "Kumba a rendu mon déménagement à Cotonou beaucoup plus facile. J'ai pu sécuriser un logement avant même d'arriver dans la ville."
+      },
+      {
+        "name": "Amina",
+        "title": "Consultante en Affaires",
+        "image": "https://images.unsplash.com/photo-1589156280159-27698a70f29e?q=80&w=772&auto=format&fit=crop",
+        "text": "Les prestataires de services sur Kumba sont professionnels et fiables. J'ai utilisé la plateforme à la fois pour le logement et pour des services supplémentaires."
+      }
+    ],
+    "download": {
+      "playstore": "Télécharger sur",
+      "appstore": "Télécharger sur"
+    }
+  },
+
+  "footer": {
+    "section1Footer1": "Trouvons votre habitation idéale aujourd'hui !",
+    "section1Footer2": "La maison de vos rêves est à portée de clic.",
+    "entreprise": "Entreprise",
+    "entreprise1": "Statistique",
+    "entreprise2": "Nos partenaires",
+    "entreprise3": "À propos",
+    "entreprise4": "Contactez-nous",
+    "ressources": "Ressources",
+    "ressources1": "FAQ",
+    "ressources2": "Support",
+    "ressources3": "Politique de confidentialité",
+    "ressources4": "Termes et conditions",
+    "contactus": "Contactez-nous",
+    "adresses": "Adresses",
+    "adresse1": "Akpakpa sodjatimè",
+    "adresse2": "Rue 1423, Cotonou - Bénin",
+    "tel": "Tél : +229 01 97 17 36 87",
+    "mail": "Mail : kumbabenin@gmail.com",
+    "copyright": "Copyright Kumba 2025"
+  }
 }

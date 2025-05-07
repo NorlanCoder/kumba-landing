@@ -2,12 +2,13 @@ import React, { useState } from "react";
 
 import "./App.css";
 import Header from "./components/Header";
+import Hero from "./components/Hero"; 
 import AboutUs from "./components/AboutUs";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import Solution from "./components/Solution";
 import Accordion from "./components/Accordion";
-import ContactUs from "./components/ContactUs";
+// import ContactUs from "./components/ContactUs";
 import TermsModal from "./components/TermsModal";
 import PrivacyModal from "./components/PrivacyModal";
 
@@ -35,20 +36,24 @@ function App() {
     <div className="font-sans">
       <Header />
 
-      <main>
-        <section id="testimonials" className="py-16">
+      <main className="w-full mt-16 md:mt-28 justify-center p-0 m-0 flex flex-col gap-0 ">
+        {/* Hero section avec id pour la navigation */}
+        <section id="home" className=" ">
+          <Hero />
+        </section>
+        <section id="testimonials" className="mb-12 ">
           <Testimonials />
         </section>
 
-        <section id="about" className="py-16">
+        <section id="about" className="mb-8 ">
           <AboutUs />
         </section>
 
-        <section id="features" className="py-16 bg-gray-50">
+        <section id="features" className="">
           <Solution />
         </section>
 
-        <section id="contact" className="py-16 bg-gray-50">
+        <section id="contact" className="">
           <Accordion />
         </section>
         {/* <section id="contact" className="py-16 bg-gray-50">

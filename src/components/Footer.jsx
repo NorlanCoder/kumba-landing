@@ -4,6 +4,8 @@ import facebook_icon from "../assets/img/facebook-circular-logo.png";
 import twiter_icon from "../assets/img/twitter (6).png";
 import instagram_icon from "../assets/img/instagram (2).png";
 import tiktok_icon from "../assets/img/tiktok (3).png";
+import google_app from "../assets/img/dispo-gplay.png";
+import app_store from "../assets/img/dispo-ios.png"
 
 import BG_Header from "../assets/img/BG.png";
 
@@ -94,6 +96,7 @@ function Footer({ openModalPolicies, openModalTerms }) {
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className="w-full flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
           <div className="flex space-x-3">
             <a
@@ -105,6 +108,65 @@ function Footer({ openModalPolicies, openModalTerms }) {
                 src={facebook_icon}
                 alt="Facebook Icon"
                 className="w-full h-auto object-cover"
+=======
+        <div className="mt-8 pt-6 border-t border-gray-200 items-center ">
+          <div className="flex flex-wrap justify-between items-center  gap-6">
+            <div className="flex space-x-3 ">
+              <a
+                href="#"
+                className="w-8 h-8 rounded-full bg-white flex items-center justify-center"
+              >
+                {/* <FaFacebookF className="text-gray-700" /> */}
+                <img
+                  src={facebook_icon}
+                  alt="Facebook Icon"
+                  className="w-full h-auto object-cover"
+                />
+              </a>
+
+              <a
+                href="#"
+                className="w-8 h-8 rounded-full bg-white flex items-center justify-center"
+              >
+                {/* <RiTwitterXFill className="text-gray-700" /> */}
+                <img
+                  src={twiter_icon}
+                  alt="Twitter Icon"
+                  className="w-full h-auto object-cover"
+                />
+              </a>
+
+              <a
+                href="#"
+                className="w-8 h-8 rounded-full bg-white flex items-center justify-center"
+              >
+                {/* <FaTiktok className="text-gray-700" /> */}
+                <img
+                  src={tiktok_icon}
+                  alt="Tiktok Icon"
+                  className="w-full h-auto object-cover"
+                />
+              </a>
+
+              <a
+                href="#"
+                className="w-8 h-8 rounded-full bg-white flex items-center justify-center"
+              >
+                {/* <FaInstagram className="text-gray-700" /> */}
+                <img
+                  src={instagram_icon}
+                  alt="Instagram Icon"
+                  className="w-full h-auto object-cover"
+                />
+              </a>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <img
+                src={google_app}
+                alt="Google Play"
+                className="h-10"
+>>>>>>> 262c820deaa50c40409900a115c5c1cb6635ff42
               />
             </a>
 
@@ -114,9 +176,15 @@ function Footer({ openModalPolicies, openModalTerms }) {
             >
               {/* <RiTwitterXFill className="text-gray-700" /> */}
               <img
+<<<<<<< HEAD
                 src={twiter_icon}
                 alt="Twitter Icon"
                 className="w-full h-auto object-cover"
+=======
+                src={app_store}
+                alt="App Store"
+                className="h-10"
+>>>>>>> 262c820deaa50c40409900a115c5c1cb6635ff42
               />
             </a>
 

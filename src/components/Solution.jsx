@@ -27,7 +27,7 @@ const Solution = () => {
 
   return (
     <section
-      className="py-8 sm:py-2 relative overflow-hidden md:h-[90vh] flex items-center justify-center "
+      className="relative overflow-hidden py-6 flex items-center justify-between "
       style={{
         backgroundImage: `url(${BG_Header})`,
         backgroundSize: "cover",
@@ -44,6 +44,7 @@ const Solution = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           variants={shapeVariants}
         >
+          {" "}
           <img
             src={Forme8}
             className="w-[4rem]"
@@ -63,20 +64,20 @@ const Solution = () => {
           <ul className="grid gap-y-8 gap-x-8 sm:grid-cols-2 lg:grid-cols-2">
             {/* Carte 1 */}
             <motion.li
-              className="flex gap-x-4"
+              className="flex gap-x-4 items-start"
               variants={cardVariants}
               transition={{ duration: 0.5 }}
             >
               <div className="space-y-3">
                 <div className="flex items-center gap-4">
-                  <div className="flex-none w-12 h-12 bg-terre text-white rounded-lg flex items-center justify-center">
+                  <div className="flex-none w-20 h-20 bg-terre text-white rounded-full flex items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6"
+                      className="w-10 h-10"
                     >
                       <path
                         strokeLinecap="round"
@@ -85,30 +86,32 @@ const Solution = () => {
                       />
                     </svg>
                   </div>
-                  <h4 className="text-lg text-terre font-semibold">
-                    {t("solutions.card1titre")}
-                  </h4>
+                  <div className="text-left">
+                    <h4 className="text-lg text-terre font-semibold">
+                      {t("solutions.card1titre")}
+                    </h4>
+                    <p className="">{t("solutions.card1description")}</p>
+                  </div>
                 </div>
-                <p className="">{t("solutions.card1description")}</p>
               </div>
             </motion.li>
 
             {/* Carte 2 */}
             <motion.li
-              className="flex gap-x-4"
+              className="flex gap-x-4 items-start"
               variants={cardVariants}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <div className="space-y-3">
                 <div className="flex items-center gap-4">
-                  <div className="flex-none w-12 h-12 bg-terre text-white rounded-lg flex items-center justify-center">
+                  <div className="flex-none w-20 h-20 bg-terre text-white rounded-full flex items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6"
+                      className="w-10 h-10"
                     >
                       <path
                         strokeLinecap="round"
@@ -117,12 +120,13 @@ const Solution = () => {
                       />
                     </svg>
                   </div>
-
-                  <h4 className="text-lg text-terre font-semibold">
-                    {t("solutions.card2titre")}
-                  </h4>
+                  <div className="text-left">
+                    <h4 className="text-lg text-terre font-semibold">
+                      {t("solutions.card2titre")}
+                    </h4>
+                    <p className="">{t("solutions.card2description")}</p>
+                  </div>
                 </div>
-                <p className="">{t("solutions.card2description")}</p>
               </div>
             </motion.li>
 
@@ -134,14 +138,14 @@ const Solution = () => {
             >
               <div className="space-y-3">
                 <div className="flex items-center gap-4">
-                  <div className="flex-none w-12 h-12 bg-terre text-white rounded-lg flex items-center justify-center">
+                  <div className="flex-none w-20 h-20 bg-terre text-white rounded-full flex items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6"
+                      className="w-10 h-10"
                     >
                       <path
                         strokeLinecap="round"
@@ -150,13 +154,13 @@ const Solution = () => {
                       />
                     </svg>
                   </div>
-
-                  <h4 className="text-lg text-terre font-semibold">
-                    {t("solutions.card3titre")}
-                  </h4>
+                  <div className="text-left">
+                    <h4 className="text-lg text-terre font-semibold">
+                      {t("solutions.card3titre")}
+                    </h4>
+                    <p className="">{t("solutions.card3description")}</p>
+                  </div>
                 </div>
-
-                <p className="">{t("solutions.card3description")}</p>
               </div>
             </motion.li>
 
@@ -168,14 +172,14 @@ const Solution = () => {
             >
               <div className="space-y-3">
                 <div className="flex items-center gap-4">
-                  <div className="flex-none w-12 h-12 bg-terre text-white rounded-lg flex items-center justify-center">
+                  <div className="flex-none w-20 h-20 bg-terre text-white rounded-full flex items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6"
+                      className="w-10 h-10"
                     >
                       <path
                         strokeLinecap="round"
@@ -184,12 +188,13 @@ const Solution = () => {
                       />
                     </svg>
                   </div>
-
-                  <h4 className="text-lg text-terre font-semibold">
-                    {t("solutions.card4titre")}
-                  </h4>
+                  <div>
+                    <h4 className="text-lg text-terre font-semibold">
+                      {t("solutions.card4titre")}
+                    </h4>
+                    <p className="">{t("solutions.card4description")}</p>
+                  </div>
                 </div>
-                <p className="">{t("solutions.card4description")}</p>
               </div>
             </motion.li>
 
@@ -201,14 +206,14 @@ const Solution = () => {
             >
               <div className="space-y-3">
                 <div className="flex items-center gap-4">
-                  <div className="flex-none w-12 h-12 bg-terre text-white rounded-lg flex items-center justify-center">
+                  <div className="flex-none w-20 h-20 bg-terre text-white rounded-full flex items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6"
+                      className="w-10 h-10"
                     >
                       <path
                         strokeLinecap="round"
@@ -217,11 +222,13 @@ const Solution = () => {
                       />
                     </svg>
                   </div>
-                  <h4 className="text-lg text-terre font-semibold">
-                    {t("solutions.card5titre")}
-                  </h4>
+                  <div>
+                    <h4 className="text-lg text-terre font-semibold">
+                      {t("solutions.card5titre")}
+                    </h4>
+                    <p className="">{t("solutions.card5description")}</p>
+                  </div>
                 </div>
-                <p className="">{t("solutions.card5description")}</p>
               </div>
             </motion.li>
 
@@ -233,14 +240,14 @@ const Solution = () => {
             >
               <div className="space-y-3">
                 <div className="flex items-center gap-4">
-                  <div className="flex-none w-12 h-12 bg-terre  text-white rounded-lg flex items-center justify-center">
+                  <div className="flex-none w-20 h-20 bg-terre  text-white rounded-full flex items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6"
+                      className="w-10 h-10"
                     >
                       <path
                         strokeLinecap="round"
@@ -249,13 +256,13 @@ const Solution = () => {
                       />
                     </svg>
                   </div>
-
-                  <h4 className="text-lg text-terre font-semibold">
-                    {t("solutions.card6titre")}
-                  </h4>
+                  <div>
+                    <h4 className="text-lg text-terre font-semibold">
+                      {t("solutions.card6titre")}
+                    </h4>
+                    <p className="">{t("solutions.card6description")}</p>
+                  </div>
                 </div>
-
-                <p className="">{t("solutions.card6description")}</p>
               </div>
             </motion.li>
           </ul>

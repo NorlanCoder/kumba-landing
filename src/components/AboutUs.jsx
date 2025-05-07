@@ -1,7 +1,7 @@
-import Iphone15 from "../assets/img/iphone15_mockup2.webp";
-import Forme4 from "../assets/img/forme4.webp";
+// import Iphone15 from "../assets/img/iphone15_mockup2.webp";
+// import Forme4 from "../assets/img/forme4.webp";
 import { useTranslation } from "react-i18next";
-import img1 from "../assets/img/phones_mobile_kumba.webp";
+import img1 from "../assets/img/Logo Kumba_Mars 2025_Luxe_Plan de travail 1 copie 11.png";
 import { motion } from "framer-motion";
 
 const AboutUs = () => {
@@ -17,35 +17,35 @@ const AboutUs = () => {
     visible: { opacity: 1, x: 0 },
   };
 
-  const shapeVariants = {
-    hidden: { opacity: 0, rotate: 0 },
-    visible: { opacity: 0.5, rotate: 12 },
-  };
+  // const shapeVariants = {
+  //   hidden: { opacity: 0, rotate: 0 },
+  //   visible: { opacity: 0.5, rotate: 12 },
+  // };
 
   return (
     <section
-      className="pt-8 sm:pt-14 max-w-6xl mx-auto relative select-none"
+      className=" flex flex-col justify-center gap-12 max-w-6xl mx-auto relative select-none"
       id="about"
     >
       {/* Titre */}
       <motion.div
-        className="flex flex-col items-center justify-center text-center mb-6"
+        className="text-center leading-10 relative z-10 px-4 flex flex-col gap-2 "
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.6 }}
         variants={textVariants}
       >
-        <h2 className="text-gray-800 text-3xl font-semibold sm:text-5xl mb-2">
+        <h2 className="text-2xl md:text-3xl font-normal text-[#23273a] uppercase">
           {t("about.titre")}
         </h2>
-        <h3 className="text-terre text-xl sm:text-3xl md:text-4xl font-semibold mt-1 mb-8">
+        <p className="text-2xl md:text-3xl mx-auto font-extrabold text-terre">
           {t("about.soustitre")}
-        </h3>
+        </p>
       </motion.div>
 
       {/* Contenu principal */}
-      <section className="bg-white mx-2 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row items-start justify-between gap-8">
+      <section className="bg-white mx-2 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row item-center md:items-start justify-between gap-8">
         {/* Image (logo) */}
         <motion.div
           className="relative mb-8 md:mb-0 md:w-1/2 flex justify-center"
@@ -62,7 +62,7 @@ const AboutUs = () => {
           />
         </motion.div>
 
-        <div className="md:w-1/2 flex flex-col">
+        <div className="md:w-1/2 flex flex-col text-center md:text-left">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -70,7 +70,7 @@ const AboutUs = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             variants={textVariants}
           >
-            <p className="text-gray-600 mb-12 text-justify">
+            <p className="text-gray-600 mb-12 ">
               {t("about.description")}
             </p>
           </motion.div>
@@ -92,7 +92,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <motion.section
+      {/* <motion.section
         className="hidden sm:block opacity-50 absolute right-10 -top-10 z-20 rotate-12"
         initial="hidden"
         whileInView="visible"
@@ -106,7 +106,7 @@ const AboutUs = () => {
           alt="Forme décorative"
           title="Forme décorative"
         />
-      </motion.section>
+      </motion.section> */}
     </section>
   );
 };
