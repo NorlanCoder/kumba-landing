@@ -1,13 +1,14 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
+// import React, { useCallback, useEffect, useRef, useState } from "react";
+// import useEmblaCarousel from "embla-carousel-react";
+// import Autoplay from "embla-carousel-autoplay";
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import BG_Header from "../assets/img/BG.png";
-import { useTranslation } from "react-i18next";
 import service_1 from "../assets/img/1.png";
 import service_2 from "../assets/img/2.png";
 import service_3 from "../assets/img/3.png";
-import testimonial_img from "../assets/img/test.png";
+import testimonial_img from "../assets/img/kumba_phone.png";
+import TestimonialSlider from "./TestimonialSlider";
 
 const containerVariants = {
   hidden: {},
@@ -24,37 +25,41 @@ const itemVariants = {
 };
 
 function Testimonials() {
-  const [t] = useTranslation("global");
+  const { t } = useTranslation("global");
 
-  const autoplay = useRef(
-    Autoplay({ delay: 4000, stopOnInteraction: false }) // 4000ms = 4s
-  );
+  const testimonials = t("testimonial.testimonials", { returnObjects: true });
 
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    {
-      loop: true,
-      containScroll: "trimSnaps", // ← C'est ça qui lisse la fin
-      align: "start",
-      speed: 10,
-    },
-    [autoplay.current]
-  );
+  // const autoplay = useRef(
+  //   Autoplay({ delay: 10000, stopOnInteraction: false }) // 4000ms = 4s
+  // );
 
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  // const [emblaRef, emblaApi] = useEmblaCarousel(
+  //   {
+  //     loop: true,
+  //     align: "center",
+  //     speed: 8,
+  //     skipSnaps: false,  
+  //   },
+  //   [autoplay.current]
+  // );
 
-  const onSelect = useCallback(() => {
-    if (!emblaApi) return;
-    setSelectedIndex(emblaApi.selectedScrollSnap());
-  }, [emblaApi]);
+  // const [selectedIndex, setSelectedIndex] = useState(0);
 
-  useEffect(() => {
-    if (!emblaApi) return;
-    onSelect();
-    emblaApi.on("select", onSelect);
-  }, [emblaApi, onSelect]);
+  // const onSelect = useCallback(() => {
+  //   if (!emblaApi) return;
+  //   setSelectedIndex(emblaApi.selectedScrollSnap());
+  // }, [emblaApi]);
+
+  // useEffect(() => {
+  //   if (!emblaApi) return;
+  //   onSelect();
+  //   emblaApi.on("select", onSelect);
+  // }, [emblaApi, onSelect]);
+
+
 
   return (
-    <section className="relative flex flex-col items-center justify-center w-full py-10 overflow-hidden gap-20">
+    <section className="relative flex flex-col items-center justify-center w-full py-10 overflow-hidden gap-10 md:gap-20">
       {/* Image d'arrière-plan */}
       <div
         className="absolute inset-0 z-0"
@@ -90,9 +95,9 @@ function Testimonials() {
       <div className="flex flex-col md:flex-row justify-between items-end gap-10 relative z-10 max-w-[1800px] mx-auto md:px-10 md:mt-20 px-4 lg:-mt-16">
         {/* Texte + statistiques */}
         <div className=" md:w-1/2 flex flex-col gap-5 items-center md:items-start">
-          <div className="flex flex-col md:flex-row  items-center space-x-6  ml-[15%]  w-full  ">
+          <div className="flex flex-col md:flex-row justi items-center space-x-6  md:ml-[15%]  w-full  ">
             <motion.h2
-              className="text-4xl md:text-6xl font-extrabold text-terre font-myriad"
+              className="text-4xl text-center md:text-6xl font-extrabold text-terre font-myriad"
               variants={itemVariants}
               initial="hidden"
               animate="visible"
@@ -102,7 +107,7 @@ function Testimonials() {
             </motion.h2>
 
             <motion.p
-              className="text-gray-600 text-sm md:text-xl font-anek text-left font-medium w-full md:max-w-[50%]"
+              className="text-gray-600 text-center text-sm md:text-xl font-anek md:text-left font-medium w-full md:max-w-[50%]"
               variants={itemVariants}
               initial="hidden"
               animate="visible"
@@ -113,7 +118,7 @@ function Testimonials() {
           </div>
 
           {/* Statistiques */}
-          <div className="flex flex-wrap gap-6 justify-center md:justify-between w-[70%] mx-auto ">
+          <div className="flex flex-wrap gap-2 md:gap-6 justify-center md:justify-between w-[70%] mx-auto ">
             {[service_1, service_2, service_3].map((icon, index) => (
               <motion.div
                 key={index}
@@ -123,17 +128,17 @@ function Testimonials() {
                 animate="visible"
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
               >
-                <div className="w-24 h-24 rounded-full border-2 border-[#c0976b] flex items-center justify-center mb-2">
+                <div className="md:w-24 md:h-24 h-14 w-14 rounded-full border-2 border-[#c0976b] flex items-center justify-center mb-2">
                   <img
                     src={icon}
                     alt={`service_${index + 1}`}
-                    className="w-12 h-12"
+                    className="md:w-12 md:h-12 w-8 h-8"
                   />
                 </div>
-                <h3 className="text-2xl font-bold text-[#c0976b]">
+                <h3 className="md:text-2xl text-xl font-bold text-[#c0976b]">
                   {t(`testimonial.icon${index + 1}.number`)}
                 </h3>
-                <p className="text-lg text-[#c0976b] font-semibold">
+                <p className="md:text-lg text text-[#c0976b] font-semibold">
                   {t(`testimonial.icon${index + 1}.label`)}
                 </p>
               </motion.div>
@@ -147,7 +152,7 @@ function Testimonials() {
               {/* Texte */}
               <div className="relative z-10  w-full py-4 text-start">
                 <motion.h3
-                  className="text-2xl md:text-4xl font-semibold mb-4 text-terre"
+                  className=" text-center md:text-start text-2xl md:text-4xl font-semibold mb-4 text-terre"
                   variants={itemVariants}
                   initial="hidden"
                   animate="visible"
@@ -157,7 +162,7 @@ function Testimonials() {
                 </motion.h3>
 
                 <motion.p
-                  className="text-base md:text-lg text-gray-700"
+                  className=" text-center md:text-start text-base md:text-lg text-gray-700"
                   variants={itemVariants}
                   initial="hidden"
                   animate="visible"
@@ -186,15 +191,18 @@ function Testimonials() {
         </motion.div>
       </div>
 
+      <TestimonialSlider testimonials={testimonials} />
+
+
       {/* --- Nouveau bloc : Témoignages en carrousel --- */}
-      <div className="select-none cursor-grab w-full md:w-[90%] xl:w-[80%] mx-auto px-4 mt-16">
-        <div className="embla overflow-hidden" ref={emblaRef}>
+      {/* <div className="select-none cursor-grab w-full md:w-[90%] xl:w-[80%] mx-auto px-4 "> */}
+        {/* <div className="embla overflow-hidden" ref={emblaRef}>
           <div className="embla__container flex snap-x snap-mandatory ">
             {t("testimonial.testimonials", { returnObjects: true }).map(
               (testimonial, index) => (
                 <motion.div
                   key={index}
-                  className="embla__slide snap-start flex-[0_0_100%] min-w-0 sm:flex-[0_0_50%] md:flex-[0_0_33.3333%] px-4"
+                  className="embla__slide snap-start flex-[0_0_100%] min-w-0 sm:flex-[0_0_50%] md:flex-[0_0_33.33%] px-4"
                   variants={itemVariants}
                   initial="hidden"
                   animate="visible"
@@ -226,10 +234,10 @@ function Testimonials() {
               )
             )}
           </div>
-        </div>
+        </div> */}
 
         {/* Indicateurs */}
-        <div className="flex justify-center mt-6 gap-2">
+        {/* <div className="flex justify-center mt-6 gap-2">
           {t("testimonial.testimonials", { returnObjects: true }).map(
             (_, index) => (
               <button
@@ -242,8 +250,8 @@ function Testimonials() {
               />
             )
           )}
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </section>
   );
 }

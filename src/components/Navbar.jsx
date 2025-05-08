@@ -4,6 +4,8 @@ import logo_kumba from "../assets/img/Logo Kumba_Mars 2025_Luxe_Plan de travail 
 import frFlag from "../assets/img/fr.png";
 import enFlag from "../assets/img/en.png";
 import BG_Header from "../assets/img/BG.png";
+
+
 function Navbar() {
   const [t, i18n] = useTranslation("global");
   const [isScrolled, setIsScrolled] = useState(false);

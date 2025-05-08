@@ -53,7 +53,7 @@ function App() {
           <Solution />
         </section>
 
-        <section id="contact" className="">
+        <section id="faq" className="">
           <Accordion />
         </section>
         {/* <section id="contact" className="py-16 bg-gray-50">
