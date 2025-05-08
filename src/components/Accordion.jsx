@@ -36,7 +36,7 @@ function Accordion() {
 
   return (
     <section className="" id="faq">
-      <section className="relative select-none flex flex-col pb-8 overflow-visible">
+      <section className="relative select-none flex flex-col pb-8 overflow-visible w-full min-h-screen px-4 sm:px-6">
         <div
           className="absolute inset-0 -z-10"
           style={{
@@ -69,7 +69,7 @@ function Accordion() {
 
           {/* Titre */}
           <motion.h1
-            className="text-terre text-3xl text-center font-bold sm:text-5xl mt-5 "
+            className="text-terre text-3xl text-center font-bold sm:text-5xl mt-5  font-myriad "
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}

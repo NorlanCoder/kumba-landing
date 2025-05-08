@@ -89,8 +89,8 @@ function Testimonials() {
       {/* Contenue Principale */}
       <div className="flex flex-col md:flex-row justify-between items-end gap-10 relative z-10 max-w-[1800px] mx-auto md:px-10 md:mt-20 px-4 lg:-mt-16">
         {/* Texte + statistiques */}
-        <div className=" md:w-1/2 flex flex-col gap-5 items-center md:items-start">
-          <div className="flex flex-col md:flex-row  items-center space-x-6  ml-[15%]  w-full  ">
+        <div className="w-full md:w-1/2 flex flex-col gap-5">
+          <div className="flex items-center justify-between w-[70%] mx-auto">
             <motion.h2
               className="text-4xl md:text-6xl font-extrabold text-terre font-myriad"
               variants={itemVariants}
@@ -102,7 +102,7 @@ function Testimonials() {
             </motion.h2>
 
             <motion.p
-              className="text-gray-600 text-sm md:text-xl font-anek text-left font-medium w-full md:max-w-[50%]"
+              className="text-gray-600 text-sm md:text-xl font-anek text-left font-medium  max-w-[60%]"
               variants={itemVariants}
               initial="hidden"
               animate="visible"

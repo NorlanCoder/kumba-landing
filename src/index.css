@@ -48,3 +48,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: 'AnekGurmukhi';
+  src: url('/src/assets/font/AnekGurmukhi-VariableFont_wdth\,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('/src/assets//font/MyriadPro-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}

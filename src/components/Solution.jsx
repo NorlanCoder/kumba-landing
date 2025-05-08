@@ -1,6 +1,5 @@
 import React from "react";
-import Forme8 from "../assets/img/forme8.webp";
-import Forme9 from "../assets/img/forme9.webp";
+
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import BG_Header from "../assets/img/BG.png";
@@ -8,10 +7,10 @@ import BG_Header from "../assets/img/BG.png";
 const Solution = () => {
   const [t, i18n] = useTranslation("global");
 
-  const textVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-  };
+  // const textVariants = {
+  //   hidden: { opacity: 0, y: 20 },
+  //   visible: { opacity: 1, y: 0 },
+  // };
 
   // Variants pour les animations des cartes
   const cardVariants = {
@@ -20,10 +19,10 @@ const Solution = () => {
   };
 
   // Variants pour les images de fond
-  const shapeVariants = {
-    hidden: { opacity: 0, rotate: -10 },
-    visible: { opacity: 0.65, rotate: 0 },
-  };
+  // const shapeVariants = {
+  //   hidden: { opacity: 0, rotate: -10 },
+  //   visible: { opacity: 0.65, rotate: 0 },
+  // };
 
   return (
     <section
@@ -35,8 +34,8 @@ const Solution = () => {
       }}
     >
       <div className="absolute inset-0 bg-heroBackground opacity-60"></div>
-      <div className="max-w-4xl mx-auto px-4 text-gray-600 md:px-8 select-none relative">
-        <motion.section
+      <div className="max-w-5xl mx-auto px-4 text-gray-600 md:px-8 select-none relative">
+        {/* <motion.section
           className="hidden sm:block opacity-65 absolute left-16 -top-10 -z-20 transform"
           initial="hidden"
           whileInView="visible"
@@ -51,7 +50,7 @@ const Solution = () => {
             alt="Bilan Image"
             title="Bilan Image"
           />
-        </motion.section>
+        </motion.section> */}
 
         {/* Cartes de solutions */}
         <motion.div
@@ -85,9 +84,10 @@ const Solution = () => {
                         d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
                       />
                     </svg>
+
                   </div>
                   <div className="text-left">
-                    <h4 className="text-lg text-terre font-semibold">
+                    <h4 className="text-lg text-terre font-semibold font-myriad">
                       {t("solutions.card1titre")}
                     </h4>
                     <p className="">{t("solutions.card1description")}</p>
@@ -105,6 +105,7 @@ const Solution = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-4">
                   <div className="flex-none w-20 h-20 bg-terre text-white rounded-full flex items-center justify-center">
+
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -116,12 +117,12 @@ const Solution = () => {
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
+                        d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3"
                       />
                     </svg>
                   </div>
                   <div className="text-left">
-                    <h4 className="text-lg text-terre font-semibold">
+                    <h4 className="text-lg text-terre font-semibold  font-myriad">
                       {t("solutions.card2titre")}
                     </h4>
                     <p className="">{t("solutions.card2description")}</p>
@@ -139,7 +140,7 @@ const Solution = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-4">
                   <div className="flex-none w-20 h-20 bg-terre text-white rounded-full flex items-center justify-center">
-                    <svg
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -150,12 +151,13 @@ const Solution = () => {
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+                        d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
                       />
                     </svg>
+                    
                   </div>
                   <div className="text-left">
-                    <h4 className="text-lg text-terre font-semibold">
+                    <h4 className="text-lg text-terre font-semibold  font-myriad">
                       {t("solutions.card3titre")}
                     </h4>
                     <p className="">{t("solutions.card3description")}</p>
@@ -173,7 +175,8 @@ const Solution = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-4">
                   <div className="flex-none w-20 h-20 bg-terre text-white rounded-full flex items-center justify-center">
-                    <svg
+                    
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -184,12 +187,12 @@ const Solution = () => {
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3"
+                        d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
                       />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-lg text-terre font-semibold">
+                    <h4 className="text-lg text-terre font-semibold  font-myriad">
                       {t("solutions.card4titre")}
                     </h4>
                     <p className="">{t("solutions.card4description")}</p>
@@ -223,7 +226,7 @@ const Solution = () => {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-lg text-terre font-semibold">
+                    <h4 className="text-lg text-terre font-semibold  font-myriad">
                       {t("solutions.card5titre")}
                     </h4>
                     <p className="">{t("solutions.card5description")}</p>
@@ -241,7 +244,7 @@ const Solution = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-4">
                   <div className="flex-none w-20 h-20 bg-terre  text-white rounded-full flex items-center justify-center">
-                    <svg
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -252,12 +255,12 @@ const Solution = () => {
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
+                        d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
                       />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-lg text-terre font-semibold">
+                    <h4 className="text-lg text-terre font-semibold  font-myriad">
                       {t("solutions.card6titre")}
                     </h4>
                     <p className="">{t("solutions.card6description")}</p>
@@ -269,7 +272,7 @@ const Solution = () => {
         </motion.div>
 
         {/* Image de fond (Forme9) */}
-        <motion.section
+        {/* <motion.section
           className="hidden sm:block opacity-30 absolute -left-7 bottom-20 -z-20 transform"
           initial="hidden"
           whileInView="visible"
@@ -283,7 +286,7 @@ const Solution = () => {
             alt="Bilan Image"
             title="Bilan Image"
           />
-        </motion.section>
+        </motion.section> */}
       </div>
     </section>
   );

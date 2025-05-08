@@ -56,7 +56,7 @@ function Footer({ openModalPolicies, openModalTerms }) {
       <div className="w-full px-6 lg:px-14 py-4 lg:py-6 bg-[#f1eee9] bg-opacity-50 space-y-8">
         <div className="max-w-full lg:max-w-4xl mx-auto w-full grid grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="text-start">
-            <h3 className="text-terre font-bold mb-2">
+            <h3 className="text-terre font-bold mb-2  font-myriad">
               {t("footer.ressources")}
             </h3>
 

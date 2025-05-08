@@ -22,11 +22,9 @@ function Header() {
   return (
     <header>
       {/* Navbar sticky - reste visible pendant le scroll */}
-      <div className="fixed top-0 w-full z-50 bg-white shadow-md">
+      <div className="fixed top-0 w-full z-50 bg-white shadow-md font-anek ">
         <Navbar />
       </div>
-
-      
     </header>
   );
 }

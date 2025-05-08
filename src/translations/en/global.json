@@ -8,9 +8,9 @@
   },
 
   "header": {
-    "titre1": "Rapid Housing",
+    "titre1": "The intuitive platform to find your accommodation",
     "titre2": "simple and safe",
-    "description": "With Kumba, explore a vast selection of accommodation adapted to your needs, with clear criteria and an intuitive interface. Simple, fast, and always at your service.",
+    "description": "Thanks to its smooth and intuitive interface, **Kumba** allows you to easily book quality accommodation in just a few clicks, whether you're on a business trip or seeking a relaxing getaway.|| **Kumba** now makes it easier to find temporary stays with style and simplicity. The app already offers you a wide selection of hotels, guesthouses, and lofts across the country. Whether it's for a night, a weekend, or a longer stay, you'll find warm, well-located places suited to all budgets.",
     "bouton2": "Read more",
     "nbre": "3,875",
     "texte1": "people downloaded",
@@ -54,16 +54,16 @@
     "description": "With kumba found the solution to your real estate problems, offices, villas, apartements, houses, hotels, stores, ecolodges, boutiques, removals.",
     "card1titre": "Fast refresh",
     "card1description": "No time to waste, our application loads in an instant to help you save time.",
-    "card2titre": "Analytics",
-    "card2description": "Gain a clear view of your data and improve your results with our essential tool.",
-    "card3titre": "Data Center Security",
-    "card3description": "We ensure the security and integrity of your data thanks to our advanced security features.",
-    "card4titre": "Build on your terms",
-    "card4description": "Set up an ideal environment to provide quality services.",
+    "card3titre": "Analytics",
+    "card3description": "Gain a clear view of your data and improve your results with our essential tool.",
+    "card6titre": "Data Center Security",
+    "card6description": "We ensure the security and integrity of your data thanks to our advanced security features.",
+    "card2titre": "Build on your terms",
+    "card2description": "Set up an ideal environment to provide quality services.",
     "card5titre": "Secure use",
     "card5description": "Kumba uses the latest encryption technologies to protect your personal information.",
-    "card6titre": "Flexible",
-    "card6description": "Kumba gives you unparalleled flexibility to personalize your experience."
+    "card4titre": "Flexible",
+    "card4description": "Kumba gives you unparalleled flexibility to personalize your experience."
   },
 
   "contact": {

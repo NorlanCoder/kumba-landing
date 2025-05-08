@@ -1,5 +1,4 @@
-// import Iphone15 from "../assets/img/iphone15_mockup2.webp";
-// import Forme4 from "../assets/img/forme4.webp";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import img1 from "../assets/img/Logo Kumba_Mars 2025_Luxe_Plan de travail 1 copie 11.png";
 import { motion } from "framer-motion";
@@ -21,6 +20,24 @@ const AboutUs = () => {
   //   hidden: { opacity: 0, rotate: 0 },
   //   visible: { opacity: 0.5, rotate: 12 },
   // };
+  function parseFormattedText(text) {
+    const lines = text.split("||");
+  
+    return lines.map((line, index) => (
+      <p key={index} className="mb-2">
+        {line.split(/(\*\*.*?\*\*)/).map((part, i) => {
+          if (part.startsWith("**") && part.endsWith("**")) {
+            return (
+              <strong key={i} className="font-semibold text-gray-800">
+                {part.slice(2, -2)}
+              </strong>
+            );
+          }
+          return <React.Fragment key={i}>{part}</React.Fragment>;
+        })}
+      </p>
+    ));
+  }
 
   return (
     <section
@@ -39,7 +56,7 @@ const AboutUs = () => {
         <h2 className="text-2xl md:text-3xl font-normal text-[#23273a] uppercase">
           {t("about.titre")}
         </h2>
-        <p className="text-2xl md:text-3xl mx-auto font-extrabold text-terre">
+        <p className="text-2xl md:text-3xl mx-auto font-extrabold text-terre font-myriad">
           {t("about.soustitre")}
         </p>
       </motion.div>
@@ -70,9 +87,9 @@ const AboutUs = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             variants={textVariants}
           >
-            <p className="text-gray-600 mb-12 ">
-              {t("about.description")}
-            </p>
+            <div className="text-gray-600 mb-12 ">
+              {parseFormattedText(t("about.description"))} 
+            </div>
           </motion.div>
 
           <motion.div
@@ -82,7 +99,7 @@ const AboutUs = () => {
             transition={{ duration: 0.6, delay: 0.8 }}
             variants={textVariants}
           >
-            <h2 className="text-terre text-2xl font-semibold sm:text-3xl mb-6">
+            <h2 className="text-terre text-2xl font-semibold sm:text-3xl mb-6 font-myriad">
               {t("about.section2")}
             </h2>
             <p className="text-gray-600 text-lg">

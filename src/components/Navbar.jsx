@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import logo_kumba from "../assets/img/logo.png";
+import logo_kumba from "../assets/img/Logo Kumba_Mars 2025_Luxe_Plan de travail 1 copie 11.png";
 import frFlag from "../assets/img/fr.png";
 import enFlag from "../assets/img/en.png";
-
+import BG_Header from "../assets/img/BG.png";
 function Navbar() {
   const [t, i18n] = useTranslation("global");
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,13 +16,13 @@ function Navbar() {
   // Empêcher le défilement du body quand le menu est ouvert
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     }
-    
+
     return () => {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     };
   }, [isMenuOpen]);
 
@@ -38,14 +38,14 @@ function Navbar() {
   // Fermer le menu de langue lorsqu'on clique à l'extérieur
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (isLangMenuOpen && !event.target.closest('.lang-selector')) {
+      if (isLangMenuOpen && !event.target.closest(".lang-selector")) {
         setIsLangMenuOpen(false);
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isLangMenuOpen]);
 
@@ -60,13 +60,13 @@ function Navbar() {
   const handleLinkClick = (e) => {
     closeMenu();
     // Optional: scroll to the section
-    const href = e.currentTarget.getAttribute('href');
-    if (href && href.startsWith('#')) {
+    const href = e.currentTarget.getAttribute("href");
+    if (href && href.startsWith("#")) {
       e.preventDefault();
       const targetId = href.substring(1);
       const element = document.getElementById(targetId);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }
   };
@@ -78,32 +78,108 @@ function Navbar() {
     setIsLangMenuOpen(false);
   };
 
-  const toggleLangMenu = () => {
-    setIsLangMenuOpen(!isLangMenuOpen);
-  };
+  // const toggleLangMenu = () => {
+  //   setIsLangMenuOpen(!isLangMenuOpen);
+  // };
+
+  const [activeSection, setActiveSection] = useState("#home");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(`#${entry.target.id}`);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5, // 50% visible
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
+
+  const navItems = [
+    { href: "#home", labelKey: "navbar.menu1" },
+    { href: "#about", labelKey: "navbar.menu2" },
+    { href: "#faq", labelKey: "navbar.menu3" },
+    { href: "#contact", labelKey: "navbar.menu4" },
+  ];
 
   return (
-    <nav className={`w-full bg-white py-1  ${isScrolled ? 'shadow-md' : ''}`}>
+    <nav
+      className={`w-full bg-cover bg-center bg-no-repeat transition-shadow duration-300 z-50 bg-white py-1  ${
+        isScrolled ? "shadow-md" : ""
+      }`}
+      style={{
+        backgroundImage: `url(${BG_Header})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full flex items-center justify-between">
         {/* Logo */}
         <div className="logo z-10">
           <a href="#home" onClick={handleLinkClick}>
-            <img className="h-16 sm:h-20 sm:w-20 md:w-28 md:h-28 " src={logo_kumba} alt="Kumba Logo" />
+            <img
+              className="h-16 sm:h-20 sm:w-20 md:w-24 md:h-24 "
+              src={logo_kumba}
+              alt="Kumba Logo"
+            />
           </a>
         </div>
 
-        {/* Desktop Menu */}
+        {/* nav pc */}
         <div className="hidden md:flex items-center space-x-8 font-light">
-          <a href="#home" onClick={handleLinkClick} className="text-black border-b-2 border-[#c0976b] pb-1 font-medium">{t("navbar.menu1")}</a>
-          <a href="#about" onClick={handleLinkClick} className="text-black hover:border-b-2 hover:border-[#c0976b] pb-1">{t("navbar.menu2")}</a>
-          <a href="#faq" onClick={handleLinkClick} className="text-black hover:border-b-2 hover:border-[#c0976b] pb-1">{t("navbar.menu3")}</a>
-          <a href="#contact" onClick={handleLinkClick} className="text-black hover:border-b-2 hover:border-[#c0976b] pb-1">{t("navbar.menu4")}</a>
+          {navItems.map((item, index) => {
+            const isActive = activeSection === item.href;
+            return (
+              <a
+                key={index}
+                href={item.href}
+                className={`relative text-black font-medium transition-all duration-300
+                  after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-[70%]
+                  after:bg-[#c0976b] after:transition-all after:duration-300
+                  ${
+                    isActive
+                      ? "after:h-[2px]"
+                      : "after:h-[1px] hover:after:h-[2px]"
+                  }`}
+              >
+                {t(item.labelKey)}
+              </a>
+            );
+          })}
         </div>
 
         {/* Language Selector and Mobile Menu Button */}
         <div className="flex items-center space-x-4">
           {/* Language Selector */}
-          <div className="relative lang-selector">
+          <div className="flex items-center space-x-4">
+            <button
+              onClick={() => changeLanguage(currentLang === "fr" ? "en" : "fr")}
+              className="flex items-center space-x-2 border border-gray-200 rounded-full p-1 focus:outline-none hover:border-[#c0976b] transition-colors"
+            >
+              <img
+                src={currentLang === "fr" ? frFlag : enFlag}
+                alt={currentLang === "fr" ? "Français" : "English"}
+                className="w-5 h-5 md:w-8 md:h-8 rounded-full"
+              />
+              {/* <span className="text-sm font-medium hidden sm:inline-block">
+                {currentLang === "fr" ? "Fr" : "En"}
+              </span> */}
+            </button>
+          </div>
+
+          {/* <div className="relative lang-selector">
             <button 
               onClick={toggleLangMenu}
               className="flex items-center space-x-2 border border-gray-200 rounded-full px-3 py-1 focus:outline-none hover:border-[#c0976b] transition-colors"
@@ -126,7 +202,7 @@ function Navbar() {
             </button>
             
             {/* Dropdown Menu */}
-            {isLangMenuOpen && (
+          {/* {isLangMenuOpen && (
               <div className="absolute right-0 mt-2 w-44 bg-white rounded-md shadow-lg z-50 py-1 border border-gray-100">
                 <button
                   onClick={() => changeLanguage("fr")}
@@ -154,23 +230,23 @@ function Navbar() {
                 </button>
               </div>
             )}
-          </div>
-          
+          </div> */}
+
           {/* Mobile Menu Button */}
-          <button 
-            onClick={toggleMenu} 
+          <button
+            onClick={toggleMenu}
             className="md:hidden text-black focus:outline-none"
             aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
           >
-            <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              width="24" 
-              height="24" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2" 
-              strokeLinecap="round" 
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
               strokeLinejoin="round"
             >
               {isMenuOpen ? (
@@ -191,59 +267,69 @@ function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div 
+      <div
         className={`md:hidden fixed inset-0 z-40 bg-white transition-opacity duration-300 ease-in-out ${
-          isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          isMenuOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
         }`}
       >
         {/* Close button */}
-        <button 
-          onClick={closeMenu} 
+        <button
+          onClick={closeMenu}
           className="absolute top-4 right-4 text-black focus:outline-none"
           aria-label="Fermer le menu"
         >
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            width="24" 
-            height="24" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            stroke="currentColor" 
-            strokeWidth="2" 
-            strokeLinecap="round" 
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
             strokeLinejoin="round"
           >
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
         </button>
-        
+
         {/* Menu items */}
         <div className="flex flex-col items-center justify-center h-full space-y-8 text-xl">
-          <a href="#home" onClick={handleLinkClick} className="text-black border-b-2 border-[#c0976b] pb-1">{t("navbar.menu1")}</a>
-          <a href="#about" onClick={handleLinkClick} className="text-black hover:border-b-2 hover:border-[#c0976b] pb-1">{t("navbar.menu2")}</a>
-          <a href="#faq" onClick={handleLinkClick} className="text-black hover:border-b-2 hover:border-[#c0976b] pb-1">{t("navbar.menu3")}</a>
-          <a href="#contact" onClick={handleLinkClick} className="text-black hover:border-b-2 hover:border-[#c0976b] pb-1">{t("navbar.menu4")}</a>
-          
-          {/* Language selector in mobile menu */}
-
-          {/* <div className="flex items-center space-x-6 mt-8">
-            <select
-              onChange={(e) => {
-                changeLanguage(e.target.value);
-                closeMenu();
-              }}
-              value={currentLang}
-              className="border border-gray-300 rounded-lg p-2 bg-white focus:outline-none focus:ring-2 focus:ring-[#c0976b]"
-            >
-              <option value="fr">Français</option>
-              <option value="en">English</option>
-            </select>
-          </div> */}
+          <a
+            href="#home"
+            onClick={handleLinkClick}
+            className="text-black border-b-2 border-[#c0976b] pb-1"
+          >
+            {t("navbar.menu1")}
+          </a>
+          <a
+            href="#about"
+            onClick={handleLinkClick}
+            className="text-black hover:border-b-2 hover:border-[#c0976b] pb-1"
+          >
+            {t("navbar.menu2")}
+          </a>
+          <a
+            href="#faq"
+            onClick={handleLinkClick}
+            className="text-black hover:border-b-2 hover:border-[#c0976b] pb-1"
+          >
+            {t("navbar.menu3")}
+          </a>
+          <a
+            href="#contact"
+            onClick={handleLinkClick}
+            className="text-black hover:border-b-2 hover:border-[#c0976b] pb-1"
+          >
+            {t("navbar.menu4")}
+          </a>
         </div>
       </div>
     </nav>
   );
 }
 
-export default Navbar; 
+export default Navbar;

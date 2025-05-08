@@ -1,3 +1,4 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { useEffect, useCallback, useState } from "react";
@@ -30,15 +31,6 @@ function Hero() {
     ]
   );
 
-  // Navigation du carrousel
-  // const scrollPrev = useCallback(() => {
-  //   if (emblaApi) emblaApi.scrollPrev();
-  // }, [emblaApi]);
-
-  // const scrollNext = useCallback(() => {
-  //   if (emblaApi) emblaApi.scrollNext();
-  // }, [emblaApi]);
-
   // Mettre à jour l'index sélectionné quand le carrousel change
   useEffect(() => {
     if (!emblaApi) return;
@@ -65,6 +57,26 @@ function Hero() {
     visible: { opacity: 1, x: 0 },
   };
 
+  function parseFormattedText(text) {
+    const lines = text.split("||");
+  
+    return lines.map((line, index) => (
+      <p key={index} className="mb-2">
+        {line.split(/(\*\*.*?\*\*)/).map((part, i) => {
+          if (part.startsWith("**") && part.endsWith("**")) {
+            return (
+              <strong key={i} className="font-semibold text-gray-800">
+                {part.slice(2, -2)}
+              </strong>
+            );
+          }
+          return <React.Fragment key={i}>{part}</React.Fragment>;
+        })}
+      </p>
+    ));
+  }
+
+  
   return (
     <section className="relative overflow-hidden  flex items-center justify-center">
       {/* Background */}
@@ -80,30 +92,30 @@ function Hero() {
       <div className="absolute inset-0 bg-[#c0976b]/10 "></div>
 
       {/* Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-10 py-6 md:py-14 relative z-10 flex items-center  justify-center w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-10 py-6 md:py-14 relative z-10 flex items-center  justify-center w-full ">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full">
           {/* Text Content */}
           <motion.div
-            className="w-full md:w-1/2 flex flex-col gap-5 "
+            className="w-full md:w-1/2 flex flex-col gap-8 "
             initial="hidden"
             animate="visible"
             transition={{ staggerChildren: 0.2 }}
           >
             <motion.h1
-              className="text-2xl sm:text-2xl md:text-3xl font-extrabold text-terre  space-y-2 text-center md:text-start"
+              className="text-2xl sm:text-2xl md:text-3xl  font-black text-terre  space-y-2 text-center md:text-start font-myriad "
               variants={textVariants}
               transition={{ duration: 0.6 }}
             >
               {t("header.titre1")}
             </motion.h1>
 
-            <motion.p
-              className="text-base sm:text-lg text-[#23273a] text-center md:text-start"
+            <motion.div
+              className="text-base sm:text-lg text-[#23273a] text-center md:text-start font-anek"
               variants={textVariants}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              {t("header.description")}
-            </motion.p>
+              {parseFormattedText(t("header.description"))}
+            </motion.div>
 
             {/* Buttons */}
             <motion.div
@@ -117,21 +129,6 @@ function Hero() {
                 <img src={app_store} alt="App Store" className="h-10" />
               </div>
             </motion.div>
-
-            {/* Stats */}
-            {/* <motion.div
-              className="flex items-center justify-center"
-              variants={textVariants}
-              transition={{ duration: 0.6, delay: 0.4 }}
-            >
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold">
-                {t("header.nbre")}
-              </h2>
-              <p className="text-xs sm:text-sm ml-2 font-light leading-tight">
-                {t("header.texte1")}
-                <span className="block">{t("header.texte2")}</span>
-              </p>
-            </motion.div> */}
           </motion.div>
 
           {/* Image transformée en carrousel */}

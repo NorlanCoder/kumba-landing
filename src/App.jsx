@@ -5,12 +5,12 @@ import Header from "./components/Header";
 import Hero from "./components/Hero"; 
 import AboutUs from "./components/AboutUs";
 import Testimonials from "./components/Testimonials";
-import Footer from "./components/Footer";
-import Solution from "./components/Solution";
 import Accordion from "./components/Accordion";
 // import ContactUs from "./components/ContactUs";
 import TermsModal from "./components/TermsModal";
 import PrivacyModal from "./components/PrivacyModal";
+import Footer from "./components/Footer";
+import Solution from "./components/Solution";
 
 function App() {
   const [showPolicies, setShowPolicies] = useState(false);
@@ -33,7 +33,7 @@ function App() {
   };
 
   return (
-    <div className="font-sans">
+    <div className="font-anek">
       <Header />
 
       <main className="w-full mt-16 md:mt-28 justify-center p-0 m-0 flex flex-col gap-0 ">

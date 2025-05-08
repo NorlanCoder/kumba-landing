@@ -10,6 +10,10 @@ module.exports = {
         mygray: "#3D405B",
         heroBackground: "#F1EEE9",
       },
+      fontFamily: {
+        anek: ['AnekGurmukhi', 'sans-serif'],
+        myriad: ['MyriadPro', 'sans-serif'],
+      },
     },
   },
   plugins: [],

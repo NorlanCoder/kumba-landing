@@ -10,7 +10,7 @@
   "header": {
     "titre1": "La plateforme intuitive pour trouver votre logement",
     "titre2": "",
-    "description": "KUMBA est une nouvelle application de logement qui réinvente la recherche locative. Elle offre une plateforme conviviale et intuitive pour trouver des maisons, des appartements, des guesthouses, des bureaux, des agences immobilières et bien plus encore, le tout pour vous faire gagner du temps",
+    "description": "Grâce à son interface fluide et intuitive, **Kumba** vous permet de réserver facilement un hébergement de qualité en quelques clics, que vous soyez en déplacement professionnel ou en quête d’une pause détente.||**Kumba** facilite désormais la recherche de séjours temporaires avec style et simplicité. L'application met déjà à votre disposition une sélection variée d’hôtels, de guesthouses et lofts à travers le pays. Que ce soit pour une nuit, un week-end ou un séjour prolongé, vous trouverez des lieux chaleureux, bien situés et adaptés à tous les budgets.",
     "bouton2": "Lire plus",
     "nbre": "3,875",
     "texte1": "personnes ont téléchargé",
@@ -46,7 +46,7 @@
     "titre": "À propos",
     "soustitre": "Le logement idéal à portée de main",
     "section2": "SOLUTIONS SIMPLES",
-    "description": "Kumba est votre compagnon idéal pour découvrir une large gamme d'appartement, de villa, de maison, de bureau, de simple chambre, d'hôtel, de magasin, de boutique qui répondent parfaitement à vos attentes. Grâce à des filtres précis et une interface conviviale, trouver votre futur chez-vous n'a jamais été aussi simple. Profitez d'une expérience fluide, rapide et toujours adaptée à vos besoins."
+    "description": "**Kumba** est votre compagnon idéal pour découvrir une large gamme de guesthouses, de lofts, d'hôtels, d’écolodges qui répondent parfaitement à vos attentes. Grâce à des filtres précis et une interface conviviale, trouver votre futur séjours, n'a jamais été aussi simple. Profitez d'une expérience fluide, rapide et toujours adaptée à vos besoins."
   },
 
   "solutions": {
@@ -54,16 +54,16 @@
     "description": "Avec Kumba trouvé la solution à vos problèmes d'immobiliers, de bureaux, de villas, d'appartements, de maisons, d'hôtels, de magasins, d'écolodges, de boutiques, de déménagements",
     "card1titre": "Rafraîchissement rapide",
     "card1description": "Pas de temps à perdre, notre application se charge en un instant pour vous aider à gagner du temps.",
-    "card2titre": "Analytique",
-    "card2description": "Obtenez une vision claire de vos données et améliorez vos résultats avec notre outil incontournable.",
-    "card3titre": "Sécurité des centres de données",
-    "card3description": "Nous assurons la sécurité et l'intégrité de vos données grâce à nos fonctionnalités de sécurité avancées.",
-    "card4titre": "Construisez selon vos conditions",
-    "card4description": "Mettez en place un environnement idéal pour fournir des services de qualité.",
+    "card3titre": "Analytique",
+    "card3description": "Obtenez une vision claire de vos données et améliorez vos résultats avec notre outil incontournable.",
+    "card6titre": "Sécurité des centres de données", 
+    "card6description": "Nous assurons la sécurité et l'intégrité de vos données grâce à nos fonctionnalités de sécurité avancées.",
+    "card2titre": "Construisez selon vos conditions",
+    "card2description": "Mettez en place un environnement idéal pour fournir des services de qualité.",
     "card5titre": "Utilisation sûre",
     "card5description": "Kumba utilise les dernières technologies de chiffrement pour protéger vos informations personnelles.",
-    "card6titre": "Flexible",
-    "card6description": "Kumba vous offre une flexibilité inégalée pour personnaliser votre expérience."
+    "card4titre": "Flexible",
+    "card4description": "Kumba vous offre une flexibilité inégalée pour personnaliser votre expérience."
   },
 
   "contact": {
